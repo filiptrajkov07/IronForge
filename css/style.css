@@ -1,0 +1,41 @@
+[hidden] {
+  display: none !important;
+}
+
+body {
+  margin: 0;
+  background: #F1F0EB;
+}
+
+a {
+  color: #151615;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #1E5BBF;
+}
+
+.p-nav a {
+  font: 500 14px/1 Geist,system-ui,sans-serif;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  color: #151615;
+  text-decoration: underline;
+  text-decoration-thickness: 3px;
+  text-underline-offset: 7px;
+  text-decoration-color: transparent;
+  transition: text-decoration-color .2s;
+}
+
+.p-nav a:hover {
+  color: #151615;
+}
+
+.p-lng:hover {
+  color: #151615;
+}
+
+.p-pill:hover {
+  transform: translateY(-2px);
+}

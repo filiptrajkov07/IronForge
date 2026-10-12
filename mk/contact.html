@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="mk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Iron Forge — Контакт</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&amp;family=Geist+Mono:wght@400;500;600&amp;display=swap">
+<link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="../css/contact.css">
+<link rel="stylesheet" href="../css/shared.css">
+</head>
+<body>
+<div class="p-grade page-box">
+
+  <header class="header-header">
+    <nav class="p-nav header-menu" aria-label="Главно мени">
+      <a class="u-blue" href="amenities.html">Содржини</a>
+      <a class="u-green" href="team.html">Тим</a>
+      <a class="u-yellow" href="gallery.html">Галерија</a>
+    </nav>
+    <a class="header-link" href="index.html" aria-label="Iron Forge почетна">
+      <svg aria-hidden="true" width="40" height="40" viewBox="0 0 40 40"><circle cx="20" cy="20" r="19" fill="#151615"></circle><circle cx="20" cy="20" r="15.5" fill="none" stroke="#F1F0EB" stroke-opacity=".28" stroke-width="1"></circle><circle cx="20" cy="20" r="8" fill="none" stroke="#F1F0EB" stroke-opacity=".7" stroke-width="1.6"></circle><circle cx="20" cy="20" r="4" fill="#F1F0EB"></circle></svg>
+      <span class="header-label">iron<br>forge</span>
+    </a>
+    <div class="p-nav header-box">
+      <a class="u-red" href="about.html">За нас</a>
+      <a class="u-yellow" href="blog.html">Блог</a>
+      <a class="u-red act" href="contact.html" aria-current="page">Контакт</a>
+      <div class="header-box-2" role="group" aria-label="Јазик">
+        <a class="p-lng on" href="contact.html" lang="mk" aria-current="true">MK</a>
+        <a class="p-lng" href="../en/contact.html" lang="en">EN</a>
+      </div>
+    </div>
+  </header>
+  <div class="header-box-3">
+
+    <section class="page-hero-section-5">
+      <div class="page-hero-box">
+        <span class="p-mono page-hero-label">Контакт · прашања или персонален тренинг</span>
+        <h1 class="page-hero-title">сврати на <span class="hero-label-red-2">здраво</span></h1>
+      </div>
+      <span class="p-mono page-hero-label-2">
+        <span class="p-live page-hero-label-green-2" id="open-dot"></span>
+        <span id="open-text">Отворено сега · до 23:00</span>
+      </span>
+    </section>
+
+    <section class="p-contact form-details-section">
+      <div class="form-details-box">
+        <form class="form-details-form" id="contact-form" noValidate="">
+          <div class="p-row">
+            <div class="p-f">
+              <label for="c-name">Име</label>
+              <input id="c-name" name="name" class="p-line" type="text" autocomplete="name" placeholder="Твоето име">
+              <span hidden class="p-err" role="alert" id="err-name"></span>
+            </div>
+            <div class="p-f">
+              <label for="c-email">Е-пошта</label>
+              <input id="c-email" name="email" class="p-line" type="email" autocomplete="email" placeholder="ti@primer.com">
+              <span hidden class="p-err" role="alert" id="err-email"></span>
+            </div>
+          </div>
+          <div class="p-topic">
+            <fieldset class="p-f">
+              <legend>Сакам да</legend>
+              <div class="p-chips">
+                <label class="p-chip"><input type="radio" name="topic" value="A question" checked=""><span>Поставам прашање</span></label>
+                <label class="p-chip"><input type="radio" name="topic" value="Personal training"><span>Разговарам со тренер за персонален тренинг</span></label>
+                <label class="p-chip"><input type="radio" name="topic" value="Careers"><span>Се пријавам за работа како тренер</span></label>
+              </div>
+            </fieldset>
+            <fieldset class="p-f p-coach">
+              <legend>Кој тренер?</legend>
+              <div class="p-chips">
+                <label class="p-chip"><input type="radio" name="coach" value="Any coach" checked=""><span>Кој било тренер</span></label>
+                <label class="p-chip"><input type="radio" name="coach" value="Marko"><span>Marko · сила</span></label>
+                <label class="p-chip"><input type="radio" name="coach" value="Ana"><span>Ana · мобилност</span></label>
+                <label class="p-chip"><input type="radio" name="coach" value="Aleksandar"><span>Aleksandar · почетници</span></label>
+                <label class="p-chip"><input type="radio" name="coach" value="Elena"><span>Elena · кондиција</span></label>
+              </div>
+            </fieldset>
+          </div>
+          <div class="p-f">
+            <label for="c-msg">Порака</label>
+            <textarea id="c-msg" name="msg" class="p-line" rows="3" placeholder="Твоето прашање, или твоите цели и деновите што ти одговараат…"></textarea>
+          </div>
+          <label class="form-details-label" for="c-consent">
+            <input class="form-details-input" id="c-consent" name="consent" type="checkbox">
+            Се согласувам Iron Forge да ги користи моите податоци за да ми одговори, како што е опишано во
+            <a class="cookies-link" href="privacy.html">политиката за приватност</a>
+            .
+          </label>
+          <span hidden class="p-err" role="alert" id="err-consent"></span>
+          <div><button type="submit" class="p-send">Испрати порака<svg width="18" height="18" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M4 10h12M11 5l5 5-5 5" stroke="currentColor" stroke-width="1.8" stroke-linecap="square"></path></svg></button></div>
+        </form>
+        <div class="form-details-box-2" hidden id="sent-box" role="status">
+<span class="p-mono form-details-label-green"><i class="posts-mark-green"></i>Пораката е испратена</span>
+<p class="p-say form-details-text">Благодариме, <span id="sent-name"></span><span class="g">.</span> <span id="reply-line">Ќе ти одговориме на  во рок од еден работен ден</span><span class="hero-label-red-2">.</span></p>
+<div><button type="button" class="p-tl form-details-button" id="send-another">Испрати нова</button></div>
+</div>
+      </div>
+      <aside class="p-info" aria-label="Контакт податоци">
+        <div>
+          <span class="p-mono page-hero-label">Адреса</span>
+          <span class="p-big">ул. Македонија 18<br>1000 Скопје</span>
+          <span class="p-sub">10 минути пеш од Камениот мост. Држачи за велосипеди на влезот.</span>
+          <a class="p-tl" href="https://maps.google.com/?q=ul.+Makedonija+18,+Skopje">Како до нас</a>
+        </div>
+        <div>
+          <span class="p-mono page-hero-label">Контакт</span>
+          <a class="p-big" href="mailto:hello@ironforge.mk">hello@ironforge.mk</a>
+          <span class="p-big">+389 70 312 458</span>
+        </div>
+        <div class="form-details-box-3">
+          <span class="p-mono form-details-label-2">Работно време</span>
+          <div class="p-hr p-row-today">
+            <i></i>
+            <span>Понеделник – петок · денес</span>
+            <span class="form-details-label-3">06:00 – 23:00</span>
+          </div>
+          <div class="p-hr">
+            <i></i>
+            <span>Сабота</span>
+            <span class="form-details-label-3">08:00 – 21:00</span>
+          </div>
+          <div class="p-hr">
+            <i></i>
+            <span>Недела</span>
+            <span class="form-details-label-3">09:00 – 18:00</span>
+          </div>
+        </div>
+        <div class="form-details-box-4">
+          <a class="p-tl" href="https://instagram.com">Instagram</a>
+          <a class="p-tl" href="https://facebook.com">Facebook</a>
+          <a class="p-tl" href="https://tiktok.com">TikTok</a>
+        </div>
+      </aside>
+    </section>
+  </div>
+
+  <section class="faq-section-yellow" id="faq">
+    <div class="faq-box">
+      <div class="faq-box-2">
+        <span class="p-mono page-hero-label">ЧПП</span>
+        <h2 class="gallery-strip-heading">Пред првата посета</h2>
+      </div>
+      <div class="faq-box-3">
+        <details class="p-faq faq-details" open="">
+          <summary>Колку чини членарината?</summary>
+          <p class="faq-text">400 ден за еден ден, 2.200 ден месечно, 5.900 ден за три месеци и 19.900 ден годишно. Нема уписнина.</p>
+        </details>
+        <details class="p-faq faq-details">
+          <summary>Може ли да ја пробам салата со дневен пас?</summary>
+          <p class="faq-text">Да. Само дојдете, не треба резервација. Шкафчињата и тушевите се вклучени.</p>
+        </details>
+        <details class="p-faq faq-details">
+          <summary>Каде сте и кога работите?</summary>
+          <p class="faq-text">Центар на Скопје, 10 минути пеш од Камениот мост. Пон–Пет 06:00–23:00, Саб 08:00–21:00, Нед 09:00–18:00.</p>
+        </details>
+        <details class="p-faq faq-details">
+          <summary>Која опрема и содржини се вклучени?</summary>
+          <p class="faq-text">Секој пас ги вклучува зоната за сила, кардио, тревната патека, шкафчињата и тушевите. Сауната, студиото за мобилност и часовите се дел од членарините. Целиот список е на страницата <a class="cookies-link" href="amenities.html">Содржини</a> .</p>
+        </details>
+        <details class="p-faq faq-details">
+          <summary>Дали салата е соодветна за почетници?</summary>
+          <p class="faq-text">Да. Почнете со бесплатен воведен тренинг и тренер ќе ви ја покаже салата и ќе ви го напише првиот месец.</p>
+        </details>
+        <details class="p-faq faq-details">
+          <summary>Дали нудите персонален тренинг?</summary>
+          <p class="faq-text">Да: 1.200 ден по тренинг, 10 тренинзи за 10.000 ден или онлајн програма за 2.500 ден месечно. Запознајте ги тренерите на страницата <a class="cookies-link" href="team.html">Тим</a> .</p>
+        </details>
+        <details class="p-faq faq-details">
+          <summary>Дали има шкафчиња, тушеви и простор за опоравување?</summary>
+          <p class="faq-text">Шкафчиња со дигитални брави и приватни тушеви со секој пас. Сауната и студиото за мобилност со секоја членарина.</p>
+        </details>
+        <details class="p-faq faq-details">
+          <summary>Што да понесам?</summary>
+          <p class="faq-text">Чисти патики за внатре и шише вода. Ние обезбедуваме пешкири, магнезиум и појаси.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer-footer">
+    <div class="footer-box">
+      <div class="footer-box-red"></div>
+      <div class="footer-box-blue"></div>
+      <div class="footer-box-yellow"></div>
+      <div class="footer-box-green"></div>
+    </div>
+    <div class="footer-box-2">
+      <div class="footer-box-3">
+        <div><div class="p-mono footer-box-9">Каде</div>ул. Македонија 18, 1000 Скопје<br><a class="footer-link-yellow" href="https://maps.google.com/?q=ul.+Makedonija+18,+Skopje">Како до нас</a></div>
+        <div><div class="p-mono footer-box-9">Кога</div><span class="footer-label">Пон–Пет 06:00–23:00<br>Саб 08:00–21:00<br>Нед 09:00–18:00</span></div>
+        <div><div class="p-mono footer-box-9">Контакт</div>+389 70 312 458<br>hello@ironforge.mk</div>
+      </div>
+      <div class="footer-box-5">
+        <div class="footer-box-6">
+          <a class="footer-link" href="index.html">Почетна</a>
+          <a class="footer-link" href="amenities.html">Содржини</a>
+          <a class="footer-link" href="team.html">Тим</a>
+          <a class="footer-link" href="gallery.html">Галерија</a>
+          <a class="footer-link" href="about.html">За нас</a>
+          <a class="footer-link" href="blog.html">Блог</a>
+          <a class="footer-link" href="contact.html">Контакт</a>
+        </div>
+        <div class="footer-box-6">
+          <a class="footer-link-2" href="privacy.html">Приватност и колачиња</a>
+          <a class="footer-link-2" href="privacy.html">Услови</a>
+        </div>
+      </div>
+      <div class="footer-box-7" aria-hidden="true">iron forge</div>
+      <div class="footer-box-8">
+        <span>© 2026 IRON FORGE СКОПЈЕ</span>
+        <span>INSTAGRAM · FACEBOOK · TIKTOK</span>
+      </div>
+    </div>
+  </footer>
+</div>
+<script src="../js/contact.js"></script>
+</body>
+</html>

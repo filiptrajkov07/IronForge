@@ -1,0 +1,608 @@
+.p-nav a.u-red:hover,
+.p-nav a.u-red.act {
+  text-decoration-color: #D2372C;
+}
+
+.p-nav a.u-blue:hover,
+.p-nav a.u-blue.act {
+  text-decoration-color: #1E5BBF;
+}
+
+.p-nav a.u-yellow:hover,
+.p-nav a.u-yellow.act {
+  text-decoration-color: #F2C318;
+}
+
+.p-nav a.u-green:hover,
+.p-nav a.u-green.act {
+  text-decoration-color: #2C8A4B;
+}
+
+.p-lng {
+  background: transparent;
+  border: 0;
+  padding: 6px 2px;
+  cursor: pointer;
+  font: 600 13px/1 "Geist Mono",ui-monospace,monospace;
+  color: #8A8B86;
+  text-decoration: none !important;
+}
+
+.p-lng.on {
+  color: #151615;
+  text-decoration: underline !important;
+  text-decoration-thickness: 2px !important;
+  text-underline-offset: 4px;
+}
+
+.p-pill {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  min-height: 48px;
+  padding: 0 26px;
+  border-radius: 999px;
+  font: 600 14px/1 Geist,system-ui,sans-serif;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: transform .2s;
+}
+
+.p-grade img {
+  filter: saturate(.88) contrast(1.06) brightness(.98);
+}
+
+.p-mono {
+  font: 600 12px/1 "Geist Mono",ui-monospace,monospace;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+
+.p-roster {
+  display: flex;
+  gap: 8px;
+  height: clamp(480px,44vw,640px);
+}
+
+.p-co {
+  position: relative;
+  flex: 1 1 0;
+  min-width: 0;
+  overflow: hidden;
+  background: #151615;
+  color: #F1F0EB;
+  transition: flex-grow .7s cubic-bezier(.2,.7,.2,1);
+}
+
+.p-co:hover,
+.p-co:focus-visible,
+.p-roster:not(:hover):not(:focus-within) .p-co:first-child {
+  flex-grow: 3.2;
+}
+
+.p-co:hover {
+  color: #F1F0EB;
+}
+
+.p-co img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: saturate(.88) contrast(1.06) brightness(.72);
+  transition: filter .6s,transform 1s cubic-bezier(.2,.7,.2,1);
+}
+
+.p-co:hover img,
+.p-co:focus-visible img,
+.p-roster:not(:hover):not(:focus-within) .p-co:first-child img {
+  filter: saturate(.95) contrast(1.06) brightness(.95);
+  transform: scale(1.03);
+}
+
+.p-co::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 4px;
+  z-index: 2;
+  background: var(--z);
+}
+
+.p-co::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: linear-gradient(180deg,rgba(21,22,21,0) 50%,rgba(21,22,21,.7));
+}
+
+.p-co-v {
+  position: absolute;
+  left: 18px;
+  bottom: 24px;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  font: 600 12px/1 "Geist Mono",ui-monospace,monospace;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  transition: opacity .3s;
+}
+
+.p-co-x {
+  position: absolute;
+  left: 24px;
+  right: 24px;
+  bottom: 28px;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  opacity: 0;
+  transform: translateY(16px);
+  transition: opacity .3s,transform .5s cubic-bezier(.2,.7,.2,1);
+  white-space: nowrap;
+}
+
+.p-co:hover .p-co-x,
+.p-co:focus-visible .p-co-x,
+.p-roster:not(:hover):not(:focus-within) .p-co:first-child .p-co-x {
+  opacity: 1;
+  transform: none;
+  transition-delay: .2s;
+}
+
+.p-co:hover .p-co-v,
+.p-co:focus-visible .p-co-v,
+.p-roster:not(:hover):not(:focus-within) .p-co:first-child .p-co-v {
+  opacity: 0;
+}
+
+.p-co-role {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font: 600 11px/1 "Geist Mono",ui-monospace,monospace;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+
+.p-co-name {
+  font-weight: 700;
+  font-size: clamp(34px,3.6vw,56px);
+  line-height: .88;
+  letter-spacing: -.055em;
+}
+
+.p-co-cta {
+  align-self: flex-start;
+  font: 600 12px/1 "Geist Mono",ui-monospace,monospace;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  border-bottom: 2px solid var(--z);
+  padding-bottom: 5px;
+}
+
+@media (max-width: 860px) {
+  .p-roster {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .p-co {
+    flex: none;
+    height: 380px;
+  }
+
+  .p-co-x {
+    opacity: 1;
+    transform: none;
+  }
+
+  .p-co-v {
+    display: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .p-co,
+  .p-co img,
+  .p-co-x,
+  .p-co-v {
+    transition: none;
+  }
+}
+
+.z-red {
+  --z: #D2372C;
+  --zc: #FFFFFF;
+}
+
+.z-blue {
+  --z: #1E5BBF;
+  --zc: #FFFFFF;
+}
+
+.z-green {
+  --z: #2C8A4B;
+  --zc: #FFFFFF;
+}
+
+.z-yellow {
+  --z: #F2C318;
+  --zc: #151615;
+}
+
+.p-pt {
+  background: #151615;
+  color: #F1F0EB;
+}
+
+.p-pt-link {
+  color: #F1F0EB;
+  font: 600 12px/1 "Geist Mono",ui-monospace,monospace;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  border-bottom: 1.5px solid #5A5B57;
+  padding-bottom: 5px;
+  transition: border-color .2s;
+}
+
+.p-pt-link:hover {
+  color: #F1F0EB;
+  border-color: #F2C318;
+}
+
+.p-load {
+  display: grid;
+  grid-template-columns: minmax(0,7fr) minmax(0,5fr);
+  align-items: center;
+  gap: 40px clamp(40px,6vw,96px);
+  padding-top: 32px;
+  border-top: 1px solid #3A3B39;
+}
+
+.p-bar {
+  position: relative;
+  height: clamp(200px,20vw,260px);
+  overflow: hidden;
+}
+
+.p-bar-rod {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  height: 6px;
+  margin-top: -3px;
+  background: #5A5B57;
+}
+
+.p-bar-sleeve {
+  position: absolute;
+  left: 46%;
+  right: 0;
+  top: 50%;
+  height: 16px;
+  margin-top: -8px;
+  background: #8A8B86;
+}
+
+.p-bar-collar {
+  position: absolute;
+  left: 46%;
+  top: 50%;
+  width: 12px;
+  height: 44px;
+  margin-top: -22px;
+  background: #C9CAC4;
+}
+
+.p-pl {
+  position: absolute;
+  width: clamp(18px,1.8vw,26px);
+  background: var(--pc);
+  opacity: 0;
+  transform: translateX(60vw);
+  transition: transform .7s cubic-bezier(.2,.9,.25,1),opacity .3s;
+}
+
+.p-pl.on {
+  opacity: 1;
+  transform: none;
+}
+
+.p-pl.c-y {
+  --pc: #F2C318;
+}
+
+.p-pl.c-r {
+  --pc: #D2372C;
+}
+
+.p-pl.c-b {
+  --pc: #1E5BBF;
+}
+
+.p-load-ui {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.p-plans {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 28px;
+}
+
+.p-plan {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  margin: 0;
+  padding: 12px 0 14px 20px;
+  border: 0;
+  background: none;
+  color: #8A8B86;
+  font: 600 13px/1 "Geist Mono",ui-monospace,monospace;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.p-plan:hover {
+  color: #C9CAC4;
+}
+
+.p-plan.on {
+  color: #F1F0EB;
+}
+
+.p-plan i {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 9px;
+  height: 9px;
+  margin-top: -5px;
+  background: var(--pc);
+  opacity: .45;
+}
+
+.p-plan.on i {
+  opacity: 1;
+}
+
+.p-plan.c-y {
+  --pc: #F2C318;
+}
+
+.p-plan.c-r {
+  --pc: #D2372C;
+}
+
+.p-plan.c-b {
+  --pc: #1E5BBF;
+}
+
+.p-load-price {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+}
+
+.p-load-n {
+  font: 700 clamp(64px,7vw,112px)/.85 Geist,system-ui,sans-serif;
+  letter-spacing: -.065em;
+  font-variant-numeric: tabular-nums;
+}
+
+.p-load-u {
+  font: 600 13px/1 "Geist Mono",ui-monospace,monospace;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: #8A8B86;
+}
+
+.p-load-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  min-height: calc(11px + 8px + 3em);
+  font-size: 15px;
+  line-height: 1.5;
+  color: #A7A8A2;
+  max-width: 36ch;
+}
+
+.p-load-tag {
+  font: 600 11px/1 "Geist Mono",ui-monospace,monospace;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: #F1F0EB;
+}
+
+@media (max-width: 860px) {
+  .p-load {
+    grid-template-columns: 1fr;
+  }
+
+  .p-bar {
+    height: 180px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .p-pl,
+  .p-plan,
+  .p-plan i {
+    transition: none;
+  }
+}
+
+.p-av {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 3px solid #F1F0EB;
+  margin-left: -14px;
+  display: block;
+}
+
+.p-av:first-child {
+  margin-left: 0;
+}
+
+:focus-visible {
+  outline: 3px solid #1E5BBF;
+  outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .p-pt-link,
+  .p-pill,
+  .p-nav a {
+    transition: none;
+  }
+}
+
+.page-hero-label-green {
+  color: #2C8A4B;
+}
+
+.page-hero-box-2 {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 clamp(16px, 4vw, 48px) clamp(88px, 9vw, 120px);
+  box-sizing: border-box;
+}
+
+.page-hero-photo {
+  object-position: 50% 22%;
+}
+
+.page-hero-photo-2 {
+  object-position: 50% 20%;
+}
+
+.personal-training-load-box {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 88px clamp(16px, 4vw, 48px) 96px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.personal-training-load-box-2 {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 640px;
+}
+
+.personal-training-load-label {
+  color: #8A8B86;
+}
+
+.personal-training-load-heading {
+  margin: 0;
+  font-weight: 600;
+  font-size: clamp(36px, 4vw, 58px);
+  line-height: .95;
+  letter-spacing: -.055em;
+}
+
+.personal-training-load-label-2 {
+  left: calc(46% + 12px + 0px);
+  top: 17%;
+  height: 66%;
+  transition-delay: 0s;
+}
+
+.personal-training-load-label-3 {
+  left: calc(46% + 12px + 0px);
+  top: 10%;
+  height: 80%;
+  transition-delay: 0s;
+}
+
+.personal-training-load-label-4 {
+  left: calc(46% + 12px + clamp(22px, 2.2vw, 32px));
+  top: 10%;
+  height: 80%;
+  transition-delay: 0.09s;
+}
+
+.personal-training-load-label-5 {
+  left: calc(46% + 12px + 0px);
+  top: 4%;
+  height: 92%;
+  transition-delay: 0s;
+}
+
+.personal-training-load-label-6 {
+  left: calc(46% + 12px + clamp(22px, 2.2vw, 32px));
+  top: 4%;
+  height: 92%;
+  transition-delay: 0s;
+}
+
+.personal-training-load-label-7 {
+  left: calc(46% + 12px + calc(clamp(22px, 2.2vw, 32px) * 2));
+  top: 4%;
+  height: 92%;
+  transition-delay: 0s;
+}
+
+.careers-section {
+  padding-block: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 32px;
+}
+
+.careers-box {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  max-width: 640px;
+}
+
+.careers-text {
+  margin: 0;
+  font-size: 17px;
+  line-height: 1.6;
+  color: #3E3F3B;
+}
+
+.careers-link,
+.careers-link:hover {
+  border: 2px solid #151615;
+  color: #151615;
+}
+
+.closing-band-section-yellow {
+  background: #F2C318;
+  color: #151615;
+}
+
+.closing-band-link-yellow,
+.closing-band-link-yellow:hover {
+  background: #151615;
+  color: #F2C318;
+}
