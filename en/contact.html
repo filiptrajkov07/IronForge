@@ -4,6 +4,8 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Iron Forge — Contact</title>
+<meta name="description" content="Contact Iron Forge Skopje: ask a question, talk to a coach about personal training, or apply to coach. ul. Makedonija 18, Skopje.">
+<link rel="icon" href="../images/favicon.png" type="image/png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&amp;family=Geist+Mono:wght@400;500;600&amp;display=swap">
@@ -12,170 +14,180 @@
 <link rel="stylesheet" href="../css/shared.css">
 </head>
 <body>
-<div class="p-grade page-box">
+<div class="site page">
 
-  <header class="header-header">
-    <nav class="p-nav header-menu" aria-label="Main">
-      <a class="u-blue" href="amenities.html">Amenities</a>
-      <a class="u-green" href="team.html">Team</a>
-      <a class="u-yellow" href="gallery.html">Gallery</a>
+  <header class="site-header">
+    <nav class="menu header-menu" aria-label="Main">
+      <a class="underline-blue" href="amenities.html">Amenities</a>
+      <a class="underline-green" href="team.html">Team</a>
+      <a class="underline-yellow" href="gallery.html">Gallery</a>
     </nav>
     <a class="header-link" href="index.html" aria-label="Iron Forge home">
-      <svg aria-hidden="true" width="40" height="40" viewBox="0 0 40 40"><circle cx="20" cy="20" r="19" fill="#151615"></circle><circle cx="20" cy="20" r="15.5" fill="none" stroke="#F1F0EB" stroke-opacity=".28" stroke-width="1"></circle><circle cx="20" cy="20" r="8" fill="none" stroke="#F1F0EB" stroke-opacity=".7" stroke-width="1.6"></circle><circle cx="20" cy="20" r="4" fill="#F1F0EB"></circle></svg>
+      <span class="logo-plate" aria-hidden="true"><span class="logo-outer-ring"><span class="logo-inner-ring"><span class="logo-dot"></span></span></span></span>
       <span class="header-label">iron<br>forge</span>
     </a>
-    <div class="p-nav header-box">
-      <a class="u-red" href="about.html">About</a>
-      <a class="u-yellow" href="blog.html">Blog</a>
-      <a class="u-red act" href="contact.html" aria-current="page">Contact</a>
-      <div class="header-box-2" role="group" aria-label="Language">
-        <a class="p-lng" href="../mk/contact.html" lang="mk">MK</a>
-        <a class="p-lng on" href="contact.html" lang="en" aria-current="true">EN</a>
+    <div class="menu header-right">
+      <a class="underline-red" href="about.html">About</a>
+      <a class="underline-yellow" href="blog.html">Blog</a>
+      <a class="underline-red current" href="contact.html" aria-current="page">Contact</a>
+      <div class="language-links" role="group" aria-label="Language">
+        <a class="language-link" href="../mk/contact.html" lang="mk">MK</a>
+        <a class="language-link active" href="contact.html" lang="en" aria-current="true">EN</a>
       </div>
     </div>
+    <button type="button" class="menu-button" id="menu-button" aria-expanded="false" aria-controls="phone-menu" aria-label="Menu">☰</button>
+    <nav class="phone-menu" id="phone-menu" aria-label="Menu">
+      <a class="underline-blue" href="amenities.html">Amenities</a>
+      <a class="underline-green" href="team.html">Team</a>
+      <a class="underline-yellow" href="gallery.html">Gallery</a>
+      <a class="underline-red" href="about.html">About</a>
+      <a class="underline-yellow" href="blog.html">Blog</a>
+      <a class="underline-red current" href="contact.html" aria-current="page">Contact</a>
+    </nav>
   </header>
-  <div class="header-box-3">
+  <div class="contact-main">
 
-    <section class="page-hero-section-5">
-      <div class="page-hero-box">
-        <span class="p-mono page-hero-label">Contact · questions or personal training</span>
-        <h1 class="page-hero-title">come say <span class="hero-label-red-2">hi</span></h1>
+    <section class="page-hero">
+      <div class="page-hero-text">
+        <span class="small-caps text-grey">Contact · questions or personal training</span>
+        <h1 class="page-hero-title">come say <span class="text-red">hi</span></h1>
       </div>
-      <span class="p-mono page-hero-label-2">
-        <span class="p-live page-hero-label-green-2" id="open-dot"></span>
+      <span class="small-caps open-status">
+        <span class="status-dot" id="open-dot"></span>
         <span id="open-text">Open now · until 23:00</span>
       </span>
     </section>
 
-    <section class="p-contact form-details-section">
-      <div class="form-details-box">
-        <form class="form-details-form" id="contact-form" noValidate="">
-          <div class="p-row">
-            <div class="p-f">
-              <label for="c-name">Name</label>
-              <input id="c-name" name="name" class="p-line" type="text" autocomplete="name" placeholder="Your name">
-              <span hidden class="p-err" role="alert" id="err-name"></span>
+    <section class="contact-grid form-section">
+      <div class="form-column">
+        <form class="form" id="contact-form" action="https://formspree.io/f/mgaolpad" method="POST" noValidate="">
+          <div class="form-row">
+            <div class="field">
+              <label for="name-input">Name</label>
+              <input id="name-input" name="name" class="line-input" type="text" autocomplete="name" placeholder="Your name">
+              <span hidden class="error" role="alert" id="name-error"></span>
             </div>
-            <div class="p-f">
-              <label for="c-email">Email</label>
-              <input id="c-email" name="email" class="p-line" type="email" autocomplete="email" placeholder="you@example.com">
-              <span hidden class="p-err" role="alert" id="err-email"></span>
+            <div class="field">
+              <label for="email-input">Email</label>
+              <input id="email-input" name="email" class="line-input" type="email" autocomplete="email" placeholder="you@example.com">
+              <span hidden class="error" role="alert" id="email-error"></span>
             </div>
           </div>
-          <div class="p-topic">
-            <fieldset class="p-f">
+          <div class="topic-picker">
+            <fieldset class="field">
               <legend>I want to</legend>
-              <div class="p-chips">
-                <label class="p-chip"><input type="radio" name="topic" value="A question" checked=""><span>Ask a question</span></label>
-                <label class="p-chip"><input type="radio" name="topic" value="Personal training"><span>Talk to a coach about personal training</span></label>
-                <label class="p-chip"><input type="radio" name="topic" value="Careers"><span>Apply for a coaching job</span></label>
+              <div class="choices">
+                <label class="choice"><input type="radio" name="topic" value="A question" checked=""><span>Ask a question</span></label>
+                <label class="choice"><input type="radio" name="topic" value="Personal training"><span>Talk to a coach about personal training</span></label>
+                <label class="choice"><input type="radio" name="topic" value="Careers"><span>Apply for a coaching job</span></label>
               </div>
             </fieldset>
-            <fieldset class="p-f p-coach">
+            <fieldset class="field coach-picker">
               <legend>Which coach?</legend>
-              <div class="p-chips">
-                <label class="p-chip"><input type="radio" name="coach" value="Any coach" checked=""><span>Any coach</span></label>
-                <label class="p-chip"><input type="radio" name="coach" value="Marko"><span>Marko · strength</span></label>
-                <label class="p-chip"><input type="radio" name="coach" value="Ana"><span>Ana · mobility</span></label>
-                <label class="p-chip"><input type="radio" name="coach" value="Aleksandar"><span>Aleksandar · beginners</span></label>
-                <label class="p-chip"><input type="radio" name="coach" value="Elena"><span>Elena · conditioning</span></label>
+              <div class="choices">
+                <label class="choice"><input type="radio" name="coach" value="Any coach" checked=""><span>Any coach</span></label>
+                <label class="choice"><input type="radio" name="coach" value="Marko"><span>Marko · strength</span></label>
+                <label class="choice"><input type="radio" name="coach" value="Ana"><span>Ana · mobility</span></label>
+                <label class="choice"><input type="radio" name="coach" value="Aleksandar"><span>Aleksandar · beginners</span></label>
+                <label class="choice"><input type="radio" name="coach" value="Elena"><span>Elena · conditioning</span></label>
               </div>
             </fieldset>
           </div>
-          <div class="p-f">
-            <label for="c-msg">Message</label>
-            <textarea id="c-msg" name="msg" class="p-line" rows="3" placeholder="Your question, or your goals and the days that suit you…"></textarea>
+          <div class="field">
+            <label for="message-input">Message</label>
+            <textarea id="message-input" name="msg" class="line-input" rows="3" placeholder="Your question, or your goals and the days that suit you…"></textarea>
           </div>
-          <label class="form-details-label" for="c-consent">
-            <input class="form-details-input" id="c-consent" name="consent" type="checkbox">
+          <label class="agree-label" for="agree-input">
+            <input class="form-input" id="agree-input" name="consent" type="checkbox">
             I agree to Iron Forge using my details to reply, as described in the
             <a class="cookies-link" href="privacy.html">privacy policy</a>
             .
           </label>
-          <span hidden class="p-err" role="alert" id="err-consent"></span>
-          <div><button type="submit" class="p-send">Send message<svg width="18" height="18" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M4 10h12M11 5l5 5-5 5" stroke="currentColor" stroke-width="1.8" stroke-linecap="square"></path></svg></button></div>
+          <span hidden class="error" role="alert" id="agree-error"></span>
+          <div><button type="submit" class="send-button">Send message<span class="send-arrow" aria-hidden="true">→</span></button></div>
+          <span class="error" role="alert" id="send-error" hidden></span>
         </form>
-        <div class="form-details-box-2" hidden id="sent-box" role="status">
-<span class="p-mono form-details-label-green"><i class="posts-mark-green"></i>Message sent</span>
-<p class="p-say form-details-text">Thanks, <span id="sent-name"></span><span class="g">.</span> <span id="reply-line">We will reply to  within one working day</span><span class="hero-label-red-2">.</span></p>
-<div><button type="button" class="p-tl form-details-button" id="send-another">Send another</button></div>
+        <div class="form-sent" hidden id="sent-box" role="status">
+<span class="small-caps form-label-green"><i class="posts-mark-green"></i>Message sent</span>
+<p class="big-message form-text">Thanks, <span id="sent-name"></span><span class="grey">.</span> <span id="reply-line">We will reply to  within one working day</span><span class="text-red">.</span></p>
+<div><button type="button" class="text-link form-button" id="send-another">Send another</button></div>
 </div>
       </div>
-      <aside class="p-info" aria-label="Contact details">
+      <aside class="contact-details" aria-label="Contact details">
         <div>
-          <span class="p-mono page-hero-label">Visit</span>
-          <span class="p-big">ul. Makedonija 18<br>1000 Skopje</span>
-          <span class="p-sub">10 minutes' walk from the Stone Bridge. Bike racks at the entrance.</span>
-          <a class="p-tl" href="https://maps.google.com/?q=ul.+Makedonija+18,+Skopje">Get directions</a>
+          <span class="small-caps text-grey">Visit</span>
+          <span class="big-text">ul. Makedonija 18<br>1000 Skopje</span>
+          <span class="small-text">10 minutes' walk from the Stone Bridge. Bike racks at the entrance.</span>
+          <a class="text-link" href="https://maps.google.com/?q=ul.+Makedonija+18,+Skopje">Get directions</a>
         </div>
         <div>
-          <span class="p-mono page-hero-label">Talk</span>
-          <a class="p-big" href="mailto:hello@ironforge.mk">hello@ironforge.mk</a>
-          <span class="p-big">+389 70 312 458</span>
+          <span class="small-caps text-grey">Talk</span>
+          <a class="big-text" href="mailto:hello@ironforge.mk">hello@ironforge.mk</a>
+          <span class="big-text">+389 70 312 458</span>
         </div>
-        <div class="form-details-box-3">
-          <span class="p-mono form-details-label-2">Hours</span>
-          <div class="p-hr p-row-today">
+        <div class="hours-box">
+          <span class="small-caps hours-title">Hours</span>
+          <div class="hours-row today-row">
             <i></i>
             <span>Monday – Friday · today</span>
-            <span class="form-details-label-3">06:00 – 23:00</span>
+            <span class="hours-time">06:00 – 23:00</span>
           </div>
-          <div class="p-hr">
+          <div class="hours-row">
             <i></i>
             <span>Saturday</span>
-            <span class="form-details-label-3">08:00 – 21:00</span>
+            <span class="hours-time">08:00 – 21:00</span>
           </div>
-          <div class="p-hr">
+          <div class="hours-row">
             <i></i>
             <span>Sunday</span>
-            <span class="form-details-label-3">09:00 – 18:00</span>
+            <span class="hours-time">09:00 – 18:00</span>
           </div>
         </div>
-        <div class="form-details-box-4">
-          <a class="p-tl" href="https://instagram.com">Instagram</a>
-          <a class="p-tl" href="https://facebook.com">Facebook</a>
-          <a class="p-tl" href="https://tiktok.com">TikTok</a>
+        <div class="social-links">
+          <a class="text-link" href="https://instagram.com">Instagram</a>
+          <a class="text-link" href="https://facebook.com">Facebook</a>
+          <a class="text-link" href="https://tiktok.com">TikTok</a>
         </div>
       </aside>
     </section>
   </div>
 
   <section class="faq-section-yellow" id="faq">
-    <div class="faq-box">
-      <div class="faq-box-2">
-        <span class="p-mono page-hero-label">FAQ</span>
+    <div class="faq-inner">
+      <div class="faq-title">
+        <span class="small-caps text-grey">FAQ</span>
         <h2 class="gallery-strip-heading">Before your first visit</h2>
       </div>
-      <div class="faq-box-3">
-        <details class="p-faq faq-details" open="">
+      <div class="faq-list">
+        <details class="question faq-details" open="">
           <summary>How much does membership cost?</summary>
           <p class="faq-text">400 ден for a day, 2.200 ден a month, 5.900 ден for three months and 19.900 ден a year. There is no joining fee.</p>
         </details>
-        <details class="p-faq faq-details">
+        <details class="question faq-details">
           <summary>Can I try the gym with a day pass?</summary>
           <p class="faq-text">Yes. Just walk in, no booking needed. Lockers and showers are included.</p>
         </details>
-        <details class="p-faq faq-details">
+        <details class="question faq-details">
           <summary>Where are you, and when are you open?</summary>
           <p class="faq-text">Central Skopje, 10 minutes' walk from the Stone Bridge. Mon–Fri 06:00–23:00, Sat 08:00–21:00, Sun 09:00–18:00.</p>
         </details>
-        <details class="p-faq faq-details">
+        <details class="question faq-details">
           <summary>What equipment and amenities are included?</summary>
           <p class="faq-text">Every pass covers the strength floor, cardio, turf, lockers and showers. Sauna, mobility studio and classes come with memberships. Full list on the <a class="cookies-link" href="amenities.html">Amenities</a> page.</p>
         </details>
-        <details class="p-faq faq-details">
+        <details class="question faq-details">
           <summary>Is the gym suitable for beginners?</summary>
           <p class="faq-text">Yes. Start with a free intro session and a coach will show you the floor and write your first month.</p>
         </details>
-        <details class="p-faq faq-details">
+        <details class="question faq-details">
           <summary>Do you offer personal training?</summary>
           <p class="faq-text">Yes: 1.200 ден a session, 10 sessions for 10.000 ден, or online programming for 2.500 ден a month. Meet the coaches on the <a class="cookies-link" href="team.html">Team</a> page.</p>
         </details>
-        <details class="p-faq faq-details">
+        <details class="question faq-details">
           <summary>Are lockers, showers and recovery facilities available?</summary>
           <p class="faq-text">Lockers with digital locks and private showers come with every pass. The sauna and mobility studio come with every membership.</p>
         </details>
-        <details class="p-faq faq-details">
+        <details class="question faq-details">
           <summary>What should I bring?</summary>
           <p class="faq-text">Clean indoor shoes and a water bottle. We provide towels, chalk and belts.</p>
         </details>
@@ -183,21 +195,21 @@
     </div>
   </section>
 
-  <footer class="footer-footer">
-    <div class="footer-box">
-      <div class="footer-box-red"></div>
-      <div class="footer-box-blue"></div>
-      <div class="footer-box-yellow"></div>
-      <div class="footer-box-green"></div>
+  <footer class="site-footer">
+    <div class="footer-stripes">
+      <div class="footer-stripe-red"></div>
+      <div class="footer-stripe-blue"></div>
+      <div class="footer-stripe-yellow"></div>
+      <div class="footer-stripe-green"></div>
     </div>
-    <div class="footer-box-2">
-      <div class="footer-box-3">
-        <div><div class="p-mono footer-box-9">Where</div>ul. Makedonija 18, 1000 Skopje<br><a class="footer-link-yellow" href="https://maps.google.com/?q=ul.+Makedonija+18,+Skopje">Get directions</a></div>
-        <div><div class="p-mono footer-box-9">When</div><span class="footer-label">Mon–Fri 06:00–23:00<br>Sat 08:00–21:00<br>Sun 09:00–18:00</span></div>
-        <div><div class="p-mono footer-box-9">Talk to us</div>+389 70 312 458<br>hello@ironforge.mk</div>
+    <div class="footer-inner">
+      <div class="footer-info">
+        <div><div class="small-caps footer-title">Where</div>ul. Makedonija 18, 1000 Skopje<br><a class="footer-link-yellow" href="https://maps.google.com/?q=ul.+Makedonija+18,+Skopje">Get directions</a></div>
+        <div><div class="small-caps footer-title">When</div><span class="footer-label">Mon–Fri 06:00–23:00<br>Sat 08:00–21:00<br>Sun 09:00–18:00</span></div>
+        <div><div class="small-caps footer-title">Talk to us</div>+389 70 312 458<br>hello@ironforge.mk</div>
       </div>
-      <div class="footer-box-5">
-        <div class="footer-box-6">
+      <div class="footer-links">
+        <div class="footer-link-group">
           <a class="footer-link" href="index.html">Home</a>
           <a class="footer-link" href="amenities.html">Amenities</a>
           <a class="footer-link" href="team.html">Team</a>
@@ -206,19 +218,31 @@
           <a class="footer-link" href="blog.html">Blog</a>
           <a class="footer-link" href="contact.html">Contact</a>
         </div>
-        <div class="footer-box-6">
-          <a class="footer-link-2" href="privacy.html">Privacy &amp; cookies</a>
-          <a class="footer-link-2" href="privacy.html">Terms</a>
+        <div class="footer-link-group">
+          <a class="footer-link-grey" href="privacy.html">Privacy &amp; cookies</a>
+          <a class="footer-link-grey" href="privacy.html">Terms</a>
         </div>
       </div>
-      <div class="footer-box-7" aria-hidden="true">iron forge</div>
-      <div class="footer-box-8">
+      <div class="footer-big-name" aria-hidden="true">iron forge</div>
+      <div class="footer-copyright">
         <span>© 2026 IRON FORGE SKOPJE</span>
         <span>INSTAGRAM · FACEBOOK · TIKTOK</span>
       </div>
     </div>
   </footer>
+  <div class="cookies-banner" id="cookie-banner" hidden role="dialog" aria-label="Cookie preferences">
+    <div class="cookies-title">
+      <span class="cookie-plate" aria-hidden="true"><span class="cookie-dot"></span></span>
+      cookies, lightly loaded
+    </div>
+    <p class="cookies-text">We only save your answer to this message. No tracking or advertising cookies. <a class="cookies-link" href="privacy.html">Cookie policy</a></p>
+    <div class="wrap-row">
+      <button type="button" class="pill-button cookies-button" id="cookie-ok">OK</button>
+    </div>
+  </div>
 </div>
+<script src="../js/menu.js"></script>
+<script src="../js/cookies.js"></script>
 <script src="../js/contact.js"></script>
 </body>
 </html>

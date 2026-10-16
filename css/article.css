@@ -1,73 +1,11 @@
-.p-nav a.u-red:hover,
-.p-nav a.u-red.act {
-  text-decoration-color: #D2372C;
-}
-
-.p-nav a.u-blue:hover,
-.p-nav a.u-blue.act {
-  text-decoration-color: #1E5BBF;
-}
-
-.p-nav a.u-yellow:hover,
-.p-nav a.u-yellow.act {
-  text-decoration-color: #F2C318;
-}
-
-.p-nav a.u-green:hover,
-.p-nav a.u-green.act {
-  text-decoration-color: #2C8A4B;
-}
-
-.p-lng {
-  background: transparent;
-  border: 0;
-  padding: 6px 2px;
-  cursor: pointer;
-  font: 600 13px/1 "Geist Mono",ui-monospace,monospace;
-  color: #8A8B86;
-  text-decoration: none !important;
-}
-
-.p-lng.on {
-  color: #151615;
-  text-decoration: underline !important;
-  text-decoration-thickness: 2px !important;
-  text-underline-offset: 4px;
-}
-
-.p-pill {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  min-height: 48px;
-  padding: 0 26px;
-  border-radius: 999px;
-  font: 600 14px/1 Geist,system-ui,sans-serif;
-  letter-spacing: .06em;
-  text-transform: uppercase;
-  cursor: pointer;
-  transition: transform .2s;
-}
-
-.p-grade img {
-  filter: saturate(.88) contrast(1.06) brightness(.98);
-}
-
-.p-mono {
-  font: 600 12px/1 "Geist Mono",ui-monospace,monospace;
-  letter-spacing: .1em;
-  text-transform: uppercase;
-}
-
-.p-body {
+.article-body {
   max-width: 68ch;
   font-size: 19px;
   line-height: 1.7;
   color: #2A2B28;
 }
 
-.p-body h2 {
+.article-body h2 {
   margin: 56px 0 16px;
   font-weight: 600;
   font-size: 34px;
@@ -77,15 +15,15 @@
   text-wrap: balance;
 }
 
-.p-body p {
+.article-body p {
   margin: 0 0 20px;
 }
 
-.p-body strong {
+.article-body strong {
   color: #151615;
 }
 
-.p-toc {
+.post-contents {
   flex: 0 0 260px;
   position: sticky;
   top: 32px;
@@ -96,23 +34,23 @@
   font-size: 15px;
 }
 
-.p-toc a {
+.post-contents a {
   padding-left: 14px;
   border-left: 2px solid rgba(21,22,21,.16);
 }
 
-.p-toc a:hover {
+.post-contents a:hover {
   color: #151615;
   border-color: #D2372C;
 }
 
 @media (max-width: 960px) {
-  .p-toc {
+  .post-contents {
     display: none;
   }
 }
 
-.p-drill {
+.list-row {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
@@ -121,21 +59,21 @@
   border-bottom: 1px solid rgba(21,22,21,.16);
 }
 
-.p-rel {
+.next-post {
   display: flex;
   flex-direction: column;
   gap: 14px;
   color: #151615;
 }
 
-.p-rel-img {
+.next-post-image {
   position: relative;
   display: block;
   overflow: hidden;
   aspect-ratio: 4/3;
 }
 
-.p-rel-img img {
+.next-post-image img {
   position: absolute;
   inset: 0;
   width: 100%;
@@ -144,11 +82,11 @@
   transition: transform .7s cubic-bezier(.2,.7,.2,1);
 }
 
-.p-rel:hover .p-rel-img img {
+.next-post:hover .next-post-image img {
   transform: scale(1.05);
 }
 
-.p-rel-t {
+.next-post-title {
   font-weight: 600;
   font-size: 22px;
   line-height: 1.15;
@@ -156,11 +94,11 @@
   transition: color .2s;
 }
 
-.p-rel:hover .p-rel-t {
+.next-post:hover .next-post-title {
   color: #1E5BBF;
 }
 
-.p-tl {
+.text-link {
   background: none;
   border: 0;
   padding: 0 0 5px;
@@ -174,25 +112,12 @@
   transition: border-color .2s,color .2s;
 }
 
-.p-tl:hover {
+.text-link:hover {
   color: #151615;
   border-color: #D2372C;
 }
 
-:focus-visible {
-  outline: 3px solid #1E5BBF;
-  outline-offset: 3px;
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .p-pill,
-  .p-nav a,
-  .p-rel-img img {
-    transition: none;
-  }
-}
-
-.article-head-box {
+.article-head {
   max-width: 1344px;
   margin: 0 auto;
   padding: clamp(48px, 6vw, 88px) clamp(16px, 4vw, 48px) 40px;
@@ -208,7 +133,7 @@
   align-self: flex-start;
 }
 
-.article-head-box-2 {
+.article-title-row {
   display: flex;
   flex-wrap: wrap;
   align-items: flex-end;
@@ -235,7 +160,7 @@
   color: #3E3F3B;
 }
 
-.article-head-box-3 {
+.article-meta {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -246,28 +171,28 @@
   color: #6E6F6A;
 }
 
-.article-head-label {
+.article-meta-info {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   gap: 10px 22px;
 }
 
-.article-head-label-2 {
+.article-topic {
   display: flex;
   align-items: center;
   gap: 10px;
   color: #151615;
 }
 
-.article-head-box-4 {
+.article-photo-box {
   max-width: 1344px;
   margin: 0 auto;
   padding-inline: clamp(16px, 4vw, 48px);
   box-sizing: border-box;
 }
 
-.article-head-box-5 {
+.article-photo-frame {
   position: relative;
   overflow: hidden;
   aspect-ratio: 21 / 9;
@@ -282,7 +207,7 @@
   object-position: 50% 45%;
 }
 
-.body-box {
+.article-columns {
   max-width: 1344px;
   margin: 0 auto;
   padding: 16px clamp(16px, 4vw, 48px) 0;
@@ -293,7 +218,7 @@
   align-items: flex-start;
 }
 
-.body-box-2 {
+.article-body {
   flex: 1 1 auto;
   min-width: 0;
 }
@@ -309,12 +234,51 @@
   letter-spacing: -.03em;
 }
 
-.body-box-3 {
+.body-quote-blue {
+  margin: 44px 0;
+  padding: 0 0 0 24px;
+  border-left: 3px solid #1E5BBF;
+  color: #151615;
+  font-weight: 600;
+  font-size: clamp(24px, 2.4vw, 32px);
+  line-height: 1.2;
+  letter-spacing: -.03em;
+}
+
+.body-quote-yellow {
+  margin: 44px 0;
+  padding: 0 0 0 24px;
+  border-left: 3px solid #F2C318;
+  color: #151615;
+  font-weight: 600;
+  font-size: clamp(24px, 2.4vw, 32px);
+  line-height: 1.2;
+  letter-spacing: -.03em;
+}
+
+.body-quote-green {
+  margin: 44px 0;
+  padding: 0 0 0 24px;
+  border-left: 3px solid #2C8A4B;
+  color: #151615;
+  font-weight: 600;
+  font-size: clamp(24px, 2.4vw, 32px);
+  line-height: 1.2;
+  letter-spacing: -.03em;
+}
+
+.posts-mark-yellow {
+  width: 9px;
+  height: 9px;
+  background: #F2C318;
+}
+
+.article-list {
   margin: 8px 0 32px;
   border-top: 1.5px solid #151615;
 }
 
-.body-box-4 {
+.list-text {
   display: flex;
   flex-direction: column;
   gap: 4px;
@@ -324,18 +288,18 @@
   font-size: 19px;
 }
 
-.body-label {
+.list-description {
   font-size: 16px;
   line-height: 1.5;
   color: #5E5F5A;
 }
 
-.body-label-2 {
+.list-value {
   font: 500 13px/1 'Geist Mono', ui-monospace, monospace;
   white-space: nowrap;
 }
 
-.body-label-3 {
+.list-week {
   font-size: 17px;
 }
 
@@ -350,7 +314,7 @@ p.body-text-yellow {
   letter-spacing: -.01em;
 }
 
-.related-box {
+.related-posts {
   max-width: 1344px;
   margin: 0 auto;
   padding: 110px clamp(16px, 4vw, 48px);
@@ -360,7 +324,7 @@ p.body-text-yellow {
   gap: 32px;
 }
 
-.related-box-2 {
+.related-top {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;

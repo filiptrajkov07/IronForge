@@ -1,6 +1,6 @@
-let zones = document.querySelectorAll(".p-zb");
-let photos = document.querySelectorAll(".p-stk-media .p-sm");
-let bars = document.querySelectorAll(".p-seg");
+let zones = document.querySelectorAll(".zone-block");
+let photos = document.querySelectorAll(".zone-photos .zone-photo");
+let bars = document.querySelectorAll(".zone-bar");
 let zoneDot = document.getElementById("zone-dot");
 let zoneName = document.getElementById("zone-name");
 let zoneNumber = document.getElementById("zone-num");
@@ -19,11 +19,11 @@ function updateZone() {
 
   for (let i = 0; i < photos.length; i++) {
     if (i === active) {
-      photos[i].classList.add("on");
-      bars[i].classList.add("on");
+      photos[i].classList.add("active");
+      bars[i].classList.add("active");
     } else {
-      photos[i].classList.remove("on");
-      bars[i].classList.remove("on");
+      photos[i].classList.remove("active");
+      bars[i].classList.remove("active");
     }
   }
 

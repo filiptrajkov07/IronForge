@@ -1,5 +1,5 @@
-[hidden] {
-  display: none !important;
+.site [hidden] {
+  display: none;
 }
 
 body {
@@ -16,7 +16,7 @@ a:hover {
   color: #1E5BBF;
 }
 
-.p-nav a {
+.menu a {
   font: 500 14px/1 Geist,system-ui,sans-serif;
   letter-spacing: .06em;
   text-transform: uppercase;
@@ -28,14 +28,78 @@ a:hover {
   transition: text-decoration-color .2s;
 }
 
-.p-nav a:hover {
+.menu a:hover {
   color: #151615;
 }
 
-.p-lng:hover {
+.language-link:hover {
   color: #151615;
 }
 
-.p-pill:hover {
+.pill-button:hover {
   transform: translateY(-2px);
+}
+
+.language-link {
+  background: transparent;
+  border: 0;
+  padding: 6px 2px;
+  cursor: pointer;
+  font: 600 13px/1 "Geist Mono",ui-monospace,monospace;
+  color: #8A8B86;
+}
+
+.pill-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  min-height: 48px;
+  padding: 0 26px;
+  border-radius: 999px;
+  font: 600 14px/1 Geist,system-ui,sans-serif;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: transform .2s;
+}
+
+.menu a.underline-red:hover,
+.menu a.underline-red.current {
+  text-decoration-color: #D2372C;
+}
+
+.menu a.underline-blue:hover,
+.menu a.underline-blue.current {
+  text-decoration-color: #1E5BBF;
+}
+
+.menu a.underline-yellow:hover,
+.menu a.underline-yellow.current {
+  text-decoration-color: #F2C318;
+}
+
+.menu a.underline-green:hover,
+.menu a.underline-green.current {
+  text-decoration-color: #2C8A4B;
+}
+
+.menu .language-link {
+  text-decoration: none;
+}
+
+.language-link.active {
+  color: #151615;
+  text-underline-offset: 4px;
+}
+
+.menu .language-link.active {
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+}
+
+.small-caps {
+  font: 600 12px/1 "Geist Mono",ui-monospace,monospace;
+  letter-spacing: .1em;
+  text-transform: uppercase;
 }

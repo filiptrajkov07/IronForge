@@ -4,6 +4,8 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Iron Forge — Длабочина на чучњот</title>
+<meta name="description" content="Колку ниско треба да одиш, зошто петиците ти се креваат од подот и три вежби со кои подлабокиот чучањ ќе ти стане нормален за неколку недели.">
+<link rel="icon" href="../images/favicon.png" type="image/png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&amp;family=Geist+Mono:wght@400;500;600&amp;display=swap">
@@ -12,57 +14,66 @@
 <link rel="stylesheet" href="../css/shared.css">
 </head>
 <body>
-<div class="p-grade page-box">
+<div class="site page">
 
-  <header class="header-header">
-    <nav class="p-nav header-menu" aria-label="Главно мени">
-      <a class="u-blue" href="amenities.html">Содржини</a>
-      <a class="u-green" href="team.html">Тим</a>
-      <a class="u-yellow" href="gallery.html">Галерија</a>
+  <header class="site-header">
+    <nav class="menu header-menu" aria-label="Главно мени">
+      <a class="underline-blue" href="amenities.html">Содржини</a>
+      <a class="underline-green" href="team.html">Тим</a>
+      <a class="underline-yellow" href="gallery.html">Галерија</a>
     </nav>
     <a class="header-link" href="index.html" aria-label="Iron Forge почетна">
-      <svg aria-hidden="true" width="40" height="40" viewBox="0 0 40 40"><circle cx="20" cy="20" r="19" fill="#151615"></circle><circle cx="20" cy="20" r="15.5" fill="none" stroke="#F1F0EB" stroke-opacity=".28" stroke-width="1"></circle><circle cx="20" cy="20" r="8" fill="none" stroke="#F1F0EB" stroke-opacity=".7" stroke-width="1.6"></circle><circle cx="20" cy="20" r="4" fill="#F1F0EB"></circle></svg>
+      <span class="logo-plate" aria-hidden="true"><span class="logo-outer-ring"><span class="logo-inner-ring"><span class="logo-dot"></span></span></span></span>
       <span class="header-label">iron<br>forge</span>
     </a>
-    <div class="p-nav header-box">
-      <a class="u-red" href="about.html">За нас</a>
-      <a class="u-yellow act" href="blog.html">Блог</a>
-      <a class="u-red" href="contact.html">Контакт</a>
-      <div class="header-box-2" role="group" aria-label="Јазик">
-        <a class="p-lng on" href="squat-depth.html" lang="mk" aria-current="true">MK</a>
-        <a class="p-lng" href="../en/squat-depth.html" lang="en">EN</a>
+    <div class="menu header-right">
+      <a class="underline-red" href="about.html">За нас</a>
+      <a class="underline-yellow current" href="blog.html">Блог</a>
+      <a class="underline-red" href="contact.html">Контакт</a>
+      <div class="language-links" role="group" aria-label="Јазик">
+        <a class="language-link active" href="squat-depth.html" lang="mk" aria-current="true">MK</a>
+        <a class="language-link" href="../en/squat-depth.html" lang="en">EN</a>
       </div>
     </div>
+    <button type="button" class="menu-button" id="menu-button" aria-expanded="false" aria-controls="phone-menu" aria-label="Мени">☰</button>
+    <nav class="phone-menu" id="phone-menu" aria-label="Мени">
+      <a class="underline-blue" href="amenities.html">Содржини</a>
+      <a class="underline-green" href="team.html">Тим</a>
+      <a class="underline-yellow" href="gallery.html">Галерија</a>
+      <a class="underline-red" href="about.html">За нас</a>
+      <a class="underline-yellow current" href="blog.html">Блог</a>
+      <a class="underline-red" href="contact.html">Контакт</a>
+    </nav>
   </header>
   <article>
 
-    <div class="article-head-box">
-      <a href="blog.html" class="p-mono article-head-link">← Сите објави</a>
-      <div class="article-head-box-2">
+    <div class="article-head">
+      <a href="blog.html" class="small-caps article-head-link">← Сите објави</a>
+      <div class="article-title-row">
         <h1 class="article-head-title">Длабочина на чучњот, објаснета од нашите тренери</h1>
         <p class="article-head-text">Колку ниско треба да одиш, зошто петиците ти се креваат од подот и три вежби со кои подлабокиот чучањ ќе ти стане нормален за неколку недели.</p>
       </div>
-      <div class="p-mono article-head-box-3">
-        <span class="article-head-label">
-          <span class="article-head-label-2">
+      <div class="small-caps article-meta">
+        <span class="article-meta-info">
+          <span class="article-topic">
             <i class="posts-mark-red"></i>
             Сила
           </span>
-          <span>Marko Petrovski</span>
+          <span>Марко Петровски</span>
           <span>28 сеп 2026</span>
           <span>6 мин читање</span>
         </span>
-        <button type="button" class="p-tl" id="copy-link">Копирај линк</button>
+        <button type="button" class="text-link" id="copy-link">Копирај линк</button>
       </div>
     </div>
-    <div class="article-head-box-4">
-      <div class="article-head-box-5">
+    <div class="article-photo-box">
+      <div class="article-photo-frame">
         <img class="article-head-photo" src="../images/squat-rack.jpg" alt="Член чучнува под паралела во пауер рек">
       </div>
     </div>
 
-    <div class="body-box">
-      <div class="p-body body-box-2">
+    <div class="article-columns">
+      <div class="article-body">
         <h2 id="depth">Колку длабоко е доволно длабоко</h2>
         <p>За повеќето луѓе одговорот е <strong>паралела</strong>: прегибот на колкот се спушта до висината на горниот дел од коленото. Тоа е и стандардот што го користат судиите во пауерлифтинг. Оди пониско ако можеш да го задржиш грбот прав и петиците долу. Застани повисоко ако не можеш и работи на вежбите подолу.</p>
         <p>Длабочината е важна затоа што на дното од чучњот седалните мускули и адукторите ја вршат најголемата работа. Половичните чучњеви ги оптоваруваат колената и квадрицепсите и оставаат многу сила неискористена.</p>
@@ -71,53 +82,53 @@
         <p>Обично се виновни глуждовите. Ако потколениците не можат доволно да одат напред, телото ја наоѓа длабочината на друго место и петиците се креваат. Три брзи решенија:</p>
         <p><strong>Рашири го ставот</strong> малку и сврти ги прстите нанадвор 15–30°. <strong>Седни меѓу колковите</strong>, не зад нив. А ако глуждовите ти се вкочанети, <strong>чучни со петиците на тег од 2–3 см</strong> додека работиш на мобилноста.</p>
         <h2 id="drills">Три вежби</h2>
-        <div class="body-box-3">
-          <div class="p-drill">
-            <div class="body-box-4">
+        <div class="article-list">
+          <div class="list-row">
+            <div class="list-text">
               <strong class="body-bold">Задржување во гоблет чучањ</strong>
-              <span class="body-label">Држи дамбел пред градите и седни на дното. Турни ги колената нанадвор со лактите.</span>
+              <span class="list-description">Држи дамбел пред градите и седни на дното. Турни ги колената нанадвор со лактите.</span>
             </div>
-            <span class="body-label-2">3 × 30 с</span>
+            <span class="list-value">3 × 30 с</span>
           </div>
-          <div class="p-drill">
-            <div class="body-box-4">
+          <div class="list-row">
+            <div class="list-text">
               <strong class="body-bold">Чучањ на кутија до паралела</strong>
-              <span class="body-label">Постави кутија на висина на паралела. Седни назад додека не ја допреш, застани, па исправи се. Кутијата те учи каде е длабочината.</span>
+              <span class="list-description">Постави кутија на висина на паралела. Седни назад додека не ја допреш, застани, па исправи се. Кутијата те учи каде е длабочината.</span>
             </div>
-            <span class="body-label-2">3 × 8</span>
+            <span class="list-value">3 × 8</span>
           </div>
-          <div class="p-drill">
-            <div class="body-box-4">
+          <div class="list-row">
+            <div class="list-text">
               <strong class="body-bold">Нишање на глуждот</strong>
-              <span class="body-label">Клекни на едно колено свртен кон ѕид и турни го предното колено преку прстите, со петицата долу. Десет на секоја страна.</span>
+              <span class="list-description">Клекни на едно колено свртен кон ѕид и турни го предното колено преку прстите, со петицата долу. Десет на секоја страна.</span>
             </div>
-            <span class="body-label-2">2 × 10</span>
+            <span class="list-value">2 × 10</span>
           </div>
         </div>
         <h2 id="plan">План за 4 недели</h2>
         <p>Прави ги вежбите пред вообичаените тренинзи со чучњеви, два или три пати неделно.</p>
-        <div class="body-box-3">
-          <div class="p-drill">
-            <span class="body-label-3"><strong>Недела 1</strong> · Гоблет задржувања, лесни чучњеви на кутија</span>
-            <span class="body-label-2">3 × 8 · 60%</span>
+        <div class="article-list">
+          <div class="list-row">
+            <span class="list-week"><strong>Недела 1</strong> · Гоблет задржувања, лесни чучњеви на кутија</span>
+            <span class="list-value">3 × 8 · 60%</span>
           </div>
-          <div class="p-drill">
-            <span class="body-label-3"><strong>Недела 2</strong> · Чучњеви на кутија со пауза</span>
-            <span class="body-label-2">4 × 6 · 65%</span>
+          <div class="list-row">
+            <span class="list-week"><strong>Недела 2</strong> · Чучњеви на кутија со пауза</span>
+            <span class="list-value">4 × 6 · 65%</span>
           </div>
-          <div class="p-drill">
-            <span class="body-label-3"><strong>Недела 3</strong> · Слободни чучњеви до паралела</span>
-            <span class="body-label-2">4 × 5 · 70%</span>
+          <div class="list-row">
+            <span class="list-week"><strong>Недела 3</strong> · Слободни чучњеви до паралела</span>
+            <span class="list-value">4 × 5 · 70%</span>
           </div>
-          <div class="p-drill">
-            <span class="body-label-3"><strong>Недела 4</strong> · Проверка на техниката со тренер</span>
-            <span class="body-label-2">5 × 3 · 75%</span>
+          <div class="list-row">
+            <span class="list-week"><strong>Недела 4</strong> · Проверка на техниката со тренер</span>
+            <span class="list-value">5 × 3 · 75%</span>
           </div>
         </div>
         <p class="body-text-yellow">Накратко: стреми се кон паралела, држи ги петиците долу и намали ја тежината пред да го скратиш чучњот.</p>
       </div>
-      <aside class="p-toc" aria-label="Во оваа објава">
-        <span class="p-mono page-hero-label">Во оваа објава</span>
+      <aside class="post-contents" aria-label="Во оваа објава">
+        <span class="small-caps text-grey">Во оваа објава</span>
         <a href="#depth">Колку длабоко е доволно длабоко</a>
         <a href="#heels">Зошто ти се креваат петиците</a>
         <a href="#drills">Три вежби</a>
@@ -126,60 +137,60 @@
     </div>
   </article>
 
-  <div class="related-box">
-    <div class="related-box-2">
+  <div class="related-posts">
+    <div class="related-top">
       <h2 class="related-heading">Прочитај понатаму</h2>
-      <a href="blog.html" class="p-mono related-link">Сите објави →</a>
+      <a href="blog.html" class="small-caps related-link">Сите објави →</a>
     </div>
     <div class="blog-box">
-      <a class="p-rel" href="blog.html">
-        <span class="p-rel-img">
+      <a class="next-post" href="sauna-after-lifting.html">
+        <span class="next-post-image">
           <img src="../images/sauna.jpg" alt="">
         </span>
-        <span class="p-mono related-label">
+        <span class="small-caps related-label">
           <i class="posts-mark-blue"></i>
           Опоравување
         </span>
-        <span class="p-rel-t">Сауна по тренинг: колку долго и колку жешко</span>
+        <span class="next-post-title">Сауна по тренинг: колку долго и колку жешко</span>
       </a>
-      <a class="p-rel" href="blog.html">
-        <span class="p-rel-img">
+      <a class="next-post" href="smoothie-bar-orders.html">
+        <span class="next-post-image">
+          <img src="../images/smoothie-counter.jpg" alt="">
+        </span>
+        <span class="small-caps related-label">
+          <i class="posts-mark-yellow"></i>
+          Исхрана
+        </span>
+        <span class="next-post-title">Пет нарачки по тренинг од смути барот</span>
+      </a>
+      <a class="next-post" href="first-four-weeks.html">
+        <span class="next-post-image">
           <img src="../images/coached-hip-thrust.jpg" alt="">
         </span>
-        <span class="p-mono related-label">
+        <span class="small-caps related-label">
           <i class="posts-mark-green"></i>
           Почетници
         </span>
-        <span class="p-rel-t">Твоите први четири недели: едноставен план за нови членови</span>
-      </a>
-      <a class="p-rel" href="blog.html">
-        <span class="p-rel-img">
-          <img src="../images/dumbbells-back.jpg" alt="">
-        </span>
-        <span class="p-mono related-label">
-          <i class="posts-mark-blue"></i>
-          Опоравување
-        </span>
-        <span class="p-rel-t">Загревање од 10 минути за луѓе што седат цел ден</span>
+        <span class="next-post-title">Твоите први четири недели: едноставен план за нови членови</span>
       </a>
     </div>
   </div>
 
-  <footer class="footer-footer">
-    <div class="footer-box">
-      <div class="footer-box-red"></div>
-      <div class="footer-box-blue"></div>
-      <div class="footer-box-yellow"></div>
-      <div class="footer-box-green"></div>
+  <footer class="site-footer">
+    <div class="footer-stripes">
+      <div class="footer-stripe-red"></div>
+      <div class="footer-stripe-blue"></div>
+      <div class="footer-stripe-yellow"></div>
+      <div class="footer-stripe-green"></div>
     </div>
-    <div class="footer-box-2">
-      <div class="footer-box-3">
-        <div><div class="p-mono footer-box-9">Каде</div>ул. Македонија 18, 1000 Скопје<br><a class="footer-link-yellow" href="https://maps.google.com/?q=ul.+Makedonija+18,+Skopje">Како до нас</a></div>
-        <div><div class="p-mono footer-box-9">Кога</div><span class="footer-label">Пон–Пет 06:00–23:00<br>Саб 08:00–21:00<br>Нед 09:00–18:00</span></div>
-        <div><div class="p-mono footer-box-9">Контакт</div>+389 70 312 458<br>hello@ironforge.mk</div>
+    <div class="footer-inner">
+      <div class="footer-info">
+        <div><div class="small-caps footer-title">Каде</div>ул. Македонија 18, 1000 Скопје<br><a class="footer-link-yellow" href="https://maps.google.com/?q=ul.+Makedonija+18,+Skopje">Како до нас</a></div>
+        <div><div class="small-caps footer-title">Кога</div><span class="footer-label">Пон–Пет 06:00–23:00<br>Саб 08:00–21:00<br>Нед 09:00–18:00</span></div>
+        <div><div class="small-caps footer-title">Контакт</div>+389 70 312 458<br>hello@ironforge.mk</div>
       </div>
-      <div class="footer-box-5">
-        <div class="footer-box-6">
+      <div class="footer-links">
+        <div class="footer-link-group">
           <a class="footer-link" href="index.html">Почетна</a>
           <a class="footer-link" href="amenities.html">Содржини</a>
           <a class="footer-link" href="team.html">Тим</a>
@@ -188,19 +199,31 @@
           <a class="footer-link" href="blog.html">Блог</a>
           <a class="footer-link" href="contact.html">Контакт</a>
         </div>
-        <div class="footer-box-6">
-          <a class="footer-link-2" href="privacy.html">Приватност и колачиња</a>
-          <a class="footer-link-2" href="privacy.html">Услови</a>
+        <div class="footer-link-group">
+          <a class="footer-link-grey" href="privacy.html">Приватност и колачиња</a>
+          <a class="footer-link-grey" href="privacy.html">Услови</a>
         </div>
       </div>
-      <div class="footer-box-7" aria-hidden="true">iron forge</div>
-      <div class="footer-box-8">
+      <div class="footer-big-name" aria-hidden="true">iron forge</div>
+      <div class="footer-copyright">
         <span>© 2026 IRON FORGE СКОПЈЕ</span>
         <span>INSTAGRAM · FACEBOOK · TIKTOK</span>
       </div>
     </div>
   </footer>
+  <div class="cookies-banner" id="cookie-banner" hidden role="dialog" aria-label="Cookie preferences">
+    <div class="cookies-title">
+      <span class="cookie-plate" aria-hidden="true"><span class="cookie-dot"></span></span>
+      колачиња, лесно натоварени
+    </div>
+    <p class="cookies-text">Го зачувуваме само твојот одговор на оваа порака. Без колачиња за следење или реклами. <a class="cookies-link" href="privacy.html">Политика за колачиња</a></p>
+    <div class="wrap-row">
+      <button type="button" class="pill-button cookies-button" id="cookie-ok">Во ред</button>
+    </div>
+  </div>
 </div>
+<script src="../js/menu.js"></script>
+<script src="../js/cookies.js"></script>
 <script src="../js/article.js"></script>
 </body>
 </html>

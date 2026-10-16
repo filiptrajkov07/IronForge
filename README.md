@@ -10,26 +10,26 @@ Double-click `index.html` (it opens the English home page), or open any file ins
 
 ```
 index.html        opens en/index.html
-en/               the 9 pages in English
-mk/               the same 9 pages in Macedonian
-css/style.css     basic styles for every page (page background, links, menu)
+en/               the 15 pages in English (9 pages + 6 more blog posts)
+mk/               the same 15 pages in Macedonian
+css/style.css     basic styles for every page (page background, links, menu colours, EN/MK links, small labels)
 css/home.css …    styles for one page each (home, about, amenities, team, gallery, blog, article, contact, privacy)
 css/shared.css    parts used on several pages: header, footer, coloured bands
-js/               small scripts, one per page that needs one
+js/               small scripts: menu.js (phone menu) and cookies.js (cookie banner) on every page, plus one per page that needs one
 images/           all photos
 ```
 
 | Page | File | Script |
 |---|---|---|
-| Home | `index.html` | `js/home.js`: barbell animation on scroll, schedule tabs, today's hours, cookie banner |
+| Home | `index.html` | `js/home.js`: barbell animation on scroll, schedule tabs, today's hours |
 | About | `about.html` | none |
 | Amenities | `amenities.html` | `js/amenities.js`: the big photo follows the zone you are reading |
 | Team | `team.html` | `js/team.js`: personal training plan buttons |
 | Gallery | `gallery.html` | none (the hover is pure CSS) |
 | Blog | `blog.html` | `js/blog.js`: topic filters |
-| Blog article | `squat-depth.html` | `js/article.js`: "Copy link" button |
-| Contact | `contact.html` | `js/contact.js`: open/closed status, form checks and thank-you message (nothing is sent) |
-| Privacy & cookies | `privacy.html` | `js/privacy.js`: cookie switches |
+| Blog posts | `squat-depth.html`, `sauna-after-lifting.html`, `smoothie-bar-orders.html`, `first-four-weeks.html`, `new-platforms.html`, `desk-warm-up.html`, `saturday-open-session.html` | `js/article.js`: "Copy link" button |
+| Contact | `contact.html` | `js/contact.js`: open/closed status, form checks, sends the message with Formspree |
+| Privacy & cookies | `privacy.html` | `js/privacy.js`: "Show the cookie message again" button |
 
 ## Two languages
 
@@ -49,6 +49,7 @@ Some links have their colour written twice, as `.footer-link` and `.footer-link:
 
 ## Good to know
 
-- The Contact form only shows the thank-you message; it doesn't send emails.
-- The cookie choice is remembered in your browser (`localStorage`).
+- **Contact form:** messages are sent with [Formspree](https://formspree.io) to the form `https://formspree.io/f/mgaolpad` (set in `en/contact.html` and `mk/contact.html`). New messages arrive in the email of that Formspree account.
+- **Phones:** below 920 px wide the menu links hide behind the ☰ button (`js/menu.js`, styles at the end of `css/shared.css`).
+- **Cookies:** the site sets no cookies. The only thing it saves is `if-cookie` in the browser's `localStorage`, after you press OK on the cookie message, so the message doesn't come back. It stays until you clear your browser data.
 - Fonts (Geist and Geist Mono) load from Google Fonts, so the pages need an internet connection to look exactly right.

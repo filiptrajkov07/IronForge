@@ -1,66 +1,4 @@
-.p-nav a.u-red:hover,
-.p-nav a.u-red.act {
-  text-decoration-color: #D2372C;
-}
-
-.p-nav a.u-blue:hover,
-.p-nav a.u-blue.act {
-  text-decoration-color: #1E5BBF;
-}
-
-.p-nav a.u-yellow:hover,
-.p-nav a.u-yellow.act {
-  text-decoration-color: #F2C318;
-}
-
-.p-nav a.u-green:hover,
-.p-nav a.u-green.act {
-  text-decoration-color: #2C8A4B;
-}
-
-.p-lng {
-  background: transparent;
-  border: 0;
-  padding: 6px 2px;
-  cursor: pointer;
-  font: 600 13px/1 "Geist Mono",ui-monospace,monospace;
-  color: #8A8B86;
-  text-decoration: none !important;
-}
-
-.p-lng.on {
-  color: #151615;
-  text-decoration: underline !important;
-  text-decoration-thickness: 2px !important;
-  text-underline-offset: 4px;
-}
-
-.p-pill {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  min-height: 48px;
-  padding: 0 26px;
-  border-radius: 999px;
-  font: 600 14px/1 Geist,system-ui,sans-serif;
-  letter-spacing: .06em;
-  text-transform: uppercase;
-  cursor: pointer;
-  transition: transform .2s;
-}
-
-.p-grade img {
-  filter: saturate(.88) contrast(1.06) brightness(.98);
-}
-
-.p-mono {
-  font: 600 12px/1 "Geist Mono",ui-monospace,monospace;
-  letter-spacing: .1em;
-  text-transform: uppercase;
-}
-
-.p-err {
+.error {
   display: flex;
   align-items: center;
   gap: 10px;
@@ -68,7 +6,7 @@
   color: #8E1F17;
 }
 
-.p-err::before {
+.error::before {
   content: "";
   width: 8px;
   height: 8px;
@@ -76,7 +14,7 @@
   flex: none;
 }
 
-.p-say {
+.big-message {
   margin: 0;
   font-weight: 500;
   font-size: clamp(28px,3.2vw,48px);
@@ -85,26 +23,17 @@
   color: #151615;
 }
 
-.p-say .g {
+.big-message .grey {
   color: #8A8B86;
 }
 
-.p-sr {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  clip: rect(0 0 0 0);
-  white-space: nowrap;
-}
-
-.p-row {
+.form-row {
   display: grid;
   grid-template-columns: repeat(auto-fit,minmax(240px,1fr));
   gap: 36px 40px;
 }
 
-.p-f {
+.field {
   display: flex;
   flex-direction: column;
   gap: 8px;
@@ -114,8 +43,8 @@
   border: 0;
 }
 
-.p-f>label,
-.p-f>legend {
+.field>label,
+.field>legend {
   padding: 0;
   font: 600 12px/1 "Geist Mono",ui-monospace,monospace;
   letter-spacing: .1em;
@@ -123,11 +52,11 @@
   color: #6E6F6A;
 }
 
-.p-f>legend {
+.field>legend {
   margin-bottom: 14px;
 }
 
-.p-line {
+.line-input {
   width: 100%;
   box-sizing: border-box;
   border: 0;
@@ -141,15 +70,15 @@
   transition: background-size .45s cubic-bezier(.2,.7,.2,1);
 }
 
-.p-line::placeholder {
+.line-input::placeholder {
   color: #B9BAB4;
 }
 
-.p-line:focus {
+.line-input:focus {
   background-size: 100% 2px,100% 1px;
 }
 
-textarea.p-line {
+textarea.line-input {
   min-height: 96px;
   resize: vertical;
   font-size: 18px;
@@ -158,17 +87,17 @@ textarea.p-line {
   letter-spacing: 0;
 }
 
-.p-chips {
+.choices {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
 }
 
-.p-chip {
+.choice {
   position: relative;
 }
 
-.p-chip input {
+.choice input {
   position: absolute;
   opacity: 0;
   width: 1px;
@@ -176,7 +105,7 @@ textarea.p-line {
   margin: 0;
 }
 
-.p-chip>span {
+.choice>span {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -193,21 +122,16 @@ textarea.p-line {
   transition: transform .2s;
 }
 
-.p-chip>span:hover {
+.choice>span:hover {
   transform: translateY(-2px);
 }
 
-.p-chip input:checked+span {
+.choice input:checked+span {
   background: #151615;
   color: #F1F0EB;
 }
 
-.p-chip input:focus-visible+span {
-  outline: 3px solid #1E5BBF;
-  outline-offset: 4px;
-}
-
-.p-send {
+.send-button {
   display: inline-flex;
   align-items: center;
   gap: 12px;
@@ -224,19 +148,20 @@ textarea.p-line {
   transition: transform .2s;
 }
 
-.p-send:hover {
+.send-button:hover {
   transform: translateY(-2px);
 }
 
-.p-send svg {
+.send-arrow {
+  font-size: 18px;
   transition: transform .3s;
 }
 
-.p-send:hover svg {
+.send-button:hover .send-arrow {
   transform: translateX(4px);
 }
 
-.p-info {
+.contact-details {
   align-self: start;
   display: flex;
   flex-direction: column;
@@ -245,7 +170,7 @@ textarea.p-line {
   padding: 0 clamp(24px,3vw,44px) clamp(24px,3vw,40px);
 }
 
-.p-info::before {
+.contact-details::before {
   content: "";
   display: block;
   height: 8px;
@@ -253,7 +178,7 @@ textarea.p-line {
   background: linear-gradient(90deg,#D2372C 0 25%,#1E5BBF 25% 50%,#F2C318 50% 75%,#2C8A4B 75%);
 }
 
-.p-info>div {
+.contact-details>div {
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -261,43 +186,43 @@ textarea.p-line {
   border-top: 1px solid rgba(241,240,235,.14);
 }
 
-.p-info>div:first-of-type {
+.contact-details>div:first-of-type {
   border-top: 0;
 }
 
-.p-info a {
+.contact-details a {
   color: #F1F0EB;
 }
 
-.p-info a:hover {
+.contact-details a:hover {
   color: #F2C318;
 }
 
-.p-info .p-big {
+.contact-details .big-text {
   color: #F1F0EB;
 }
 
-.p-info .p-mono {
-  color: #8A8B86 !important;
+.contact-details .small-caps {
+  color: #8A8B86;
 }
 
-.p-info .p-tl {
+.contact-details .text-link {
   color: #F1F0EB;
   border-bottom-color: #F1F0EB;
 }
 
-.p-info .p-tl:hover {
+.contact-details .text-link:hover {
   color: #F1F0EB;
   border-color: #F2C318;
 }
 
-.p-info .p-sub {
+.contact-details .small-text {
   font-size: 15px;
   line-height: 1.5;
   color: #B9BAB4;
 }
 
-.p-big {
+.big-text {
   font-weight: 600;
   font-size: clamp(20px,1.7vw,26px);
   line-height: 1.3;
@@ -305,7 +230,7 @@ textarea.p-line {
   color: #151615;
 }
 
-.p-tl {
+.text-link {
   align-self: flex-start;
   font: 600 12px/1 "Geist Mono",ui-monospace,monospace;
   letter-spacing: .1em;
@@ -316,12 +241,12 @@ textarea.p-line {
   transition: border-color .2s;
 }
 
-.p-tl:hover {
+.text-link:hover {
   color: #151615;
   border-color: #D2372C;
 }
 
-.p-hr {
+.hours-row {
   display: grid;
   grid-template-columns: auto 1fr auto;
   align-items: center;
@@ -330,28 +255,28 @@ textarea.p-line {
   font-size: 16px;
 }
 
-.p-hr i {
+.hours-row i {
   width: 8px;
   height: 8px;
   background: transparent;
 }
 
-.p-hr.p-row-today i {
+.hours-row.today-row i {
   background: #F2C318;
 }
 
-.p-hr.p-row-today {
+.hours-row.today-row {
   font-weight: 600;
 }
 
-.p-live {
+.status-dot {
   width: 9px;
   height: 9px;
   flex: none;
-  animation: p-pulse 2s ease-out infinite;
+  animation: pulse 2s ease-out infinite;
 }
 
-@keyframes p-pulse {
+@keyframes pulse {
   0% {
     box-shadow: 0 0 0 0 currentColor;
   }
@@ -365,7 +290,7 @@ textarea.p-line {
   }
 }
 
-details.p-faq summary {
+details.question summary {
   cursor: pointer;
   list-style: none;
   display: flex;
@@ -376,11 +301,11 @@ details.p-faq summary {
   padding: 22px 0;
 }
 
-details.p-faq summary::-webkit-details-marker {
+details.question summary::-webkit-details-marker {
   display: none;
 }
 
-details.p-faq summary::after {
+details.question summary::after {
   content: "+";
   flex: none;
   width: 34px;
@@ -392,58 +317,27 @@ details.p-faq summary::after {
   line-height: 1;
 }
 
-details.p-faq[open] summary::after {
+details.question[open] summary::after {
   content: "–";
   background: #151615;
   color: #F1F0EB;
 }
 
-@media (max-width: 900px) {
-  .p-contact {
-    grid-template-columns: 1fr !important;
-  }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .p-live {
-    animation: none;
-  }
-
-  .p-send,
-  .p-send svg,
-  .p-line,
-  .p-chip>span {
-    transition: none;
-  }
-}
-
-:focus-visible {
-  outline: 3px solid #1E5BBF;
-  outline-offset: 3px;
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .p-pill,
-  .p-nav a {
-    transition: none;
-  }
-}
-
-.p-topic {
+.topic-picker {
   display: flex;
   flex-direction: column;
   gap: 28px;
 }
 
-.p-coach {
+.coach-picker {
   display: none;
 }
 
-.p-topic:has(input[value="Personal training"]:checked) .p-coach {
+.topic-picker:has(input[value="Personal training"]:checked) .coach-picker {
   display: flex;
 }
 
-.header-box-3 {
+.contact-main {
   max-width: 1440px;
   margin: 0 auto;
   padding-inline: clamp(16px, 4vw, 48px);
@@ -451,7 +345,7 @@ details.p-faq[open] summary::after {
   height: 1052px;
 }
 
-.page-hero-section-5 {
+.page-hero {
   padding-block: clamp(64px, 8vw, 120px) 64px;
   display: flex;
   flex-wrap: wrap;
@@ -460,7 +354,7 @@ details.p-faq[open] summary::after {
   gap: 28px 64px;
 }
 
-.page-hero-label-2 {
+.open-status {
   display: inline-flex;
   align-items: center;
   gap: 12px;
@@ -468,29 +362,29 @@ details.p-faq[open] summary::after {
   padding-bottom: 10px;
 }
 
-.page-hero-label-green-2 {
+.status-dot {
   background: #2C8A4B;
   color: #2C8A4B;
 }
 
-.form-details-section {
+.form-section {
   display: grid;
-  grid-template-columns: minmax(0, 7fr) minmax(0, 4fr);
+  grid-template-columns: 7fr 4fr;
   gap: 48px clamp(48px, 7vw, 120px);
   padding: 8px 0 120px;
 }
 
-.form-details-box {
+.form-column {
   min-width: 0;
 }
 
-.form-details-form {
+.form {
   display: flex;
   flex-direction: column;
   gap: 40px;
 }
 
-.form-details-label {
+.agree-label {
   display: flex;
   gap: 12px;
   align-items: flex-start;
@@ -499,33 +393,33 @@ details.p-faq[open] summary::after {
   color: #3E3F3B;
 }
 
-.form-details-input {
+.form-input {
   margin-top: 3px;
   width: 18px;
   height: 18px;
   accent-color: #151615;
 }
 
-.form-details-box-2 {
+.form-sent {
   display: flex;
   flex-direction: column;
   gap: 22px;
   padding-top: 24px;
 }
 
-.form-details-label-green {
+.form-label-green {
   display: inline-flex;
   align-items: center;
   gap: 10px;
   color: #2C8A4B;
 }
 
-.form-details-text {
+.form-text {
   margin: 0;
 }
 
-.form-details-button,
-.form-details-button:hover {
+.form-button,
+.form-button:hover {
   background: none;
   border-top: 0;
   border-left: 0;
@@ -533,21 +427,21 @@ details.p-faq[open] summary::after {
   cursor: pointer;
 }
 
-div.form-details-box-3 {
+div.hours-box {
   gap: 4px;
 }
 
-.form-details-label-2 {
+.hours-title {
   color: #6E6F6A;
   margin-bottom: 8px;
 }
 
-.form-details-label-3 {
+.hours-time {
   font-family: 'Geist Mono', ui-monospace, monospace;
   font-variant-numeric: tabular-nums;
 }
 
-div.form-details-box-4 {
+div.social-links {
   flex-direction: row;
   flex-wrap: wrap;
   gap: 24px;
@@ -557,7 +451,7 @@ div.form-details-box-4 {
   background-color: #f2c318;
 }
 
-.faq-box {
+.faq-inner {
   max-width: 1440px;
   margin: 0 auto;
   padding: 110px clamp(16px, 4vw, 48px);
@@ -567,14 +461,14 @@ div.form-details-box-4 {
   gap: 40px 80px;
 }
 
-.faq-box-2 {
+.faq-title {
   flex: 1 1 300px;
   display: flex;
   flex-direction: column;
   gap: 16px;
 }
 
-.faq-box-3 {
+.faq-list {
   flex: 999 1 600px;
   min-width: 0;
   border-top: 2px solid #151615;
@@ -589,4 +483,16 @@ div.form-details-box-4 {
   max-width: 62ch;
   line-height: 1.6;
   color: #2A2B28;
+}
+
+@media (max-width: 920px) {
+  .contact-main {
+    height: auto;
+  }
+}
+
+@media (max-width: 900px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
 }

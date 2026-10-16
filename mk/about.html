@@ -4,6 +4,8 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Iron Forge — За нас</title>
+<meta name="description" content="Приказната и мисијата на Iron Forge Скопје: теретана изградена околу шипката, каде секој може да стане посилен.">
+<link rel="icon" href="../images/favicon.png" type="image/png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&amp;family=Geist+Mono:wght@400;500;600&amp;display=swap">
@@ -12,64 +14,73 @@
 <link rel="stylesheet" href="../css/shared.css">
 </head>
 <body>
-<div class="p-grade page-box">
+<div class="site page">
 
-  <header class="header-header">
-    <nav class="p-nav header-menu" aria-label="Главно мени">
-      <a class="u-blue" href="amenities.html">Содржини</a>
-      <a class="u-green" href="team.html">Тим</a>
-      <a class="u-yellow" href="gallery.html">Галерија</a>
+  <header class="site-header">
+    <nav class="menu header-menu" aria-label="Главно мени">
+      <a class="underline-blue" href="amenities.html">Содржини</a>
+      <a class="underline-green" href="team.html">Тим</a>
+      <a class="underline-yellow" href="gallery.html">Галерија</a>
     </nav>
     <a class="header-link" href="index.html" aria-label="Iron Forge почетна">
-      <svg aria-hidden="true" width="40" height="40" viewBox="0 0 40 40"><circle cx="20" cy="20" r="19" fill="#151615"></circle><circle cx="20" cy="20" r="15.5" fill="none" stroke="#F1F0EB" stroke-opacity=".28" stroke-width="1"></circle><circle cx="20" cy="20" r="8" fill="none" stroke="#F1F0EB" stroke-opacity=".7" stroke-width="1.6"></circle><circle cx="20" cy="20" r="4" fill="#F1F0EB"></circle></svg>
+      <span class="logo-plate" aria-hidden="true"><span class="logo-outer-ring"><span class="logo-inner-ring"><span class="logo-dot"></span></span></span></span>
       <span class="header-label">iron<br>forge</span>
     </a>
-    <div class="p-nav header-box">
-      <a class="u-red act" href="about.html" aria-current="page">За нас</a>
-      <a class="u-yellow" href="blog.html">Блог</a>
-      <a class="u-red" href="contact.html">Контакт</a>
-      <div class="header-box-2" role="group" aria-label="Јазик">
-        <a class="p-lng on" href="about.html" lang="mk" aria-current="true">MK</a>
-        <a class="p-lng" href="../en/about.html" lang="en">EN</a>
+    <div class="menu header-right">
+      <a class="underline-red current" href="about.html" aria-current="page">За нас</a>
+      <a class="underline-yellow" href="blog.html">Блог</a>
+      <a class="underline-red" href="contact.html">Контакт</a>
+      <div class="language-links" role="group" aria-label="Јазик">
+        <a class="language-link active" href="about.html" lang="mk" aria-current="true">MK</a>
+        <a class="language-link" href="../en/about.html" lang="en">EN</a>
       </div>
     </div>
+    <button type="button" class="menu-button" id="menu-button" aria-expanded="false" aria-controls="phone-menu" aria-label="Мени">☰</button>
+    <nav class="phone-menu" id="phone-menu" aria-label="Мени">
+      <a class="underline-blue" href="amenities.html">Содржини</a>
+      <a class="underline-green" href="team.html">Тим</a>
+      <a class="underline-yellow" href="gallery.html">Галерија</a>
+      <a class="underline-red current" href="about.html" aria-current="page">За нас</a>
+      <a class="underline-yellow" href="blog.html">Блог</a>
+      <a class="underline-red" href="contact.html">Контакт</a>
+    </nav>
   </header>
 
-  <div class="p-wrap">
-    <section class="page-hero-section">
-      <div class="page-hero-box">
-        <span class="p-mono page-hero-label">За нас · Iron Forge Скопје</span>
-        <h1 class="page-hero-title">изградено околу <span class="hero-label-red-2">шипката</span></h1>
+  <div class="page-width">
+    <section class="page-hero">
+      <div class="page-hero-text">
+        <span class="small-caps text-grey">За нас · Iron Forge Скопје</span>
+        <h1 class="page-hero-title">изградено околу <span class="text-red">шипката</span></h1>
       </div>
     </section>
   </div>
 
-  <div class="p-wrap">
-    <section class="p-sm">
-      <figure class="p-photo">
+  <div class="page-width">
+    <section class="story">
+      <figure class="photo">
         <img src="../images/plate-wall.webp" alt="Ѕид со црвени, сини, жолти и зелени бампер тегови до рекот со шипки">
-        <figcaption class="p-tab">
+        <figcaption class="photo-label">
           <i></i>
           Ѕидот со тегови · зона за сила
         </figcaption>
       </figure>
-      <div class="p-sm-text">
+      <div class="story-text">
         <div>
-          <span class="p-mono page-hero-label">Нашата приказна</span>
+          <span class="small-caps text-grey">Нашата приказна</span>
           <p>Iron Forge Скопје е изградена со една едноставна идеја: да создадеме простор каде секој може да стане посилен, и физички и ментално. Она што почна како визија денес е место каде луѓе од сите профили се собираат со заедничка цел: <b>да бидат подобри од вчера</b>.</p>
         </div>
         <div>
-          <span class="p-mono page-hero-label">Нашата мисија</span>
+          <span class="small-caps text-grey">Нашата мисија</span>
           <p>Да обезбедиме модерна, пријатна и мотивирачка средина каде <b>дисциплината, доследноста и заедницата</b> водат до вистински резултати.</p>
-          <span class="p-mono photo-story-mission-label">Рутината</span>
-          <div class="p-steps">
+          <span class="small-caps mission-label">Рутината</span>
+          <div class="steps">
             <span>дојди</span>
             <em>/</em>
             <span>кревај правилно</span>
             <em>/</em>
             <span>опорави се</span>
             <em>/</em>
-            <span><span class="hero-label-red-2">повтори</span></span>
+            <span><span class="text-red">повтори</span></span>
           </div>
         </div>
       </div>
@@ -77,22 +88,22 @@
   </div>
 
   <section class="plans-section">
-    <div class="p-wrap closing-band-box">
-      <span class="p-mono closing-band-label">Во бројки</span>
-      <div class="p-facts">
-        <div class="p-fact closing-band-box-red">
+    <div class="page-width numbers-box">
+      <span class="small-caps closing-band-label">Во бројки</span>
+      <div class="facts">
+        <div class="fact fact-red">
           <b>4</b>
           <span>Зони, секоја со своја боја</span>
         </div>
-        <div class="p-fact closing-band-box-blue">
+        <div class="fact fact-blue">
           <b>4</b>
           <span>Тренери во салата</span>
         </div>
-        <div class="p-fact closing-band-box-yellow">
+        <div class="fact fact-yellow">
           <b>1K+</b>
           <span>Членови</span>
         </div>
-        <div class="p-fact closing-band-box-green">
+        <div class="fact fact-green">
           <b>7</b>
           <span>Дена во неделата отворено</span>
         </div>
@@ -100,27 +111,27 @@
     </div>
   </section>
   <section class="beginners-section-green">
-    <div class="closing-band-box-2">
+    <div class="closing-band-inner">
       <h2 class="closing-band-heading">запознај ги луѓето зад неа.</h2>
-      <a class="p-pill closing-band-link-green" href="team.html">Запознај го тимот</a>
+      <a class="pill-button closing-band-link-green" href="team.html">Запознај го тимот</a>
     </div>
   </section>
 
-  <footer class="footer-footer">
-    <div class="footer-box">
-      <div class="footer-box-red"></div>
-      <div class="footer-box-blue"></div>
-      <div class="footer-box-yellow"></div>
-      <div class="footer-box-green"></div>
+  <footer class="site-footer">
+    <div class="footer-stripes">
+      <div class="footer-stripe-red"></div>
+      <div class="footer-stripe-blue"></div>
+      <div class="footer-stripe-yellow"></div>
+      <div class="footer-stripe-green"></div>
     </div>
-    <div class="footer-box-2">
-      <div class="footer-box-3">
-        <div><div class="p-mono footer-box-9">Каде</div>ул. Македонија 18, 1000 Скопје<br><a class="footer-link-yellow" href="https://maps.google.com/?q=ul.+Makedonija+18,+Skopje">Како до нас</a></div>
-        <div><div class="p-mono footer-box-9">Кога</div><span class="footer-label">Пон–Пет 06:00–23:00<br>Саб 08:00–21:00<br>Нед 09:00–18:00</span></div>
-        <div><div class="p-mono footer-box-9">Контакт</div>+389 70 312 458<br>hello@ironforge.mk</div>
+    <div class="footer-inner">
+      <div class="footer-info">
+        <div><div class="small-caps footer-title">Каде</div>ул. Македонија 18, 1000 Скопје<br><a class="footer-link-yellow" href="https://maps.google.com/?q=ul.+Makedonija+18,+Skopje">Како до нас</a></div>
+        <div><div class="small-caps footer-title">Кога</div><span class="footer-label">Пон–Пет 06:00–23:00<br>Саб 08:00–21:00<br>Нед 09:00–18:00</span></div>
+        <div><div class="small-caps footer-title">Контакт</div>+389 70 312 458<br>hello@ironforge.mk</div>
       </div>
-      <div class="footer-box-5">
-        <div class="footer-box-6">
+      <div class="footer-links">
+        <div class="footer-link-group">
           <a class="footer-link" href="index.html">Почетна</a>
           <a class="footer-link" href="amenities.html">Содржини</a>
           <a class="footer-link" href="team.html">Тим</a>
@@ -129,18 +140,30 @@
           <a class="footer-link" href="blog.html">Блог</a>
           <a class="footer-link" href="contact.html">Контакт</a>
         </div>
-        <div class="footer-box-6">
-          <a class="footer-link-2" href="privacy.html">Приватност и колачиња</a>
-          <a class="footer-link-2" href="privacy.html">Услови</a>
+        <div class="footer-link-group">
+          <a class="footer-link-grey" href="privacy.html">Приватност и колачиња</a>
+          <a class="footer-link-grey" href="privacy.html">Услови</a>
         </div>
       </div>
-      <div class="footer-box-7" aria-hidden="true">iron forge</div>
-      <div class="footer-box-8">
+      <div class="footer-big-name" aria-hidden="true">iron forge</div>
+      <div class="footer-copyright">
         <span>© 2026 IRON FORGE СКОПЈЕ</span>
         <span>INSTAGRAM · FACEBOOK · TIKTOK</span>
       </div>
     </div>
   </footer>
+  <div class="cookies-banner" id="cookie-banner" hidden role="dialog" aria-label="Cookie preferences">
+    <div class="cookies-title">
+      <span class="cookie-plate" aria-hidden="true"><span class="cookie-dot"></span></span>
+      колачиња, лесно натоварени
+    </div>
+    <p class="cookies-text">Го зачувуваме само твојот одговор на оваа порака. Без колачиња за следење или реклами. <a class="cookies-link" href="privacy.html">Политика за колачиња</a></p>
+    <div class="wrap-row">
+      <button type="button" class="pill-button cookies-button" id="cookie-ok">Во ред</button>
+    </div>
+  </div>
 </div>
+<script src="../js/menu.js"></script>
+<script src="../js/cookies.js"></script>
 </body>
 </html>

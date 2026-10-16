@@ -44,7 +44,7 @@ if (hourNow >= opens && hourNow < closes) {
   openDot.style.color = "#D2372C";
 }
 
-let hourRows = document.querySelectorAll(".p-hr");
+let hourRows = document.querySelectorAll(".hours-row");
 let dayNamesEn = ["Monday – Friday", "Saturday", "Sunday"];
 let dayNamesMk = ["Понеделник – петок", "Сабота", "Недела"];
 
@@ -64,14 +64,14 @@ for (let i = 0; i < hourRows.length; i++) {
   }
 
   if (i === todayRow) {
-    hourRows[i].classList.add("p-row-today");
+    hourRows[i].classList.add("today-row");
     if (language === "mk") {
       nameText.textContent = name + " · денес";
     } else {
       nameText.textContent = name + " · today";
     }
   } else {
-    hourRows[i].classList.remove("p-row-today");
+    hourRows[i].classList.remove("today-row");
     nameText.textContent = name;
   }
 }
@@ -105,35 +105,37 @@ form.addEventListener("submit", function (event) {
   let allGood = true;
 
   if (name === "") {
-    showError("err-name", "Please fill in your name.", "Внесете го вашето име.");
+    showError("name-error", "Please fill in your name.", "Внесете го вашето име.");
     allGood = false;
   } else {
-    hideError("err-name");
+    hideError("name-error");
   }
 
   let emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
   if (emailPattern.test(email) === false) {
-    showError("err-email", "Please enter a valid email, like name@example.com.", "Внесете валидна е-пошта, на пр. ime@primer.com.");
+    showError("email-error", "Please enter a valid email, like name@example.com.", "Внесете валидна е-пошта, на пр. ime@primer.com.");
     allGood = false;
   } else {
-    hideError("err-email");
+    hideError("email-error");
   }
 
   if (agreed === false) {
-    showError("err-consent", "Please tick the box so we can reply to you.", "Означете го полето за да можеме да ви одговориме.");
+    showError("agree-error", "Please tick the box so we can reply to you.", "Означете го полето за да можеме да ви одговориме.");
     allGood = false;
   } else {
-    hideError("err-consent");
+    hideError("agree-error");
   }
 
   if (allGood === false) {
     return;
   }
 
+  let coachNamesMk = { Marko: "Марко", Ana: "Ана", Aleksandar: "Александар", Elena: "Елена" };
+
   let reply = "";
   if (topic === "Personal training" && coach !== "Any coach") {
     if (language === "mk") {
-      reply = coach + " ќе ти одговори на " + email + " во рок од еден работен ден";
+      reply = coachNamesMk[coach] + " ќе ти одговори на " + email + " во рок од еден работен ден";
     } else {
       reply = coach + " will reply to " + email + " within one working day";
     }
@@ -155,8 +157,25 @@ form.addEventListener("submit", function (event) {
   document.getElementById("sent-name").textContent = firstName;
   document.getElementById("reply-line").textContent = reply;
 
-  form.hidden = true;
-  sentBox.hidden = false;
+  let formData = new FormData(form);
+
+  fetch(form.action, {
+    method: "POST",
+    body: formData,
+    headers: { "Accept": "application/json" }
+  })
+    .then(function (response) {
+      if (response.ok) {
+        hideError("send-error");
+        form.hidden = true;
+        sentBox.hidden = false;
+      } else {
+        showError("send-error", "Sorry, the message could not be sent. Please try again.", "Пораката не можеше да се испрати. Обидете се повторно.");
+      }
+    })
+    .catch(function () {
+      showError("send-error", "Sorry, the message could not be sent. Please try again.", "Пораката не можеше да се испрати. Обидете се повторно.");
+    });
 });
 
 sendAnotherButton.addEventListener("click", function () {

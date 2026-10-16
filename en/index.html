@@ -4,6 +4,8 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Iron Forge — Home</title>
+<meta name="description" content="Iron Forge Skopje: a strength gym with four colour-coded zones, a cedar sauna, a smoothie bar and small group classes. Open 7 days a week.">
+<link rel="icon" href="../images/favicon.png" type="image/png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&amp;family=Geist+Mono:wght@400;500;600&amp;display=swap">
@@ -12,72 +14,81 @@
 <link rel="stylesheet" href="../css/shared.css">
 </head>
 <body>
-<div class="p-grade page-box">
+<div class="site page">
 
-  <header class="header-header">
-    <nav class="p-nav header-menu" aria-label="Main">
-      <a class="u-blue" href="amenities.html">Amenities</a>
-      <a class="u-green" href="team.html">Team</a>
-      <a class="u-yellow" href="gallery.html">Gallery</a>
+  <header class="site-header">
+    <nav class="menu header-menu" aria-label="Main">
+      <a class="underline-blue" href="amenities.html">Amenities</a>
+      <a class="underline-green" href="team.html">Team</a>
+      <a class="underline-yellow" href="gallery.html">Gallery</a>
     </nav>
     <a class="header-link" href="index.html" aria-label="Iron Forge home">
-      <svg aria-hidden="true" width="40" height="40" viewBox="0 0 40 40"><circle cx="20" cy="20" r="19" fill="#151615"></circle><circle cx="20" cy="20" r="15.5" fill="none" stroke="#F1F0EB" stroke-opacity=".28" stroke-width="1"></circle><circle cx="20" cy="20" r="8" fill="none" stroke="#F1F0EB" stroke-opacity=".7" stroke-width="1.6"></circle><circle cx="20" cy="20" r="4" fill="#F1F0EB"></circle></svg>
+      <span class="logo-plate" aria-hidden="true"><span class="logo-outer-ring"><span class="logo-inner-ring"><span class="logo-dot"></span></span></span></span>
       <span class="header-label">iron<br>forge</span>
     </a>
-    <div class="p-nav header-box">
-      <a class="u-red" href="about.html">About</a>
-      <a class="u-yellow" href="blog.html">Blog</a>
-      <a class="u-red" href="contact.html">Contact</a>
-      <div class="header-box-2" role="group" aria-label="Language">
-        <a class="p-lng" href="../mk/index.html" lang="mk">MK</a>
-        <a class="p-lng on" href="index.html" lang="en" aria-current="true">EN</a>
+    <div class="menu header-right">
+      <a class="underline-red" href="about.html">About</a>
+      <a class="underline-yellow" href="blog.html">Blog</a>
+      <a class="underline-red" href="contact.html">Contact</a>
+      <div class="language-links" role="group" aria-label="Language">
+        <a class="language-link" href="../mk/index.html" lang="mk">MK</a>
+        <a class="language-link active" href="index.html" lang="en" aria-current="true">EN</a>
       </div>
     </div>
+    <button type="button" class="menu-button" id="menu-button" aria-expanded="false" aria-controls="phone-menu" aria-label="Menu">☰</button>
+    <nav class="phone-menu" id="phone-menu" aria-label="Menu">
+      <a class="underline-blue" href="amenities.html">Amenities</a>
+      <a class="underline-green" href="team.html">Team</a>
+      <a class="underline-yellow" href="gallery.html">Gallery</a>
+      <a class="underline-red" href="about.html">About</a>
+      <a class="underline-yellow" href="blog.html">Blog</a>
+      <a class="underline-red" href="contact.html">Contact</a>
+    </nav>
   </header>
 
   <section class="hero-section">
-    <div class="p-hero-fold hero-box">
-      <div class="hero-box-2"></div>
-      <div class="hero-box-3" id="hero-bar">
-        <span class="hero-label" aria-hidden="true">
-          <span class="hero-label-2"></span>
-          <span class="p-clip-l hero-label-3"></span>
-          <span class="p-load-l hero-label-green"></span>
-          <span class="p-load-l hero-label-yellow"></span>
-          <span class="p-load-l hero-label-blue"></span>
-          <span class="p-load-l hero-label-red"></span>
-          <span class="hero-label-4"></span>
+    <div class="hero hero-content">
+      <div class="hero-spacer"></div>
+      <div class="hero-barbell" id="big-barbell">
+        <span class="hero-bar-side" aria-hidden="true">
+          <span class="hero-bar-end-left"></span>
+          <span class="clip-left hero-clip"></span>
+          <span class="plate-left hero-plate-green"></span>
+          <span class="plate-left hero-plate-yellow"></span>
+          <span class="plate-left hero-plate-blue"></span>
+          <span class="plate-left hero-plate-red"></span>
+          <span class="hero-collar"></span>
         </span>
-        <div class="hero-box-4">
-          <span class="hero-label-5" aria-hidden="true"></span>
-          <h1 class="hero-title">lift<span class="hero-label-red-2">.</span> rest<span class="hero-label-blue-2">.</span> repeat<span class="hero-label-yellow-2">.</span></h1>
+        <div class="hero-middle">
+          <span class="hero-bar" aria-hidden="true"></span>
+          <h1 class="hero-title">lift<span class="text-red">.</span> rest<span class="text-blue">.</span> repeat<span class="text-yellow">.</span></h1>
         </div>
-        <span class="hero-label" aria-hidden="true">
-          <span class="hero-label-4"></span>
-          <span class="p-load-r hero-label-red"></span>
-          <span class="p-load-r hero-label-blue"></span>
-          <span class="p-load-r hero-label-yellow"></span>
-          <span class="p-load-r hero-label-green"></span>
-          <span class="p-clip-r hero-label-3"></span>
-          <span class="hero-label-6"></span>
+        <span class="hero-bar-side" aria-hidden="true">
+          <span class="hero-collar"></span>
+          <span class="plate-right hero-plate-red"></span>
+          <span class="plate-right hero-plate-blue"></span>
+          <span class="plate-right hero-plate-yellow"></span>
+          <span class="plate-right hero-plate-green"></span>
+          <span class="clip-right hero-clip"></span>
+          <span class="hero-bar-end-right"></span>
         </span>
       </div>
-      <div class="p-cue" id="scroll-cue" role="img" aria-label="Scroll down to see what is inside">
-        <span class="p-cue-t">Scroll</span>
-        <span class="p-cue-l" aria-hidden="true"></span>
+      <div class="scroll-hint" id="scroll" role="img" aria-label="Scroll down to see what is inside">
+        <span class="scroll-hint-text">Scroll</span>
+        <span class="scroll-hint-line" aria-hidden="true"></span>
       </div>
     </div>
   </section>
-  <div class="hero-box-5">
+  <div class="page-width">
 
-    <section class="about-floor-signs-section" id="about">
-      <div class="about-floor-signs-box">
-        <div class="about-floor-signs-box-2">ABOUT IRON FORGE</div>
-        <h2 class="about-floor-signs-heading">Every zone has a plate colour</h2>
-        <p class="about-floor-signs-text">We built Iron Forge around strength, progress and community, with recovery and nutrition under the same roof. The colour code comes from Olympic bumper plates. The same colours are painted on the floor signs, so you always know where you are.</p>
-        <div class="about-floor-signs-box-3">
-          <a class="p-tour" href="amenities.html">
-            <span class="p-bb" aria-hidden="true">
+    <section class="colours-section" id="about">
+      <div class="colours-intro">
+        <div class="colours-small-title">ABOUT IRON FORGE</div>
+        <h2 class="colours-heading">Every zone has a plate colour</h2>
+        <p class="colours-text">We built Iron Forge around strength, progress and community, with recovery and nutrition under the same roof. The colour code comes from Olympic bumper plates. The same colours are painted on the floor signs, so you always know where you are.</p>
+        <div class="colours-link-row">
+          <a class="tour-link" href="amenities.html">
+            <span class="mini-barbell" aria-hidden="true">
               <i></i>
               <i></i>
               <i></i>
@@ -87,68 +98,68 @@
           </a>
         </div>
       </div>
-      <div class="p-signs about-floor-signs-box-4">
-        <a href="amenities.html#strength" class="p-sign about-floor-signs-link-red">
-          <div class="about-floor-signs-box-5">
-            <span class="about-floor-signs-label">RED</span>
-            <span aria-hidden="true" class="p-spin about-floor-signs-label-2">
-              <span class="about-floor-signs-label-3"></span>
-              <span class="about-floor-signs-label-4"></span>
+      <div class="zone-cards">
+        <a href="amenities.html#strength" class="zone-card colours-link-red">
+          <div class="zone-card-top">
+            <span class="zone-card-colour">RED</span>
+            <span aria-hidden="true" class="spinning-plate zone-card-plate">
+              <span class="zone-card-plate-mark"></span>
+              <span class="zone-card-plate-dot"></span>
             </span>
           </div>
-          <div class="about-floor-signs-box-6">
-            <span class="about-floor-signs-label-5">strength</span>
-            <span class="about-floor-signs-label-6">→ racks · platforms · turf</span>
+          <div class="zone-card-text">
+            <span class="zone-card-name">strength</span>
+            <span class="zone-card-list">→ racks · platforms · turf</span>
           </div>
         </a>
-        <a href="amenities.html#recovery" class="p-sign about-floor-signs-link-blue">
-          <div class="about-floor-signs-box-5">
-            <span class="about-floor-signs-label">BLUE</span>
-            <span aria-hidden="true" class="p-spin about-floor-signs-label-2">
-              <span class="about-floor-signs-label-3"></span>
-              <span class="about-floor-signs-label-4"></span>
+        <a href="amenities.html#recovery" class="zone-card colours-link-blue">
+          <div class="zone-card-top">
+            <span class="zone-card-colour">BLUE</span>
+            <span aria-hidden="true" class="spinning-plate zone-card-plate">
+              <span class="zone-card-plate-mark"></span>
+              <span class="zone-card-plate-dot"></span>
             </span>
           </div>
-          <div class="about-floor-signs-box-6">
-            <span class="about-floor-signs-label-5">recovery</span>
-            <span class="about-floor-signs-label-6">→ sauna · changing rooms</span>
+          <div class="zone-card-text">
+            <span class="zone-card-name">recovery</span>
+            <span class="zone-card-list">→ sauna · changing rooms</span>
           </div>
         </a>
-        <a href="amenities.html#nutrition" class="p-sign about-floor-signs-link-yellow">
-          <div class="about-floor-signs-box-5">
-            <span class="about-floor-signs-label">YELLOW</span>
-            <span aria-hidden="true" class="p-spin about-floor-signs-label-7">
-              <span class="about-floor-signs-label-8"></span>
-              <span class="about-floor-signs-label-9"></span>
+        <a href="amenities.html#nutrition" class="zone-card colours-link-yellow">
+          <div class="zone-card-top">
+            <span class="zone-card-colour">YELLOW</span>
+            <span aria-hidden="true" class="spinning-plate zone-card-plate-yellow">
+              <span class="zone-card-plate-mark-yellow"></span>
+              <span class="zone-card-plate-dot-yellow"></span>
             </span>
           </div>
-          <div class="about-floor-signs-box-6">
-            <span class="about-floor-signs-label-5">nutrition</span>
-            <span class="about-floor-signs-label-10">→ smoothie bar</span>
+          <div class="zone-card-text">
+            <span class="zone-card-name">nutrition</span>
+            <span class="zone-card-list-yellow">→ smoothie bar</span>
           </div>
         </a>
-        <a href="amenities.html#community" class="p-sign about-floor-signs-link-green">
-          <div class="about-floor-signs-box-5">
-            <span class="about-floor-signs-label">GREEN</span>
-            <span aria-hidden="true" class="p-spin about-floor-signs-label-2">
-              <span class="about-floor-signs-label-3"></span>
-              <span class="about-floor-signs-label-4"></span>
+        <a href="amenities.html#community" class="zone-card colours-link-green">
+          <div class="zone-card-top">
+            <span class="zone-card-colour">GREEN</span>
+            <span aria-hidden="true" class="spinning-plate zone-card-plate">
+              <span class="zone-card-plate-mark"></span>
+              <span class="zone-card-plate-dot"></span>
             </span>
           </div>
-          <div class="about-floor-signs-box-6">
-            <span class="about-floor-signs-label-5">community</span>
-            <span class="about-floor-signs-label-6">→ classes · open sessions</span>
+          <div class="zone-card-text">
+            <span class="zone-card-name">community</span>
+            <span class="zone-card-list">→ classes · open sessions</span>
           </div>
         </a>
       </div>
     </section>
   </div>
 
-  <figure class="p-band">
-    <div class="p-band-img">
+  <figure class="photo-band">
+    <div class="photo-band-image">
       <img src="../images/deadlift-grip.jpg" alt="Lifter gripping a barbell loaded with red and blue bumper plates">
     </div>
-    <figcaption class="p-band-cap">
+    <figcaption class="photo-band-caption">
       <span>
         <i></i>
         Strength floor, red zone
@@ -158,301 +169,301 @@
   </figure>
 
   <section class="plans-section" id="plans">
-    <div class="plans-box">
-      <div class="plans-box-2">
-        <div class="plans-box-3">
-          <div class="plans-box-4">MEMBERSHIP</div>
-          <h2 class="plans-heading">load <span class="hero-label-yellow-2">up</span></h2>
+    <div class="plans-inner">
+      <div class="section-top">
+        <div class="plans-title">
+          <div class="plans-small-title">MEMBERSHIP</div>
+          <h2 class="plans-heading">load <span class="text-yellow">up</span></h2>
         </div>
         <p class="plans-text">Heavier plate, longer commitment, lower price per visit.</p>
       </div>
-      <div class="plans-box-5">
-        <div class="p-tier plans-box-6">
-          <div class="p-spin plans-box-green" aria-hidden="true">
-            <span class="plans-label"></span>
-            <span class="plans-label-2"></span>
-            <div class="plans-box-7">
-              <div class="plans-box-8"></div>
+      <div class="plans-grid">
+        <div class="price-plan">
+          <div class="spinning-plate plan-plate-green" aria-hidden="true">
+            <span class="plate-mark-top"></span>
+            <span class="plate-mark-bottom"></span>
+            <div class="plate-ring">
+              <div class="plate-hole"></div>
             </div>
           </div>
-          <div class="plans-box-9">
-            <span class="plans-label-3">10 KG</span>
-            <span class="plans-label-4">day pass</span>
-            <span class="plans-label-5">400 ден</span>
-            <span class="plans-label-6">One visit: full floor, lockers and showers.</span>
+          <div class="price-plan-text">
+            <span class="price-plan-weight-green">10 KG</span>
+            <span class="price-plan-name">day pass</span>
+            <span class="price-plan-price">400 ден</span>
+            <span class="price-plan-note">One visit: full floor, lockers and showers.</span>
           </div>
         </div>
-        <div class="p-tier plans-box-6">
-          <div class="p-spin plans-box-yellow" aria-hidden="true">
-            <span class="plans-label-7"></span>
-            <span class="plans-label-8"></span>
-            <div class="plans-box-10">
-              <div class="plans-box-8"></div>
+        <div class="price-plan">
+          <div class="spinning-plate plan-plate-yellow" aria-hidden="true">
+            <span class="plate-mark-top-dark"></span>
+            <span class="plate-mark-bottom-dark"></span>
+            <div class="plate-ring-yellow">
+              <div class="plate-hole"></div>
             </div>
           </div>
-          <div class="plans-box-9">
-            <span class="plans-label-yellow">15 KG</span>
-            <span class="plans-label-4">monthly</span>
-            <span class="plans-label-5">2.200 ден</span>
-            <span class="plans-label-6">Unlimited training, sauna and classes.</span>
+          <div class="price-plan-text">
+            <span class="price-plan-weight-yellow">15 KG</span>
+            <span class="price-plan-name">monthly</span>
+            <span class="price-plan-price">2.200 ден</span>
+            <span class="price-plan-note">Unlimited training, sauna and classes.</span>
           </div>
         </div>
-        <div class="p-tier plans-box-6">
-          <div class="p-spin plans-box-blue" aria-hidden="true">
-            <span class="plans-label"></span>
-            <span class="plans-label-2"></span>
-            <div class="plans-box-7">
-              <div class="plans-box-8"></div>
+        <div class="price-plan">
+          <div class="spinning-plate plan-plate-blue" aria-hidden="true">
+            <span class="plate-mark-top"></span>
+            <span class="plate-mark-bottom"></span>
+            <div class="plate-ring">
+              <div class="plate-hole"></div>
             </div>
           </div>
-          <div class="plans-box-9">
-            <span class="plans-label-9">20 KG · MOST CHOSEN</span>
-            <span class="plans-label-4">3 months</span>
-            <span class="plans-label-5">5.900 ден</span>
-            <span class="plans-label-6">Plus a coach-written plan and a week-6 check.</span>
+          <div class="price-plan-text">
+            <span class="price-plan-weight-blue">20 KG · MOST CHOSEN</span>
+            <span class="price-plan-name">3 months</span>
+            <span class="price-plan-price">5.900 ден</span>
+            <span class="price-plan-note">Plus a coach-written plan and a week-6 check.</span>
           </div>
         </div>
-        <div class="p-tier plans-box-6">
-          <div class="p-spin plans-box-red" aria-hidden="true">
-            <span class="plans-label"></span>
-            <span class="plans-label-2"></span>
-            <div class="plans-box-7">
-              <div class="plans-box-8"></div>
+        <div class="price-plan">
+          <div class="spinning-plate plan-plate-red" aria-hidden="true">
+            <span class="plate-mark-top"></span>
+            <span class="plate-mark-bottom"></span>
+            <div class="plate-ring">
+              <div class="plate-hole"></div>
             </div>
           </div>
-          <div class="plans-box-9">
-            <span class="plans-label-10">25 KG</span>
-            <span class="plans-label-4">annual</span>
-            <span class="plans-label-5">19.900 ден</span>
-            <span class="plans-label-6">Everything, plus 2 personal training sessions.</span>
+          <div class="price-plan-text">
+            <span class="price-plan-weight-red">25 KG</span>
+            <span class="price-plan-name">annual</span>
+            <span class="price-plan-price">19.900 ден</span>
+            <span class="price-plan-note">Everything, plus 2 personal training sessions.</span>
           </div>
         </div>
       </div>
     </div>
   </section>
-  <div class="hero-box-5">
+  <div class="page-width">
 
     <section class="gallery-strip-section" id="gallery">
-      <div class="plans-box-2">
+      <div class="section-top">
         <h2 class="gallery-strip-heading">Gallery</h2>
         <span class="gallery-strip-label">A FIRST LOOK INSIDE</span>
       </div>
-      <div class="p-bento">
-        <a class="p-bt p-bt-g" href="gallery.html">
-          <img class="gallery-strip-photo" src="../images/hip-thrust-green.jpg" alt="Hip thrust machine loaded with a green 10 kg plate">
+      <div class="gallery-grid">
+        <a class="gallery-tile gallery-tile-green" href="gallery.html">
+          <img class="photo-bit-left" src="../images/hip-thrust-green.jpg" alt="Hip thrust machine loaded with a green 10 kg plate">
         </a>
-        <a class="p-bt p-bt-r" href="gallery.html">
-          <img class="gallery-strip-photo-2" src="../images/turf-lane.jpg" alt="Battle ropes on the turf lane">
+        <a class="gallery-tile gallery-tile-red" href="gallery.html">
+          <img src="../images/turf-lane.jpg" alt="Battle ropes on the turf lane">
         </a>
-        <a class="p-bt p-bt-b" href="gallery.html">
-          <img class="gallery-strip-photo-3" src="../images/core-work.jpg" alt="Medicine ball exercise in the mobility studio">
+        <a class="gallery-tile gallery-tile-blue" href="gallery.html">
+          <img class="photo-left" src="../images/core-work.jpg" alt="Medicine ball exercise in the mobility studio">
         </a>
-        <a class="p-bt p-bt-r" href="gallery.html">
-          <img class="gallery-strip-photo-4" src="../images/free-weights.jpg" alt="Seated dumbbell curls">
+        <a class="gallery-tile gallery-tile-red" href="gallery.html">
+          <img class="photo-higher" src="../images/free-weights.jpg" alt="Seated dumbbell curls">
         </a>
-        <a class="p-bt-cta" href="gallery.html">
-          <span class="p-bt-cta-k">More inside</span>
-          <span class="p-bt-cta-h">See the full gallery</span>
-          <svg class="p-bt-cta-a" width="44" height="44" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M5 15L15 5M7 5h8v8" stroke="currentColor" stroke-width="1.6" stroke-linecap="square"></path></svg>
+        <a class="gallery-more" href="gallery.html">
+          <span class="gallery-more-label">More inside</span>
+          <span class="gallery-more-title">See the full gallery</span>
+          <span class="gallery-more-arrow" aria-hidden="true">↗</span>
         </a>
       </div>
     </section>
   </div>
 
   <section class="timetable-section" id="timetable">
-    <div class="timetable-box">
-      <div class="timetable-box-2">
-        <div class="timetable-box-3">
-          <span class="timetable-label">MEMBERS · CLASS SCHEDULE · THIS WEEK</span>
-          <h2 class="timetable-heading">your <span class="hero-label-yellow-2">week</span></h2>
+    <div class="timetable-inner">
+      <div class="timetable-top">
+        <div class="title-group">
+          <span class="timetable-small-title">MEMBERS · CLASS SCHEDULE · THIS WEEK</span>
+          <h2 class="timetable-heading">your <span class="text-yellow">week</span></h2>
         </div>
-        <div role="tablist" aria-label="Day" class="p-week">
-          <button type="button" role="tab" aria-selected="true" class="p-day on">MON<span class="p-day-dot" aria-label="today"></span></button>
-          <button type="button" role="tab" aria-selected="false" class="p-day">TUE</button>
-          <button type="button" role="tab" aria-selected="false" class="p-day">WED</button>
-          <button type="button" role="tab" aria-selected="false" class="p-day">THU</button>
-          <button type="button" role="tab" aria-selected="false" class="p-day">FRI</button>
-          <button type="button" role="tab" aria-selected="false" class="p-day">SAT</button>
-          <button type="button" role="tab" aria-selected="false" class="p-day">SUN</button>
+        <div role="tablist" aria-label="Day" class="week-tabs">
+          <button type="button" role="tab" aria-selected="true" class="day-tab active">MON<span class="today-mark" aria-label="today"></span></button>
+          <button type="button" role="tab" aria-selected="false" class="day-tab">TUE</button>
+          <button type="button" role="tab" aria-selected="false" class="day-tab">WED</button>
+          <button type="button" role="tab" aria-selected="false" class="day-tab">THU</button>
+          <button type="button" role="tab" aria-selected="false" class="day-tab">FRI</button>
+          <button type="button" role="tab" aria-selected="false" class="day-tab">SAT</button>
+          <button type="button" role="tab" aria-selected="false" class="day-tab">SUN</button>
         </div>
       </div>
-      <div class="timetable-box-4" role="tabpanel">
-        <div class="p-tt-row" data-day="0">
-          <span class="timetable-label-2">07:00</span>
-          <span class="timetable-label-3">
+      <div class="class-list" role="tabpanel">
+        <div class="class-row" data-day="0">
+          <span class="class-time">07:00</span>
+          <span class="class-name">
             <i class="timetable-mark-red"></i>
             Strength basics
           </span>
-          <span class="p-tt-meta timetable-label-4">Marko Petrovski</span>
-          <span class="p-tt-meta timetable-label-5">60 MIN</span>
+          <span class="class-info class-coach">Marko Petrovski</span>
+          <span class="class-info class-length">60 MIN</span>
         </div>
-        <div class="p-tt-row" data-day="0">
-          <span class="timetable-label-2">18:30</span>
-          <span class="timetable-label-3">
+        <div class="class-row" data-day="0">
+          <span class="class-time">18:30</span>
+          <span class="class-name">
             <i class="timetable-mark-green"></i>
             Conditioning
           </span>
-          <span class="p-tt-meta timetable-label-4">Elena Jovanovska</span>
-          <span class="p-tt-meta timetable-label-5">45 MIN</span>
+          <span class="class-info class-coach">Elena Jovanovska</span>
+          <span class="class-info class-length">45 MIN</span>
         </div>
-        <div class="p-tt-row" data-day="0">
-          <span class="timetable-label-2">20:00</span>
-          <span class="timetable-label-3">
+        <div class="class-row" data-day="0">
+          <span class="class-time">20:00</span>
+          <span class="class-name">
             <i class="timetable-mark-blue"></i>
             Mobility
           </span>
-          <span class="p-tt-meta timetable-label-4">Ana Stojanovska</span>
-          <span class="p-tt-meta timetable-label-5">45 MIN</span>
+          <span class="class-info class-coach">Ana Stojanovska</span>
+          <span class="class-info class-length">45 MIN</span>
         </div>
-        <div class="p-tt-row" data-day="1" hidden>
-<span class="timetable-label-2">12:15</span>
-<span class="timetable-label-3"><i class="timetable-mark-green"></i>Conditioning</span>
-<span class="p-tt-meta timetable-label-4">Elena Jovanovska</span>
-<span class="p-tt-meta timetable-label-5">45 MIN</span>
+        <div class="class-row" data-day="1" hidden>
+<span class="class-time">12:15</span>
+<span class="class-name"><i class="timetable-mark-green"></i>Conditioning</span>
+<span class="class-info class-coach">Elena Jovanovska</span>
+<span class="class-info class-length">45 MIN</span>
 </div>
-        <div class="p-tt-row" data-day="1" hidden>
-<span class="timetable-label-2">18:30</span>
-<span class="timetable-label-3"><i class="timetable-mark-red"></i>Strength basics</span>
-<span class="p-tt-meta timetable-label-4">Aleksandar Bozhinovski</span>
-<span class="p-tt-meta timetable-label-5">60 MIN</span>
+        <div class="class-row" data-day="1" hidden>
+<span class="class-time">18:30</span>
+<span class="class-name"><i class="timetable-mark-red"></i>Strength basics</span>
+<span class="class-info class-coach">Aleksandar Bozhinovski</span>
+<span class="class-info class-length">60 MIN</span>
 </div>
-        <div class="p-tt-row" data-day="1" hidden>
-<span class="timetable-label-2">20:00</span>
-<span class="timetable-label-3"><i class="timetable-mark-blue"></i>Mobility</span>
-<span class="p-tt-meta timetable-label-4">Ana Stojanovska</span>
-<span class="p-tt-meta timetable-label-5">45 MIN</span>
+        <div class="class-row" data-day="1" hidden>
+<span class="class-time">20:00</span>
+<span class="class-name"><i class="timetable-mark-blue"></i>Mobility</span>
+<span class="class-info class-coach">Ana Stojanovska</span>
+<span class="class-info class-length">45 MIN</span>
 </div>
-        <div class="p-tt-row" data-day="2" hidden>
-<span class="timetable-label-2">07:00</span>
-<span class="timetable-label-3"><i class="timetable-mark-red"></i>Strength basics</span>
-<span class="p-tt-meta timetable-label-4">Marko Petrovski</span>
-<span class="p-tt-meta timetable-label-5">60 MIN</span>
+        <div class="class-row" data-day="2" hidden>
+<span class="class-time">07:00</span>
+<span class="class-name"><i class="timetable-mark-red"></i>Strength basics</span>
+<span class="class-info class-coach">Marko Petrovski</span>
+<span class="class-info class-length">60 MIN</span>
 </div>
-        <div class="p-tt-row" data-day="2" hidden>
-<span class="timetable-label-2">18:30</span>
-<span class="timetable-label-3"><i class="timetable-mark-green"></i>Conditioning</span>
-<span class="p-tt-meta timetable-label-4">Elena Jovanovska</span>
-<span class="p-tt-meta timetable-label-5">45 MIN</span>
+        <div class="class-row" data-day="2" hidden>
+<span class="class-time">18:30</span>
+<span class="class-name"><i class="timetable-mark-green"></i>Conditioning</span>
+<span class="class-info class-coach">Elena Jovanovska</span>
+<span class="class-info class-length">45 MIN</span>
 </div>
-        <div class="p-tt-row" data-day="3" hidden>
-<span class="timetable-label-2">12:15</span>
-<span class="timetable-label-3"><i class="timetable-mark-green"></i>Conditioning</span>
-<span class="p-tt-meta timetable-label-4">Elena Jovanovska</span>
-<span class="p-tt-meta timetable-label-5">45 MIN</span>
+        <div class="class-row" data-day="3" hidden>
+<span class="class-time">12:15</span>
+<span class="class-name"><i class="timetable-mark-green"></i>Conditioning</span>
+<span class="class-info class-coach">Elena Jovanovska</span>
+<span class="class-info class-length">45 MIN</span>
 </div>
-        <div class="p-tt-row" data-day="3" hidden>
-<span class="timetable-label-2">18:30</span>
-<span class="timetable-label-3"><i class="timetable-mark-red"></i>Strength basics</span>
-<span class="p-tt-meta timetable-label-4">Aleksandar Bozhinovski</span>
-<span class="p-tt-meta timetable-label-5">60 MIN</span>
+        <div class="class-row" data-day="3" hidden>
+<span class="class-time">18:30</span>
+<span class="class-name"><i class="timetable-mark-red"></i>Strength basics</span>
+<span class="class-info class-coach">Aleksandar Bozhinovski</span>
+<span class="class-info class-length">60 MIN</span>
 </div>
-        <div class="p-tt-row" data-day="3" hidden>
-<span class="timetable-label-2">20:00</span>
-<span class="timetable-label-3"><i class="timetable-mark-blue"></i>Mobility</span>
-<span class="p-tt-meta timetable-label-4">Ana Stojanovska</span>
-<span class="p-tt-meta timetable-label-5">45 MIN</span>
+        <div class="class-row" data-day="3" hidden>
+<span class="class-time">20:00</span>
+<span class="class-name"><i class="timetable-mark-blue"></i>Mobility</span>
+<span class="class-info class-coach">Ana Stojanovska</span>
+<span class="class-info class-length">45 MIN</span>
 </div>
-        <div class="p-tt-row" data-day="4" hidden>
-<span class="timetable-label-2">07:00</span>
-<span class="timetable-label-3"><i class="timetable-mark-red"></i>Strength basics</span>
-<span class="p-tt-meta timetable-label-4">Marko Petrovski</span>
-<span class="p-tt-meta timetable-label-5">60 MIN</span>
+        <div class="class-row" data-day="4" hidden>
+<span class="class-time">07:00</span>
+<span class="class-name"><i class="timetable-mark-red"></i>Strength basics</span>
+<span class="class-info class-coach">Marko Petrovski</span>
+<span class="class-info class-length">60 MIN</span>
 </div>
-        <div class="p-tt-row" data-day="4" hidden>
-<span class="timetable-label-2">18:30</span>
-<span class="timetable-label-3"><i class="timetable-mark-green"></i>Conditioning</span>
-<span class="p-tt-meta timetable-label-4">Elena Jovanovska</span>
-<span class="p-tt-meta timetable-label-5">45 MIN</span>
+        <div class="class-row" data-day="4" hidden>
+<span class="class-time">18:30</span>
+<span class="class-name"><i class="timetable-mark-green"></i>Conditioning</span>
+<span class="class-info class-coach">Elena Jovanovska</span>
+<span class="class-info class-length">45 MIN</span>
 </div>
-        <div class="p-tt-row" data-day="5" hidden>
-<span class="timetable-label-2">10:00</span>
-<span class="timetable-label-3"><i class="timetable-mark-green"></i>Saturday open session</span>
-<span class="p-tt-meta timetable-label-4">Whole team</span>
-<span class="p-tt-meta timetable-label-5">90 MIN</span>
+        <div class="class-row" data-day="5" hidden>
+<span class="class-time">10:00</span>
+<span class="class-name"><i class="timetable-mark-green"></i>Saturday open session</span>
+<span class="class-info class-coach">Whole team</span>
+<span class="class-info class-length">90 MIN</span>
 </div>
-        <div class="p-tt-row" data-day="6" hidden>
-<span class="timetable-label-2">10:00</span>
-<span class="timetable-label-3"><i class="timetable-mark-blue"></i>Mobility</span>
-<span class="p-tt-meta timetable-label-4">Ana Stojanovska</span>
-<span class="p-tt-meta timetable-label-5">45 MIN</span>
+        <div class="class-row" data-day="6" hidden>
+<span class="class-time">10:00</span>
+<span class="class-name"><i class="timetable-mark-blue"></i>Mobility</span>
+<span class="class-info class-coach">Ana Stojanovska</span>
+<span class="class-info class-length">45 MIN</span>
 </div>
       </div>
       <p class="timetable-text"></p>
     </div>
   </section>
-  <div class="timetable-box-5">
+  <div class="blog-strip-box">
 
     <section class="gallery-strip-section" id="blog">
-      <div class="plans-box-2">
+      <div class="section-top">
         <h2 class="blog-heading">from the blog</h2>
-        <a class="blog-link" href="blog.html">ALL POSTS →</a>
+        <a class="all-posts-link" href="blog.html">ALL POSTS →</a>
       </div>
       <div class="blog-box">
-        <a class="p-hb blog-link-2" href="squat-depth.html">
-          <span class="p-hb-img">
+        <a class="home-post" href="squat-depth.html">
+          <span class="home-post-image">
             <img src="../images/squat-rack.jpg" alt="">
           </span>
-          <span class="blog-label">
+          <span class="home-post-meta">
             <span class="blog-label-red"></span>
             STRENGTH · 28.09.2026
           </span>
-          <span class="p-hb-t blog-label-2">Squat depth, explained by our coaches</span>
+          <span class="home-post-title">Squat depth, explained by our coaches</span>
         </a>
-        <a class="p-hb blog-link-2" href="blog.html">
-          <span class="p-hb-img">
+        <a class="home-post" href="sauna-after-lifting.html">
+          <span class="home-post-image">
             <img src="../images/sauna.jpg" alt="">
           </span>
-          <span class="blog-label">
+          <span class="home-post-meta">
             <span class="blog-label-blue"></span>
             RECOVERY · 15.09.2026
           </span>
-          <span class="p-hb-t blog-label-2">Sauna after lifting: how long and how hot</span>
+          <span class="home-post-title">Sauna after lifting: how long and how hot</span>
         </a>
-        <a class="p-hb blog-link-2" href="blog.html">
-          <span class="p-hb-img">
+        <a class="home-post" href="smoothie-bar-orders.html">
+          <span class="home-post-image">
             <img src="../images/smoothie-counter.jpg" alt="">
           </span>
-          <span class="blog-label">
+          <span class="home-post-meta">
             <span class="blog-label-yellow"></span>
             NUTRITION · 02.09.2026
           </span>
-          <span class="p-hb-t blog-label-2">Five post-workout orders from the smoothie bar</span>
+          <span class="home-post-title">Five post-workout orders from the smoothie bar</span>
         </a>
       </div>
     </section>
   </div>
 
   <section class="beginners-section-green">
-    <div class="beginners-box">
-      <div class="beginners-box-2">
-        <div class="beginners-box-3">BEGINNERS</div>
+    <div class="beginners-inner">
+      <div class="beginners-text-box">
+        <div class="beginners-small-title">BEGINNERS</div>
         <h2 class="beginners-heading">Everyone starts with the 10s</h2>
         <p class="beginners-text">The lightest bumper plate is where every lifter begins. Come in any day and ask at the front desk for a free intro session: a coach will show you around and set up your first month.</p>
-        <div class="beginners-box-4">
-          <a class="p-pill beginners-link" href="https://maps.google.com/?q=ul.+Makedonija+18,+Skopje">Get directions</a>
+        <div class="beginners-buttons">
+          <a class="pill-button beginners-link" href="https://maps.google.com/?q=ul.+Makedonija+18,+Skopje">Get directions</a>
         </div>
       </div>
-      <div class="beginners-box-5">
+      <div class="beginners-photo-box">
         <img class="beginners-photo" src="../images/bench-press-green.jpg" alt="Bench press with green 10 kg bumper plates">
       </div>
     </div>
   </section>
 
-  <footer class="footer-footer">
-    <div class="footer-box">
-      <div class="footer-box-red"></div>
-      <div class="footer-box-blue"></div>
-      <div class="footer-box-yellow"></div>
-      <div class="footer-box-green"></div>
+  <footer class="site-footer">
+    <div class="footer-stripes">
+      <div class="footer-stripe-red"></div>
+      <div class="footer-stripe-blue"></div>
+      <div class="footer-stripe-yellow"></div>
+      <div class="footer-stripe-green"></div>
     </div>
-    <div class="footer-box-2">
-      <div class="footer-box-3">
-        <div><div class="footer-box-4">WHERE</div>ul. Makedonija 18, 1000 Skopje<br><a class="footer-link-yellow" href="https://maps.google.com/?q=ul.+Makedonija+18,+Skopje">Get directions</a></div>
-        <div><div class="footer-box-4">WHEN</div><span class="footer-label">Mon–Fri 06:00–23:00<br>Sat 08:00–21:00<br>Sun 09:00–18:00</span></div>
-        <div><div class="footer-box-4">TALK TO US</div>+389 70 312 458<br>hello@ironforge.mk</div>
+    <div class="footer-inner">
+      <div class="footer-info">
+        <div><div class="small-caps footer-title">WHERE</div>ul. Makedonija 18, 1000 Skopje<br><a class="footer-link-yellow" href="https://maps.google.com/?q=ul.+Makedonija+18,+Skopje">Get directions</a></div>
+        <div><div class="small-caps footer-title">WHEN</div><span class="footer-label">Mon–Fri 06:00–23:00<br>Sat 08:00–21:00<br>Sun 09:00–18:00</span></div>
+        <div><div class="small-caps footer-title">TALK TO US</div>+389 70 312 458<br>hello@ironforge.mk</div>
       </div>
-      <div class="footer-box-5">
-        <div class="footer-box-6">
+      <div class="footer-links">
+        <div class="footer-link-group">
           <a class="footer-link" href="index.html">Home</a>
           <a class="footer-link" href="amenities.html">Amenities</a>
           <a class="footer-link" href="team.html">Team</a>
@@ -461,31 +472,32 @@
           <a class="footer-link" href="blog.html">Blog</a>
           <a class="footer-link" href="contact.html">Contact</a>
         </div>
-        <div class="footer-box-6">
-          <a class="footer-link-2" href="privacy.html">Privacy &amp; cookies</a>
-          <a class="footer-link-2" href="privacy.html">Terms</a>
+        <div class="footer-link-group">
+          <a class="footer-link-grey" href="privacy.html">Privacy &amp; cookies</a>
+          <a class="footer-link-grey" href="privacy.html">Terms</a>
         </div>
       </div>
-      <div class="footer-box-7" aria-hidden="true">iron forge</div>
-      <div class="footer-box-8">
+      <div class="footer-big-name" aria-hidden="true">iron forge</div>
+      <div class="footer-copyright">
         <span>© 2026 IRON FORGE SKOPJE</span>
         <span>INSTAGRAM · FACEBOOK · TIKTOK</span>
       </div>
     </div>
   </footer>
 
-  <div class="cookies-box" hidden role="dialog" aria-label="Cookie preferences">
-    <div class="cookies-box-2">
-      <svg aria-hidden="true" width="22" height="22" viewBox="0 0 22 22"><circle cx="11" cy="11" r="10" fill="#F2C318"></circle><circle cx="11" cy="11" r="3.5" fill="#FFFFFF"></circle></svg>
+  <div class="cookies-banner" id="cookie-banner" hidden role="dialog" aria-label="Cookie preferences">
+    <div class="cookies-title">
+      <span class="cookie-plate" aria-hidden="true"><span class="cookie-dot"></span></span>
       cookies, lightly loaded
     </div>
-    <p class="cookies-text">Essential cookies keep the site working. Optional ones help us count visits. <a class="cookies-link" href="privacy.html">Cookie policy</a></p>
-    <div class="cookies-box-3">
-      <button type="button" class="p-pill cookies-button" id="accept-all">Accept all</button>
-      <button type="button" class="p-pill cookies-button-2" id="accept-essential">Essential only</button>
+    <p class="cookies-text">We only save your answer to this message. No tracking or advertising cookies. <a class="cookies-link" href="privacy.html">Cookie policy</a></p>
+    <div class="wrap-row">
+      <button type="button" class="pill-button cookies-button" id="cookie-ok">OK</button>
     </div>
   </div>
 </div>
+<script src="../js/menu.js"></script>
+<script src="../js/cookies.js"></script>
 <script src="../js/home.js"></script>
 </body>
 </html>

@@ -1,5 +1,5 @@
-let bar = document.getElementById("hero-bar");
-let scrollCue = document.getElementById("scroll-cue");
+let bar = document.getElementById("big-barbell");
+let scrollHint = document.getElementById("scroll");
 
 function movePieces(pieces, direction, progress) {
   for (let i = 0; i < pieces.length; i++) {
@@ -36,8 +36,8 @@ function unloadBar() {
   let scrolled = window.scrollY;
   let screenHeight = window.innerHeight;
 
-  let cueOpacity = 1 - scrolled / (screenHeight * 0.45);
-  scrollCue.style.opacity = Math.max(0, cueOpacity);
+  let scrollOpacity = 1 - scrolled / (screenHeight * 0.45);
+  scrollHint.style.opacity = Math.max(0, scrollOpacity);
 
   let reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
@@ -49,8 +49,8 @@ function unloadBar() {
     progress = 0;
   }
 
-  let leftPieces = bar.querySelectorAll(".p-clip-l, .p-load-l");
-  let rightPieces = bar.querySelectorAll(".p-load-r, .p-clip-r");
+  let leftPieces = bar.querySelectorAll(".clip-left, .plate-left");
+  let rightPieces = bar.querySelectorAll(".plate-right, .clip-right");
   movePieces(leftPieces, -1, progress);
   movePieces(rightPieces, 1, progress);
 }
@@ -59,8 +59,8 @@ window.addEventListener("scroll", unloadBar);
 window.addEventListener("resize", unloadBar);
 unloadBar();
 
-let dayButtons = document.querySelectorAll(".p-day");
-let classRows = document.querySelectorAll(".p-tt-row");
+let dayButtons = document.querySelectorAll(".day-tab");
+let classRows = document.querySelectorAll(".class-row");
 
 let today = new Date().getDay() - 1;
 if (today === -1) {
@@ -70,10 +70,10 @@ if (today === -1) {
 function showDay(day) {
   for (let i = 0; i < dayButtons.length; i++) {
     if (i === day) {
-      dayButtons[i].classList.add("on");
+      dayButtons[i].classList.add("active");
       dayButtons[i].setAttribute("aria-selected", "true");
     } else {
-      dayButtons[i].classList.remove("on");
+      dayButtons[i].classList.remove("active");
       dayButtons[i].setAttribute("aria-selected", "false");
     }
   }
@@ -90,7 +90,7 @@ for (let i = 0; i < dayButtons.length; i++) {
   });
 }
 
-let todayMark = document.querySelector(".p-day-dot");
+let todayMark = document.querySelector(".today-mark");
 dayButtons[today].appendChild(todayMark);
 
 showDay(today);
@@ -104,21 +104,3 @@ if (today === 6) {
   hours = "09:00–18:00";
 }
 todayHours.textContent = todayHours.dataset.label + " " + hours;
-
-let banner = document.querySelector("[role='dialog']");
-let acceptAllButton = document.getElementById("accept-all");
-let essentialButton = document.getElementById("accept-essential");
-
-if (localStorage.getItem("if-cookie") === null) {
-  banner.hidden = false;
-}
-
-acceptAllButton.addEventListener("click", function () {
-  localStorage.setItem("if-cookie", "all");
-  banner.hidden = true;
-});
-
-essentialButton.addEventListener("click", function () {
-  localStorage.setItem("if-cookie", "essential");
-  banner.hidden = true;
-});

@@ -4,6 +4,8 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Iron Forge — Блог</title>
+<meta name="description" content="Совети за тренинг и вести од тренерите на Iron Forge: сила, опоравување, исхрана и заедница.">
+<link rel="icon" href="../images/favicon.png" type="image/png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&amp;family=Geist+Mono:wght@400;500;600&amp;display=swap">
@@ -12,191 +14,200 @@
 <link rel="stylesheet" href="../css/shared.css">
 </head>
 <body>
-<div class="p-grade page-box">
+<div class="site page">
 
-  <header class="header-header">
-    <nav class="p-nav header-menu" aria-label="Главно мени">
-      <a class="u-blue" href="amenities.html">Содржини</a>
-      <a class="u-green" href="team.html">Тим</a>
-      <a class="u-yellow" href="gallery.html">Галерија</a>
+  <header class="site-header">
+    <nav class="menu header-menu" aria-label="Главно мени">
+      <a class="underline-blue" href="amenities.html">Содржини</a>
+      <a class="underline-green" href="team.html">Тим</a>
+      <a class="underline-yellow" href="gallery.html">Галерија</a>
     </nav>
     <a class="header-link" href="index.html" aria-label="Iron Forge почетна">
-      <svg aria-hidden="true" width="40" height="40" viewBox="0 0 40 40"><circle cx="20" cy="20" r="19" fill="#151615"></circle><circle cx="20" cy="20" r="15.5" fill="none" stroke="#F1F0EB" stroke-opacity=".28" stroke-width="1"></circle><circle cx="20" cy="20" r="8" fill="none" stroke="#F1F0EB" stroke-opacity=".7" stroke-width="1.6"></circle><circle cx="20" cy="20" r="4" fill="#F1F0EB"></circle></svg>
+      <span class="logo-plate" aria-hidden="true"><span class="logo-outer-ring"><span class="logo-inner-ring"><span class="logo-dot"></span></span></span></span>
       <span class="header-label">iron<br>forge</span>
     </a>
-    <div class="p-nav header-box">
-      <a class="u-red" href="about.html">За нас</a>
-      <a class="u-yellow act" href="blog.html" aria-current="page">Блог</a>
-      <a class="u-red" href="contact.html">Контакт</a>
-      <div class="header-box-2" role="group" aria-label="Јазик">
-        <a class="p-lng on" href="blog.html" lang="mk" aria-current="true">MK</a>
-        <a class="p-lng" href="../en/blog.html" lang="en">EN</a>
+    <div class="menu header-right">
+      <a class="underline-red" href="about.html">За нас</a>
+      <a class="underline-yellow current" href="blog.html" aria-current="page">Блог</a>
+      <a class="underline-red" href="contact.html">Контакт</a>
+      <div class="language-links" role="group" aria-label="Јазик">
+        <a class="language-link active" href="blog.html" lang="mk" aria-current="true">MK</a>
+        <a class="language-link" href="../en/blog.html" lang="en">EN</a>
       </div>
     </div>
+    <button type="button" class="menu-button" id="menu-button" aria-expanded="false" aria-controls="phone-menu" aria-label="Мени">☰</button>
+    <nav class="phone-menu" id="phone-menu" aria-label="Мени">
+      <a class="underline-blue" href="amenities.html">Содржини</a>
+      <a class="underline-green" href="team.html">Тим</a>
+      <a class="underline-yellow" href="gallery.html">Галерија</a>
+      <a class="underline-red" href="about.html">За нас</a>
+      <a class="underline-yellow current" href="blog.html" aria-current="page">Блог</a>
+      <a class="underline-red" href="contact.html">Контакт</a>
+    </nav>
   </header>
-  <div class="hero-box-5">
+  <div class="page-width">
 
-    <section class="page-hero-section-4">
-      <span class="p-mono page-hero-label">Блог и вести · пишуваат нашите тренери</span>
-      <h1 class="page-hero-title">од <span class="hero-label-red-2">салата</span></h1>
+    <section class="page-hero">
+      <span class="small-caps text-grey">Блог и вести · пишуваат нашите тренери</span>
+      <h1 class="page-hero-title">од <span class="text-red">салата</span></h1>
     </section>
 
-    <a class="p-lt" href="squat-depth.html" aria-label="Прочитај ја најновата објава: Длабочина на чучњот, објаснета од нашите тренери">
-      <span class="p-lt-media">
-        <span class="p-lt-shadow" aria-hidden="true"></span>
-        <span class="p-lt-photo">
+    <a class="latest-post" href="squat-depth.html" aria-label="Прочитај ја најновата објава: Длабочина на чучњот, објаснета од нашите тренери">
+      <span class="latest-post-media">
+        <span class="latest-post-shadow" aria-hidden="true"></span>
+        <span class="latest-post-photo">
           <img src="../images/squat-rack.jpg" alt="Чучањ со шипка во пауер рек">
         </span>
       </span>
-      <span class="p-lt-text">
-        <span class="p-lt-meta">
-          <span class="p-lt-tag">
+      <span class="latest-post-content">
+        <span class="latest-post-meta">
+          <span class="latest-post-tag">
             <i></i>
             Најново · Сила
           </span>
         </span>
-        <span class="p-lt-h">Длабочина на чучњот, објаснета од нашите <span class="hero-label-red-2">тренери</span></span>
-        <span class="p-lt-p">Колку ниско да одиш, зошто ти се креваат петиците и три вежби што го решаваат тоа за една недела.</span>
-        <span class="p-lt-by">
+        <span class="latest-post-title">Длабочина на чучњот, објаснета од нашите <span class="text-red">тренери</span></span>
+        <span class="latest-post-intro">Колку ниско да одиш, зошто ти се креваат петиците и три вежби што го решаваат тоа за една недела.</span>
+        <span class="latest-post-author">
           <img src="../images/coach-marko.webp" alt="">
           <span>
-            <b class="latest-post-bold">Marko Petrovski</b>
+            <b class="latest-post-bold">Марко Петровски</b>
           </span>
-          <span class="p-lt-read">Читање · 6 мин</span>
+          <span class="latest-post-read">Читање · 6 мин</span>
         </span>
       </span>
     </a>
 
-    <div class="filters-box">
+    <div class="filters-row">
       <h2 class="filters-heading">Сите објави</h2>
-      <div class="filters-box-2" role="toolbar" aria-label="Филтрирај објави">
-        <button type="button" data-filter="all" class="p-filter on" aria-pressed="true">
+      <div class="filter-buttons" role="toolbar" aria-label="Филтрирај објави">
+        <button type="button" data-filter="all" class="filter-button active" aria-pressed="true">
           <i class="filters-mark"></i>
           Сите
         </button>
-        <button type="button" data-filter="strength" class="p-filter" aria-pressed="false">
+        <button type="button" data-filter="strength" class="filter-button" aria-pressed="false">
           <i class="zones-sticky-photo-mark-red"></i>
           Сила
         </button>
-        <button type="button" data-filter="recovery" class="p-filter" aria-pressed="false">
+        <button type="button" data-filter="recovery" class="filter-button" aria-pressed="false">
           <i class="zones-sticky-photo-mark-blue"></i>
           Опоравување
         </button>
-        <button type="button" data-filter="nutrition" class="p-filter" aria-pressed="false">
+        <button type="button" data-filter="nutrition" class="filter-button" aria-pressed="false">
           <i class="zones-sticky-photo-mark-yellow"></i>
           Исхрана
         </button>
-        <button type="button" data-filter="community" class="p-filter" aria-pressed="false">
+        <button type="button" data-filter="community" class="filter-button" aria-pressed="false">
           <i class="zones-sticky-photo-mark-green"></i>
           Заедница
         </button>
       </div>
     </div>
 
-    <section aria-label="Објави" class="p-posts">
-      <a class="p-post" href="squat-depth.html" data-k="recovery">
-        <span class="p-post-img">
+    <section aria-label="Објави" class="post-grid">
+      <a class="post-card" href="sauna-after-lifting.html" data-topic="recovery">
+        <span class="post-card-image">
           <img src="../images/sauna.jpg" alt="">
         </span>
-        <span class="posts-label">
-          <span class="posts-label-2">
+        <span class="post-card-top">
+          <span class="post-card-topic">
             <i class="posts-mark-blue"></i>
             ОПОРАВУВАЊЕ
           </span>
-          <span class="page-hero-label">4 МИН</span>
+          <span class="text-grey">4 МИН</span>
         </span>
-        <span class="p-post-t">Сауна по тренинг: колку долго и колку жешко</span>
+        <span class="post-card-title">Сауна по тренинг: колку долго и колку жешко</span>
       </a>
-      <a class="p-post" href="squat-depth.html" data-k="nutrition">
-        <span class="p-post-img">
+      <a class="post-card" href="smoothie-bar-orders.html" data-topic="nutrition">
+        <span class="post-card-image">
           <img src="../images/smoothie-counter.jpg" alt="">
         </span>
-        <span class="posts-label">
-          <span class="posts-label-2">
+        <span class="post-card-top">
+          <span class="post-card-topic">
             <i class="posts-mark-yellow"></i>
             ИСХРАНА
           </span>
-          <span class="page-hero-label">3 МИН</span>
+          <span class="text-grey">3 МИН</span>
         </span>
-        <span class="p-post-t">Пет нарачки по тренинг од смути барот</span>
+        <span class="post-card-title">Пет нарачки по тренинг од смути барот</span>
       </a>
-      <a class="p-post" href="squat-depth.html" data-k="community">
-        <span class="p-post-img">
+      <a class="post-card" href="first-four-weeks.html" data-topic="community">
+        <span class="post-card-image">
           <img src="../images/coached-hip-thrust.jpg" alt="">
         </span>
-        <span class="posts-label">
-          <span class="posts-label-2">
+        <span class="post-card-top">
+          <span class="post-card-topic">
             <i class="posts-mark-green"></i>
             ПОЧЕТНИЦИ
           </span>
-          <span class="page-hero-label">5 МИН</span>
+          <span class="text-grey">5 МИН</span>
         </span>
-        <span class="p-post-t">Твоите први четири недели: едноставен план за нови членови</span>
+        <span class="post-card-title">Твоите први четири недели: едноставен план за нови членови</span>
       </a>
-      <a class="p-post" href="squat-depth.html" data-k="strength">
-        <span class="p-post-img">
-          <img src="../images/deadlift-setup.jpg" alt="">
+      <a class="post-card" href="new-platforms.html" data-topic="strength">
+        <span class="post-card-image">
+          <img src="../images/turf-sprint-lane.jpg" alt="">
         </span>
-        <span class="posts-label">
-          <span class="posts-label-2">
+        <span class="post-card-top">
+          <span class="post-card-topic">
             <i class="posts-mark-red"></i>
             ВЕСТИ
           </span>
-          <span class="page-hero-label">2 МИН</span>
+          <span class="text-grey">2 МИН</span>
         </span>
-        <span class="p-post-t">Отворени се две нови платформи и тревна патека од 20 м</span>
+        <span class="post-card-title">Отворени се две нови платформи и тревна патека од 20 м</span>
       </a>
-      <a class="p-post" href="squat-depth.html" data-k="recovery">
-        <span class="p-post-img">
-          <img src="../images/dumbbells-back.jpg" alt="">
+      <a class="post-card" href="desk-warm-up.html" data-topic="recovery">
+        <span class="post-card-image">
+          <img src="../images/warm-up-stretch.jpg" alt="">
         </span>
-        <span class="posts-label">
-          <span class="posts-label-2">
+        <span class="post-card-top">
+          <span class="post-card-topic">
             <i class="posts-mark-blue"></i>
             ОПОРАВУВАЊЕ
           </span>
-          <span class="page-hero-label">4 МИН</span>
+          <span class="text-grey">4 МИН</span>
         </span>
-        <span class="p-post-t">Загревање од 10 минути за луѓе што седат цел ден</span>
+        <span class="post-card-title">Загревање од 10 минути за луѓе што седат цел ден</span>
       </a>
-      <a class="p-post" href="squat-depth.html" data-k="community">
-        <span class="p-post-img">
+      <a class="post-card" href="saturday-open-session.html" data-topic="community">
+        <span class="post-card-image">
           <img src="../images/group-flex.jpg" alt="">
         </span>
-        <span class="posts-label">
-          <span class="posts-label-2">
+        <span class="post-card-top">
+          <span class="post-card-topic">
             <i class="posts-mark-green"></i>
             ЗАЕДНИЦА
           </span>
-          <span class="page-hero-label">3 МИН</span>
+          <span class="text-grey">3 МИН</span>
         </span>
-        <span class="p-post-t">Саботен отворен тренинг: што да очекуваш</span>
+        <span class="post-card-title">Саботен отворен тренинг: што да очекуваш</span>
       </a>
     </section>
   </div>
 
-  <section class="closing-band-section-blue-2">
-    <div class="closing-band-box-2">
+  <section class="closing-band-section-blue">
+    <div class="closing-band-inner">
       <h2 class="closing-band-heading">прашања? прашај тренер.</h2>
-      <a class="p-pill closing-band-link-blue" href="contact.html">Прашај нè</a>
+      <a class="pill-button closing-band-link-blue" href="contact.html">Прашај нè</a>
     </div>
   </section>
 
-  <footer class="footer-footer">
-    <div class="footer-box">
-      <div class="footer-box-red"></div>
-      <div class="footer-box-blue"></div>
-      <div class="footer-box-yellow"></div>
-      <div class="footer-box-green"></div>
+  <footer class="site-footer">
+    <div class="footer-stripes">
+      <div class="footer-stripe-red"></div>
+      <div class="footer-stripe-blue"></div>
+      <div class="footer-stripe-yellow"></div>
+      <div class="footer-stripe-green"></div>
     </div>
-    <div class="footer-box-2">
-      <div class="footer-box-3">
-        <div><div class="p-mono footer-box-9">Каде</div>ул. Македонија 18, 1000 Скопје<br><a class="footer-link-yellow" href="https://maps.google.com/?q=ul.+Makedonija+18,+Skopje">Како до нас</a></div>
-        <div><div class="p-mono footer-box-9">Кога</div><span class="footer-label">Пон–Пет 06:00–23:00<br>Саб 08:00–21:00<br>Нед 09:00–18:00</span></div>
-        <div><div class="p-mono footer-box-9">Контакт</div>+389 70 312 458<br>hello@ironforge.mk</div>
+    <div class="footer-inner">
+      <div class="footer-info">
+        <div><div class="small-caps footer-title">Каде</div>ул. Македонија 18, 1000 Скопје<br><a class="footer-link-yellow" href="https://maps.google.com/?q=ul.+Makedonija+18,+Skopje">Како до нас</a></div>
+        <div><div class="small-caps footer-title">Кога</div><span class="footer-label">Пон–Пет 06:00–23:00<br>Саб 08:00–21:00<br>Нед 09:00–18:00</span></div>
+        <div><div class="small-caps footer-title">Контакт</div>+389 70 312 458<br>hello@ironforge.mk</div>
       </div>
-      <div class="footer-box-5">
-        <div class="footer-box-6">
+      <div class="footer-links">
+        <div class="footer-link-group">
           <a class="footer-link" href="index.html">Почетна</a>
           <a class="footer-link" href="amenities.html">Содржини</a>
           <a class="footer-link" href="team.html">Тим</a>
@@ -205,19 +216,31 @@
           <a class="footer-link" href="blog.html">Блог</a>
           <a class="footer-link" href="contact.html">Контакт</a>
         </div>
-        <div class="footer-box-6">
-          <a class="footer-link-2" href="privacy.html">Приватност и колачиња</a>
-          <a class="footer-link-2" href="privacy.html">Услови</a>
+        <div class="footer-link-group">
+          <a class="footer-link-grey" href="privacy.html">Приватност и колачиња</a>
+          <a class="footer-link-grey" href="privacy.html">Услови</a>
         </div>
       </div>
-      <div class="footer-box-7" aria-hidden="true">iron forge</div>
-      <div class="footer-box-8">
+      <div class="footer-big-name" aria-hidden="true">iron forge</div>
+      <div class="footer-copyright">
         <span>© 2026 IRON FORGE СКОПЈЕ</span>
         <span>INSTAGRAM · FACEBOOK · TIKTOK</span>
       </div>
     </div>
   </footer>
+  <div class="cookies-banner" id="cookie-banner" hidden role="dialog" aria-label="Cookie preferences">
+    <div class="cookies-title">
+      <span class="cookie-plate" aria-hidden="true"><span class="cookie-dot"></span></span>
+      колачиња, лесно натоварени
+    </div>
+    <p class="cookies-text">Го зачувуваме само твојот одговор на оваа порака. Без колачиња за следење или реклами. <a class="cookies-link" href="privacy.html">Политика за колачиња</a></p>
+    <div class="wrap-row">
+      <button type="button" class="pill-button cookies-button" id="cookie-ok">Во ред</button>
+    </div>
+  </div>
 </div>
+<script src="../js/menu.js"></script>
+<script src="../js/cookies.js"></script>
 <script src="../js/blog.js"></script>
 </body>
 </html>

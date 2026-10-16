@@ -4,6 +4,8 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Iron Forge — Тим</title>
+<meta name="description" content="Запознај ги четирите тренери на Iron Forge Скопје и избери пакет за персонален тренинг: поединечен, пакет од 10 или од 25.">
+<link rel="icon" href="../images/favicon.png" type="image/png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&amp;family=Geist+Mono:wght@400;500;600&amp;display=swap">
@@ -12,114 +14,123 @@
 <link rel="stylesheet" href="../css/shared.css">
 </head>
 <body>
-<div class="p-grade page-box">
+<div class="site page">
 
-  <header class="header-header">
-    <nav class="p-nav header-menu" aria-label="Главно мени">
-      <a class="u-blue" href="amenities.html">Содржини</a>
-      <a class="u-green act" href="team.html" aria-current="page">Тим</a>
-      <a class="u-yellow" href="gallery.html">Галерија</a>
+  <header class="site-header">
+    <nav class="menu header-menu" aria-label="Главно мени">
+      <a class="underline-blue" href="amenities.html">Содржини</a>
+      <a class="underline-green current" href="team.html" aria-current="page">Тим</a>
+      <a class="underline-yellow" href="gallery.html">Галерија</a>
     </nav>
     <a class="header-link" href="index.html" aria-label="Iron Forge почетна">
-      <svg aria-hidden="true" width="40" height="40" viewBox="0 0 40 40"><circle cx="20" cy="20" r="19" fill="#151615"></circle><circle cx="20" cy="20" r="15.5" fill="none" stroke="#F1F0EB" stroke-opacity=".28" stroke-width="1"></circle><circle cx="20" cy="20" r="8" fill="none" stroke="#F1F0EB" stroke-opacity=".7" stroke-width="1.6"></circle><circle cx="20" cy="20" r="4" fill="#F1F0EB"></circle></svg>
+      <span class="logo-plate" aria-hidden="true"><span class="logo-outer-ring"><span class="logo-inner-ring"><span class="logo-dot"></span></span></span></span>
       <span class="header-label">iron<br>forge</span>
     </a>
-    <div class="p-nav header-box">
-      <a class="u-red" href="about.html">За нас</a>
-      <a class="u-yellow" href="blog.html">Блог</a>
-      <a class="u-red" href="contact.html">Контакт</a>
-      <div class="header-box-2" role="group" aria-label="Јазик">
-        <a class="p-lng on" href="team.html" lang="mk" aria-current="true">MK</a>
-        <a class="p-lng" href="../en/team.html" lang="en">EN</a>
+    <div class="menu header-right">
+      <a class="underline-red" href="about.html">За нас</a>
+      <a class="underline-yellow" href="blog.html">Блог</a>
+      <a class="underline-red" href="contact.html">Контакт</a>
+      <div class="language-links" role="group" aria-label="Јазик">
+        <a class="language-link active" href="team.html" lang="mk" aria-current="true">MK</a>
+        <a class="language-link" href="../en/team.html" lang="en">EN</a>
       </div>
     </div>
+    <button type="button" class="menu-button" id="menu-button" aria-expanded="false" aria-controls="phone-menu" aria-label="Мени">☰</button>
+    <nav class="phone-menu" id="phone-menu" aria-label="Мени">
+      <a class="underline-blue" href="amenities.html">Содржини</a>
+      <a class="underline-green current" href="team.html" aria-current="page">Тим</a>
+      <a class="underline-yellow" href="gallery.html">Галерија</a>
+      <a class="underline-red" href="about.html">За нас</a>
+      <a class="underline-yellow" href="blog.html">Блог</a>
+      <a class="underline-red" href="contact.html">Контакт</a>
+    </nav>
   </header>
 
-  <div class="hero-box-5">
+  <div class="page-width">
 
-    <section class="page-hero-section-2">
-      <div class="page-hero-box">
-        <span class="p-mono page-hero-label">Тим · тренери во салата секој ден</span>
-        <h1 class="page-hero-title"><span class="page-hero-label-green">тимот</span></h1>
+    <section class="page-hero">
+      <div class="page-hero-text">
+        <span class="small-caps text-grey">Тим · тренери во салата секој ден</span>
+        <h1 class="page-hero-title"><span class="text-green">тимот</span></h1>
       </div>
     </section>
   </div>
-  <div class="page-hero-box-2">
-    <section class="p-roster" aria-label="Тренери">
-      <div class="p-co z-red" tabindex="0" aria-label="Marko Petrovski, главен тренер · сила">
-        <img class="page-hero-photo" src="../images/coach-marko.webp" alt="Портрет на главниот тренер Marko Petrovski со прекрстени раце пред рекот со дамбели">
-        <span class="p-co-v" aria-hidden="true">Marko</span>
-        <span class="p-co-x">
-          <span class="p-co-role">Главен тренер · сила</span>
-          <span class="p-co-name">Marko<br>Petrovski</span>
+  <div class="coaches-box">
+    <section class="coach-row" aria-label="Тренери">
+      <div class="coach-card coach-red" tabindex="0" aria-label="Марко Петровски, главен тренер · сила">
+        <img class="coach-photo" src="../images/coach-marko.webp" alt="Портрет на главниот тренер Марко Петровски со прекрстени раце пред рекот со дамбели">
+        <span class="coach-first-name" aria-hidden="true">Марко</span>
+        <span class="coach-details">
+          <span class="coach-role">Главен тренер · сила</span>
+          <span class="coach-name">Марко<br>Петровски</span>
         </span>
       </div>
-      <div class="p-co z-blue" tabindex="0" aria-label="Ana Stojanovska, мобилност и опоравување">
-        <img class="page-hero-photo" src="../images/coach-ana.jpg" alt="Портрет на тренерката Ana Stojanovska, насмеана, со прекрстени раце">
-        <span class="p-co-v" aria-hidden="true">Ana</span>
-        <span class="p-co-x">
-          <span class="p-co-role">Мобилност и опоравување</span>
-          <span class="p-co-name">Ana<br>Stojanovska</span>
+      <div class="coach-card coach-blue" tabindex="0" aria-label="Ана Стојановска, мобилност и опоравување">
+        <img class="coach-photo" src="../images/coach-ana.jpg" alt="Портрет на тренерката Ана Стојановска, насмеана, со прекрстени раце">
+        <span class="coach-first-name" aria-hidden="true">Ана</span>
+        <span class="coach-details">
+          <span class="coach-role">Мобилност и опоравување</span>
+          <span class="coach-name">Ана<br>Стојановска</span>
         </span>
       </div>
-      <div class="p-co z-green" tabindex="0" aria-label="Aleksandar Bozhinovski, персонален тренер · почетници">
-        <img class="page-hero-photo-2" src="../images/coach-aleksandar.webp" alt="Портрет на персоналниот тренер Aleksandar Bozhinovski со прекрстени раце во салата">
-        <span class="p-co-v" aria-hidden="true">Aleksandar</span>
-        <span class="p-co-x">
-          <span class="p-co-role">Персонален тренер · почетници</span>
-          <span class="p-co-name">Aleksandar<br>Bozhinovski</span>
+      <div class="coach-card coach-green" tabindex="0" aria-label="Александар Божиновски, персонален тренер · почетници">
+        <img class="coach-photo-higher" src="../images/coach-aleksandar.webp" alt="Портрет на персоналниот тренер Александар Божиновски со прекрстени раце во салата">
+        <span class="coach-first-name" aria-hidden="true">Александар</span>
+        <span class="coach-details">
+          <span class="coach-role">Персонален тренер · почетници</span>
+          <span class="coach-name">Александар<br>Божиновски</span>
         </span>
       </div>
-      <div class="p-co z-yellow" tabindex="0" aria-label="Elena Jovanovska, кондиција · часови">
-        <img class="page-hero-photo" src="../images/coach-elena.webp" alt="Портрет на тренерката Elena Jovanovska, насмеана, со раце на колковите">
-        <span class="p-co-v" aria-hidden="true">Elena</span>
-        <span class="p-co-x">
-          <span class="p-co-role">Кондиција · часови</span>
-          <span class="p-co-name">Elena<br>Jovanovska</span>
+      <div class="coach-card coach-yellow" tabindex="0" aria-label="Елена Јовановска, кондиција · часови">
+        <img class="coach-photo" src="../images/coach-elena.webp" alt="Портрет на тренерката Елена Јовановска, насмеана, со раце на колковите">
+        <span class="coach-first-name" aria-hidden="true">Елена</span>
+        <span class="coach-details">
+          <span class="coach-role">Кондиција · часови</span>
+          <span class="coach-name">Елена<br>Јовановска</span>
         </span>
       </div>
     </section>
   </div>
 
-  <section id="pt" class="p-pt" aria-labelledby="pt-h">
-    <div class="personal-training-load-box">
-      <div class="personal-training-load-box-2">
-        <span class="p-mono personal-training-load-label">Персонален тренинг · 60 мин</span>
-        <h2 class="personal-training-load-heading" id="pt-h">еден <span class="page-hero-label-green">тренер</span>. еден <span class="page-hero-label-green">план</span></h2>
+  <section id="pt" class="training" aria-labelledby="pt-h">
+    <div class="training-inner">
+      <div class="training-title">
+        <span class="small-caps training-small-title">Персонален тренинг · 60 мин</span>
+        <h2 class="training-heading" id="pt-h">еден <span class="text-green">тренер</span>. еден <span class="text-green">план</span></h2>
       </div>
-      <div class="p-load">
-        <div class="p-bar" aria-hidden="true">
-          <span class="p-bar-rod"></span>
-          <span class="p-bar-sleeve"></span>
-          <span class="p-bar-collar"></span>
-          <span data-plan="0" data-j="0" class="p-pl c-y personal-training-load-label-2"></span>
-          <span data-plan="1" data-j="0" class="p-pl c-b on personal-training-load-label-3"></span>
-          <span data-plan="1" data-j="1" class="p-pl c-b on personal-training-load-label-4"></span>
-          <span data-plan="2" data-j="0" class="p-pl c-r personal-training-load-label-5"></span>
-          <span data-plan="2" data-j="1" class="p-pl c-r personal-training-load-label-6"></span>
-          <span data-plan="2" data-j="2" class="p-pl c-r personal-training-load-label-7"></span>
+      <div class="plan-picker">
+        <div class="barbell" aria-hidden="true">
+          <span class="bar-middle"></span>
+          <span class="bar-end"></span>
+          <span class="bar-ring"></span>
+          <span data-plan="0" data-order="0" class="plate plan-yellow yellow-plate"></span>
+          <span data-plan="1" data-order="0" class="plate plan-blue active blue-plate-first"></span>
+          <span data-plan="1" data-order="1" class="plate plan-blue active blue-plate-second"></span>
+          <span data-plan="2" data-order="0" class="plate plan-red red-plate-first"></span>
+          <span data-plan="2" data-order="1" class="plate plan-red red-plate-second"></span>
+          <span data-plan="2" data-order="2" class="plate plan-red red-plate-third"></span>
         </div>
-        <div class="p-load-ui">
-          <div role="radiogroup" aria-label="Избери пакет" class="p-plans">
-            <button type="button" role="radio" data-i="0" data-price="1.200" data-tag="Плаќаш по тренинг" data-desc="Еден тренинг од 60 минути со кој било тренер." aria-checked="false" class="p-plan c-y">
+        <div class="plan-controls">
+          <div role="radiogroup" aria-label="Избери пакет" class="plan-buttons">
+            <button type="button" role="radio" data-price="1.200" data-tag="Плаќаш по тренинг" data-description="Еден тренинг од 60 минути со кој било тренер." aria-checked="false" class="plan-button plan-yellow">
               <i></i>
               Поединечен
             </button>
-            <button type="button" role="radio" data-i="1" data-price="10.000" data-tag="Најбирано · заштедуваш 2.000 ден" data-desc="1.000 ден по тренинг, десет тренинзи што ги користиш во рок од четири месеци." aria-checked="true" class="p-plan c-b on">
+            <button type="button" role="radio" data-price="10.000" data-tag="Најбирано · заштедуваш 2.000 ден" data-description="1.000 ден по тренинг, десет тренинзи што ги користиш во рок од четири месеци." aria-checked="true" class="plan-button plan-blue active">
               <i></i>
               Пакет од 10
             </button>
-            <button type="button" role="radio" data-i="2" data-price="22.500" data-tag="Најисплатливо · заштедуваш 7.500 ден" data-desc="900 ден по тренинг, 25 тренинзи што ги користиш во рок од осум месеци." aria-checked="false" class="p-plan c-r">
+            <button type="button" role="radio" data-price="22.500" data-tag="Најисплатливо · заштедуваш 7.500 ден" data-description="900 ден по тренинг, 25 тренинзи што ги користиш во рок од осум месеци." aria-checked="false" class="plan-button plan-red">
               <i></i>
               Пакет од 25
             </button>
           </div>
-          <div class="p-load-price">
-            <span class="p-load-n">10.000</span>
-            <span class="p-load-u">ден</span>
+          <div class="plan-price-row">
+            <span class="plan-price">10.000</span>
+            <span class="plan-currency">ден</span>
           </div>
-          <div class="p-load-meta">
-            <span class="p-load-tag">Најбирано · заштедуваш 2.000 ден</span>
+          <div class="plan-details">
+            <span class="plan-tag">Најбирано · заштедуваш 2.000 ден</span>
             <span>1.000 ден по тренинг, десет тренинзи што ги користиш во рок од четири месеци.</span>
           </div>
         </div>
@@ -127,39 +138,39 @@
     </div>
   </section>
 
-  <div class="hero-box-5">
+  <div class="page-width">
     <section class="careers-section">
       <div class="careers-box">
-        <span class="p-mono page-hero-label">Кариера</span>
+        <span class="small-caps text-grey">Кариера</span>
         <h2 class="gallery-strip-heading">Сакате да тренирате луѓе во Iron Forge?</h2>
         <p class="careers-text">Бараме тренер за викендите. Испратете кратко CV и кажете ни што би предавале.</p>
       </div>
-      <a class="p-pill careers-link" href="contact.html">Пријави се</a>
+      <a class="pill-button careers-link" href="contact.html">Пријави се</a>
     </section>
   </div>
 
   <section class="closing-band-section-yellow">
-    <div class="closing-band-box-2">
+    <div class="closing-band-inner">
       <h2 class="closing-band-heading">тренирај со тренер.</h2>
-      <a class="p-pill closing-band-link-yellow" href="https://wa.me/38970312458">Пиши ни</a>
+      <a class="pill-button closing-band-link-yellow" href="https://wa.me/38970312458">Пиши ни</a>
     </div>
   </section>
 
-  <footer class="footer-footer">
-    <div class="footer-box">
-      <div class="footer-box-red"></div>
-      <div class="footer-box-blue"></div>
-      <div class="footer-box-yellow"></div>
-      <div class="footer-box-green"></div>
+  <footer class="site-footer">
+    <div class="footer-stripes">
+      <div class="footer-stripe-red"></div>
+      <div class="footer-stripe-blue"></div>
+      <div class="footer-stripe-yellow"></div>
+      <div class="footer-stripe-green"></div>
     </div>
-    <div class="footer-box-2">
-      <div class="footer-box-3">
-        <div><div class="p-mono footer-box-9">Каде</div>ул. Македонија 18, 1000 Скопје<br><a class="footer-link-yellow" href="https://maps.google.com/?q=ul.+Makedonija+18,+Skopje">Како до нас</a></div>
-        <div><div class="p-mono footer-box-9">Кога</div><span class="footer-label">Пон–Пет 06:00–23:00<br>Саб 08:00–21:00<br>Нед 09:00–18:00</span></div>
-        <div><div class="p-mono footer-box-9">Контакт</div>+389 70 312 458<br>hello@ironforge.mk</div>
+    <div class="footer-inner">
+      <div class="footer-info">
+        <div><div class="small-caps footer-title">Каде</div>ул. Македонија 18, 1000 Скопје<br><a class="footer-link-yellow" href="https://maps.google.com/?q=ul.+Makedonija+18,+Skopje">Како до нас</a></div>
+        <div><div class="small-caps footer-title">Кога</div><span class="footer-label">Пон–Пет 06:00–23:00<br>Саб 08:00–21:00<br>Нед 09:00–18:00</span></div>
+        <div><div class="small-caps footer-title">Контакт</div>+389 70 312 458<br>hello@ironforge.mk</div>
       </div>
-      <div class="footer-box-5">
-        <div class="footer-box-6">
+      <div class="footer-links">
+        <div class="footer-link-group">
           <a class="footer-link" href="index.html">Почетна</a>
           <a class="footer-link" href="amenities.html">Содржини</a>
           <a class="footer-link" href="team.html">Тим</a>
@@ -168,19 +179,31 @@
           <a class="footer-link" href="blog.html">Блог</a>
           <a class="footer-link" href="contact.html">Контакт</a>
         </div>
-        <div class="footer-box-6">
-          <a class="footer-link-2" href="privacy.html">Приватност и колачиња</a>
-          <a class="footer-link-2" href="privacy.html">Услови</a>
+        <div class="footer-link-group">
+          <a class="footer-link-grey" href="privacy.html">Приватност и колачиња</a>
+          <a class="footer-link-grey" href="privacy.html">Услови</a>
         </div>
       </div>
-      <div class="footer-box-7" aria-hidden="true">iron forge</div>
-      <div class="footer-box-8">
+      <div class="footer-big-name" aria-hidden="true">iron forge</div>
+      <div class="footer-copyright">
         <span>© 2026 IRON FORGE СКОПЈЕ</span>
         <span>INSTAGRAM · FACEBOOK · TIKTOK</span>
       </div>
     </div>
   </footer>
+  <div class="cookies-banner" id="cookie-banner" hidden role="dialog" aria-label="Cookie preferences">
+    <div class="cookies-title">
+      <span class="cookie-plate" aria-hidden="true"><span class="cookie-dot"></span></span>
+      колачиња, лесно натоварени
+    </div>
+    <p class="cookies-text">Го зачувуваме само твојот одговор на оваа порака. Без колачиња за следење или реклами. <a class="cookies-link" href="privacy.html">Политика за колачиња</a></p>
+    <div class="wrap-row">
+      <button type="button" class="pill-button cookies-button" id="cookie-ok">Во ред</button>
+    </div>
+  </div>
 </div>
+<script src="../js/menu.js"></script>
+<script src="../js/cookies.js"></script>
 <script src="../js/team.js"></script>
 </body>
 </html>

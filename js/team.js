@@ -1,16 +1,16 @@
-let planButtons = document.querySelectorAll(".p-plan");
-let plates = document.querySelectorAll(".p-pl");
-let price = document.querySelector(".p-load-n");
-let tag = document.querySelector(".p-load-tag");
-let description = document.querySelector(".p-load-meta span:last-child");
+let planButtons = document.querySelectorAll(".plan-button");
+let plates = document.querySelectorAll(".plate");
+let price = document.querySelector(".plan-price");
+let tag = document.querySelector(".plan-tag");
+let description = document.querySelector(".plan-details span:last-child");
 
 function choosePlan(plan) {
   for (let i = 0; i < planButtons.length; i++) {
     if (i === plan) {
-      planButtons[i].classList.add("on");
+      planButtons[i].classList.add("active");
       planButtons[i].setAttribute("aria-checked", "true");
     } else {
-      planButtons[i].classList.remove("on");
+      planButtons[i].classList.remove("active");
       planButtons[i].setAttribute("aria-checked", "false");
     }
   }
@@ -18,10 +18,10 @@ function choosePlan(plan) {
   for (let i = 0; i < plates.length; i++) {
     let plate = plates[i];
     if (Number(plate.dataset.plan) === plan) {
-      plate.classList.add("on");
-      plate.style.transitionDelay = (Number(plate.dataset.j) * 0.09) + "s";
+      plate.classList.add("active");
+      plate.style.transitionDelay = (Number(plate.dataset.order) * 0.09) + "s";
     } else {
-      plate.classList.remove("on");
+      plate.classList.remove("active");
       plate.style.transitionDelay = "0s";
     }
   }
@@ -29,7 +29,7 @@ function choosePlan(plan) {
   let button = planButtons[plan];
   price.textContent = button.dataset.price;
   tag.textContent = button.dataset.tag;
-  description.textContent = button.dataset.desc;
+  description.textContent = button.dataset.description;
 }
 
 for (let i = 0; i < planButtons.length; i++) {

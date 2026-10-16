@@ -1,19 +1,19 @@
-let filterButtons = document.querySelectorAll(".p-filter");
-let posts = document.querySelectorAll(".p-post");
+let filterButtons = document.querySelectorAll(".filter-button");
+let posts = document.querySelectorAll(".post-card");
 
 function showTopic(topic) {
   for (let i = 0; i < filterButtons.length; i++) {
     if (filterButtons[i].dataset.filter === topic) {
-      filterButtons[i].classList.add("on");
+      filterButtons[i].classList.add("active");
       filterButtons[i].setAttribute("aria-pressed", "true");
     } else {
-      filterButtons[i].classList.remove("on");
+      filterButtons[i].classList.remove("active");
       filterButtons[i].setAttribute("aria-pressed", "false");
     }
   }
 
   for (let i = 0; i < posts.length; i++) {
-    if (topic === "all" || posts[i].dataset.k === topic) {
+    if (topic === "all" || posts[i].dataset.topic === topic) {
       posts[i].hidden = false;
     } else {
       posts[i].hidden = true;
