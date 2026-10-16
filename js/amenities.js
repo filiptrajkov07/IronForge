@@ -5,7 +5,7 @@ let zoneDot = document.getElementById("zone-dot");
 let zoneName = document.getElementById("zone-name");
 let zoneNumber = document.getElementById("zone-num");
 
-let colours = ["#D2372C", "#1E5BBF", "#F2C318", "#2C8A4B"];
+let colours = ["#D2372C", "#1E5BBF", "#F2C318", "#277D44"];
 
 function updateZone() {
   let active = 0;

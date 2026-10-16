@@ -113,7 +113,7 @@
 
 .steps em {
   font-style: normal;
-  color: #B9BAB4;
+  color: #686964;
   font-weight: 400;
 }
 
@@ -139,7 +139,7 @@
 }
 
 .mission-label {
-  color: #6E6F6A;
+  color: #686964;
   margin-top: 16px;
 }
 
@@ -167,11 +167,15 @@
 }
 
 .fact-green {
-  border-top-color: #2C8A4B;
+  border-top-color: #277D44;
 }
 
 .closing-band-link-green,
 .closing-band-link-green:hover {
   background: #FFFFFF;
-  color: #2C8A4B;
+  color: #277D44;
+}
+
+.steps .text-red {
+  color: #C4342A;
 }

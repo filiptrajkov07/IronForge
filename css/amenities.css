@@ -170,11 +170,11 @@
 }
 
 .detail-green {
-  border-top-color: #2C8A4B;
+  border-top-color: #277D44;
 }
 
 .detail-green dd {
-  color: #2C8A4B;
+  color: #277D44;
 }
 
 .detail-yellow {
@@ -231,10 +231,6 @@
 
 .photo-bit-right {
   object-position: 58% 50%;
-}
-
-.photo-far-left {
-  object-position: 32% 50%;
 }
 
 .zone-caption-name {
@@ -317,15 +313,6 @@
   color: #FFFFFF;
 }
 
-.phone-photo-far-left {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: 32% 50%;
-}
-
 .zone-plate-yellow {
   width: 40px;
   height: 40px;
@@ -354,14 +341,14 @@
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background: #2C8A4B;
+  background: #277D44;
   box-shadow: inset 0 0 0 5px rgba(0,0,0,.2);
   display: grid;
   place-items: center;
 }
 
 .tag-green {
-  background: #2C8A4B;
+  background: #277D44;
   color: #FFFFFF;
 }
 

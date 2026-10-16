@@ -6,7 +6,7 @@
   padding: 12px 0 14px 20px;
   border: 0;
   background: none;
-  color: #8A8B86;
+  color: #686964;
   font: 600 13px/1 "Geist Mono",ui-monospace,monospace;
   letter-spacing: .12em;
   text-transform: uppercase;
@@ -163,7 +163,7 @@
   gap: 20px;
   font: 500 12px/1 "Geist Mono",ui-monospace,monospace;
   letter-spacing: .1em;
-  color: #6E6F6A;
+  color: #686964;
 }
 
 .latest-post-tag {
@@ -235,7 +235,7 @@
   font: 500 11px/1 "Geist Mono",ui-monospace,monospace;
   letter-spacing: .1em;
   text-transform: uppercase;
-  color: #6E6F6A;
+  color: #686964;
 }
 
 @media (max-width: 900px) {

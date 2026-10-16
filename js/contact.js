@@ -24,21 +24,24 @@ if (hourNow >= opens && hourNow < closes) {
   } else {
     openText.textContent = "Open now · until " + closes + ":00";
   }
-  openDot.style.background = "#2C8A4B";
-  openDot.style.color = "#2C8A4B";
+  openDot.style.background = "#277D44";
+  openDot.style.color = "#277D44";
 } else {
-  if (hourNow < opens) {
-    if (language === "mk") {
-      openText.textContent = "Затворено · отвора во 0" + opens + ":00";
-    } else {
-      openText.textContent = "Closed now · opens at 0" + opens + ":00";
+  let nextOpen = opens;
+  if (hourNow >= closes) {
+    let tomorrow = (weekday + 1) % 7;
+    nextOpen = 6;
+    if (tomorrow === 6) {
+      nextOpen = 8;
     }
+    if (tomorrow === 0) {
+      nextOpen = 9;
+    }
+  }
+  if (language === "mk") {
+    openText.textContent = "Затворено · од 0" + nextOpen + ":00";
   } else {
-    if (language === "mk") {
-      openText.textContent = "Затворено · отвора утре наутро";
-    } else {
-      openText.textContent = "Closed now · opens tomorrow morning";
-    }
+    openText.textContent = "Closed · opens 0" + nextOpen + ":00";
   }
   openDot.style.background = "#D2372C";
   openDot.style.color = "#D2372C";

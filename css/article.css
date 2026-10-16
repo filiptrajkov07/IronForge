@@ -129,7 +129,7 @@
 
 .article-head-link,
 .article-head-link:hover {
-  color: #6E6F6A;
+  color: #686964;
   align-self: flex-start;
 }
 
@@ -168,7 +168,7 @@
   gap: 12px 24px;
   padding-top: 18px;
   border-top: 1px solid rgba(21,22,21,.2);
-  color: #6E6F6A;
+  color: #686964;
 }
 
 .article-meta-info {
@@ -259,7 +259,7 @@
 .body-quote-green {
   margin: 44px 0;
   padding: 0 0 0 24px;
-  border-left: 3px solid #2C8A4B;
+  border-left: 3px solid #277D44;
   color: #151615;
   font-weight: 600;
   font-size: clamp(24px, 2.4vw, 32px);
@@ -348,5 +348,5 @@ p.body-text-yellow {
   display: flex;
   align-items: center;
   gap: 10px;
-  color: #6E6F6A;
+  color: #686964;
 }

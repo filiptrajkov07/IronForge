@@ -98,6 +98,10 @@
   color: #F2C318;
 }
 
+.text-gold {
+  color: #9C7600;
+}
+
 .page-width {
   max-width: 1440px;
   margin: 0 auto;
@@ -135,7 +139,7 @@
 }
 
 .beginners-section-green {
-  background: #2C8A4B;
+  background: #277D44;
   color: #FFFFFF;
 }
 
@@ -171,7 +175,7 @@
 }
 
 .footer-stripe-green {
-  background: #2C8A4B;
+  background: #277D44;
 }
 
 .footer-inner {
@@ -266,7 +270,7 @@
 }
 
 .text-grey {
-  color: #6E6F6A;
+  color: #686964;
 }
 
 .page-hero-title {
@@ -315,7 +319,7 @@
 }
 
 .zones-sticky-photo-mark-green {
-  background: #2C8A4B;
+  background: #277D44;
 }
 
 .closing-band-link-blue,
@@ -333,7 +337,7 @@
 .posts-mark-green {
   width: 9px;
   height: 9px;
-  background: #2C8A4B;
+  background: #277D44;
 }
 
 .posts-mark-red {
@@ -365,7 +369,7 @@
   left: 0;
   right: 0;
   height: 6px;
-  background: linear-gradient(90deg,#D2372C 0 25%,#1E5BBF 25% 50%,#F2C318 50% 75%,#2C8A4B 75%);
+  background: linear-gradient(90deg,#D2372C 0 25%,#1E5BBF 25% 50%,#F2C318 50% 75%,#277D44 75%);
 }
 
 @keyframes slide-up {
@@ -526,7 +530,7 @@
   }
 
   .phone-menu a.underline-green {
-    border-color: #2C8A4B;
+    border-color: #277D44;
   }
 
   .menu-open {

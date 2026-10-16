@@ -99,11 +99,11 @@
 }
 
 .zone-community::after {
-  box-shadow: inset 0 0 0 0 #2C8A4B;
+  box-shadow: inset 0 0 0 0 #277D44;
 }
 
 .zone-community:hover::after {
-  box-shadow: inset 0 0 0 8px #2C8A4B;
+  box-shadow: inset 0 0 0 8px #277D44;
 }
 
 .page-hero {

@@ -49,7 +49,7 @@
   font: 600 12px/1 "Geist Mono",ui-monospace,monospace;
   letter-spacing: .1em;
   text-transform: uppercase;
-  color: #6E6F6A;
+  color: #686964;
 }
 
 .field>legend {
@@ -175,7 +175,7 @@ textarea.line-input {
   display: block;
   height: 8px;
   margin: 0 calc(-1 * clamp(24px,3vw,44px)) 8px;
-  background: linear-gradient(90deg,#D2372C 0 25%,#1E5BBF 25% 50%,#F2C318 50% 75%,#2C8A4B 75%);
+  background: linear-gradient(90deg,#D2372C 0 25%,#1E5BBF 25% 50%,#F2C318 50% 75%,#277D44 75%);
 }
 
 .contact-details>div {
@@ -363,8 +363,8 @@ details.question[open] summary::after {
 }
 
 .status-dot {
-  background: #2C8A4B;
-  color: #2C8A4B;
+  background: #277D44;
+  color: #277D44;
 }
 
 .form-section {
@@ -411,7 +411,7 @@ details.question[open] summary::after {
   display: inline-flex;
   align-items: center;
   gap: 10px;
-  color: #2C8A4B;
+  color: #277D44;
 }
 
 .form-text {
@@ -432,7 +432,7 @@ div.hours-box {
 }
 
 .hours-title {
-  color: #6E6F6A;
+  color: #686964;
   margin-bottom: 8px;
 }
 
@@ -502,4 +502,8 @@ div.social-links {
   width: 100%;
   height: 180px;
   border: 0;
+}
+
+.faq-title .text-grey {
+  color: #4A4B48;
 }
