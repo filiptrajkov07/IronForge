@@ -115,28 +115,6 @@
   cursor: not-allowed;
 }
 
-.button {
-  display: inline-flex;
-  align-items: center;
-  min-height: 48px;
-  padding: 0 24px;
-  border: 0;
-  font: 600 14px/1 Geist,system-ui,sans-serif;
-  letter-spacing: .04em;
-  text-transform: uppercase;
-  cursor: pointer;
-  transition: background .2s,color .2s;
-}
-
-.button-yellow {
-  background: #F2C318;
-  color: #151615;
-}
-
-.button-yellow:hover {
-  background: #F1F0EB;
-}
-
 @media (max-width: 760px) {
   .policy-row {
     grid-template-columns: minmax(0, 1fr);
@@ -197,14 +175,6 @@
 .cookie-row-note {
   font-size: 14px;
   color: #8A8B86;
-}
-
-.cookie-settings-buttons {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 10px 12px;
-  padding-top: 24px;
 }
 
 .policy-sections {

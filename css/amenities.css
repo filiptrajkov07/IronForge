@@ -130,6 +130,7 @@
 }
 
 .stat dd {
+  order: -1;
   margin: 0;
   font-weight: 700;
   font-size: clamp(36px,3.2vw,52px);

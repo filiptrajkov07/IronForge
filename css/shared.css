@@ -344,18 +344,37 @@
 
 .cookies-banner {
   position: fixed;
-  right: 16px;
-  bottom: 16px;
+  left: 0;
+  right: 0;
+  bottom: 0;
   z-index: 10;
-  max-width: min(380px, calc(100% - 32px));
-  background: #FFFFFF;
-  color: #151615;
-  border: 2px solid #151615;
-  border-radius: 24px;
-  padding: 22px;
+  background: #151615;
+  color: #F1F0EB;
+  padding: 24px clamp(16px,4vw,48px) 18px;
   display: flex;
-  flex-direction: column;
-  gap: 14px;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px 28px;
+  animation: slide-up .4s ease-out;
+}
+
+.cookies-banner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 6px;
+  background: linear-gradient(90deg,#D2372C 0 25%,#1E5BBF 25% 50%,#F2C318 50% 75%,#2C8A4B 75%);
+}
+
+@keyframes slide-up {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0);
+  }
 }
 
 .cookies-title {
@@ -363,7 +382,7 @@
   align-items: center;
   gap: 10px;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 17px;
   letter-spacing: -.02em;
 }
 
@@ -382,21 +401,42 @@
   width: 7px;
   height: 7px;
   border-radius: 50%;
-  background: #FFFFFF;
+  background: #151615;
 }
 
 .cookies-text {
+  flex: 1 1 320px;
   margin: 0;
   font-size: 14px;
   line-height: 1.5;
+  color: #B9BAB4;
 }
 
-.cookies-button {
-  background: #151615;
-  color: #FFFFFF;
+.cookies-banner .cookies-link,
+.cookies-banner .cookies-link:hover {
+  color: #F1F0EB;
+}
+
+.cookies-buttons {
+  display: flex;
+  gap: 8px;
+}
+
+.cookies-accept {
+  background: #F2C318;
+  color: #151615;
   border: 0;
   min-height: 44px;
-  padding: 0 18px;
+  padding: 0 22px;
+  font-size: 12px;
+}
+
+.cookies-decline {
+  background: transparent;
+  color: #F1F0EB;
+  border: 1.5px solid #F1F0EB;
+  min-height: 44px;
+  padding: 0 22px;
   font-size: 12px;
 }
 

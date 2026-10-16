@@ -29,7 +29,7 @@ images/           all photos
 | Blog | `blog.html` | `js/blog.js`: topic filters |
 | Blog posts | `squat-depth.html`, `sauna-after-lifting.html`, `smoothie-bar-orders.html`, `first-four-weeks.html`, `new-platforms.html`, `desk-warm-up.html`, `saturday-open-session.html` | `js/article.js`: "Copy link" button |
 | Contact | `contact.html` | `js/contact.js`: open/closed status, form checks, sends the message with Formspree |
-| Privacy & cookies | `privacy.html` | `js/privacy.js`: "Show the cookie message again" button |
+| Privacy & cookies | `privacy.html` | `js/privacy.js`: the Analytics on/off switch |
 
 ## Two languages
 
@@ -49,7 +49,7 @@ Some links have their colour written twice, as `.footer-link` and `.footer-link:
 
 ## Good to know
 
-- **Contact form:** messages are sent with [Formspree](https://formspree.io) to the form `https://formspree.io/f/mgaolpad` (set in `en/contact.html` and `mk/contact.html`). New messages arrive in the email of that Formspree account.
+- **Contact form:** messages are sent with [Formspree](https://formspree.io) to the form `https://formspree.io/f/xzedyopj` (set in `en/contact.html` and `mk/contact.html`). New messages arrive in the email of that Formspree account.
 - **Phones:** below 920 px wide the menu links hide behind the ☰ button (`js/menu.js`, styles at the end of `css/shared.css`).
-- **Cookies:** the site sets no cookies. The only thing it saves is `if-cookie` in the browser's `localStorage`, after you press OK on the cookie message, so the message doesn't come back. It stays until you clear your browser data.
+- **Cookies and Google Analytics:** the cookie bar has Accept and Decline. The answer is saved as `if-cookie` in `localStorage` (`yes` or `no`). Only after Accept does `js/cookies.js` load Google Analytics (ID `G-V2JXWRYFR7`), which sets the `_ga` cookies. Visitor numbers show up at analytics.google.com. On the Privacy page the Analytics switch changes the answer.
 - Fonts (Geist and Geist Mono) load from Google Fonts, so the pages need an internet connection to look exactly right.

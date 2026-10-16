@@ -57,7 +57,7 @@
   </div>
   <div class="coaches-box">
     <section class="coach-row" aria-label="Тренери">
-      <div class="coach-card coach-red" tabindex="0" aria-label="Марко Петровски, главен тренер · сила">
+      <div class="coach-card coach-red" tabindex="0" role="group" aria-label="Марко Петровски, главен тренер · сила">
         <img class="coach-photo" src="../images/coach-marko.webp" alt="Портрет на главниот тренер Марко Петровски со прекрстени раце пред рекот со дамбели">
         <span class="coach-first-name" aria-hidden="true">Марко</span>
         <span class="coach-details">
@@ -65,7 +65,7 @@
           <span class="coach-name">Марко<br>Петровски</span>
         </span>
       </div>
-      <div class="coach-card coach-blue" tabindex="0" aria-label="Ана Стојановска, мобилност и опоравување">
+      <div class="coach-card coach-blue" tabindex="0" role="group" aria-label="Ана Стојановска, мобилност и опоравување">
         <img class="coach-photo" src="../images/coach-ana.jpg" alt="Портрет на тренерката Ана Стојановска, насмеана, со прекрстени раце">
         <span class="coach-first-name" aria-hidden="true">Ана</span>
         <span class="coach-details">
@@ -73,7 +73,7 @@
           <span class="coach-name">Ана<br>Стојановска</span>
         </span>
       </div>
-      <div class="coach-card coach-green" tabindex="0" aria-label="Александар Божиновски, персонален тренер · почетници">
+      <div class="coach-card coach-green" tabindex="0" role="group" aria-label="Александар Божиновски, персонален тренер · почетници">
         <img class="coach-photo-higher" src="../images/coach-aleksandar.webp" alt="Портрет на персоналниот тренер Александар Божиновски со прекрстени раце во салата">
         <span class="coach-first-name" aria-hidden="true">Александар</span>
         <span class="coach-details">
@@ -81,7 +81,7 @@
           <span class="coach-name">Александар<br>Божиновски</span>
         </span>
       </div>
-      <div class="coach-card coach-yellow" tabindex="0" aria-label="Елена Јовановска, кондиција · часови">
+      <div class="coach-card coach-yellow" tabindex="0" role="group" aria-label="Елена Јовановска, кондиција · часови">
         <img class="coach-photo" src="../images/coach-elena.webp" alt="Портрет на тренерката Елена Јовановска, насмеана, со раце на колковите">
         <span class="coach-first-name" aria-hidden="true">Елена</span>
         <span class="coach-details">
@@ -165,9 +165,9 @@
     </div>
     <div class="footer-inner">
       <div class="footer-info">
-        <div><div class="small-caps footer-title">Каде</div>ул. Македонија 18, 1000 Скопје<br><a class="footer-link-yellow" href="https://maps.google.com/?q=ul.+Makedonija+18,+Skopje">Како до нас</a></div>
+        <div><div class="small-caps footer-title">Каде</div>ул. Македонија 18, 1000 Скопје<br><a class="footer-link-yellow" href="https://www.google.com/maps/dir/?api=1&amp;destination=41.9948,21.4290" target="_blank">Како до нас</a></div>
         <div><div class="small-caps footer-title">Кога</div><span class="footer-label">Пон–Пет 06:00–23:00<br>Саб 08:00–21:00<br>Нед 09:00–18:00</span></div>
-        <div><div class="small-caps footer-title">Контакт</div>+389 70 312 458<br>hello@ironforge.mk</div>
+        <div><div class="small-caps footer-title">Контакт</div>+389 70 312 458<br>ironforge2601@gmail.com</div>
       </div>
       <div class="footer-links">
         <div class="footer-link-group">
@@ -187,18 +187,19 @@
       <div class="footer-big-name" aria-hidden="true">iron forge</div>
       <div class="footer-copyright">
         <span>© 2026 IRON FORGE СКОПЈЕ</span>
-        <span>INSTAGRAM · FACEBOOK · TIKTOK</span>
+        <span><a class="footer-link-grey" href="https://www.instagram.com/ironforge.mk/" target="_blank">INSTAGRAM</a> · <a class="footer-link-grey" href="https://www.facebook.com/profile.php?id=61595370364953" target="_blank">FACEBOOK</a> · <a class="footer-link-grey" href="https://www.tiktok.com/@ironforge.mk" target="_blank">TIKTOK</a></span>
       </div>
     </div>
   </footer>
-  <div class="cookies-banner" id="cookie-banner" hidden role="dialog" aria-label="Cookie preferences">
+  <div class="cookies-banner" id="cookie-banner" hidden role="dialog" aria-label="Поставки за колачиња">
     <div class="cookies-title">
       <span class="cookie-plate" aria-hidden="true"><span class="cookie-dot"></span></span>
       колачиња, лесно натоварени
     </div>
-    <p class="cookies-text">Го зачувуваме само твојот одговор на оваа порака. Без колачиња за следење или реклами. <a class="cookies-link" href="privacy.html">Политика за колачиња</a></p>
-    <div class="wrap-row">
-      <button type="button" class="pill-button cookies-button" id="cookie-ok">Во ред</button>
+    <p class="cookies-text">Користиме колачиња од Google Analytics за броење посети, но само ако прифатиш. <a class="cookies-link" href="privacy.html">Политика за колачиња</a></p>
+    <div class="cookies-buttons">
+      <button type="button" class="pill-button cookies-accept" id="cookie-accept">Прифати</button>
+      <button type="button" class="pill-button cookies-decline" id="cookie-decline">Одбиј</button>
     </div>
   </div>
 </div>

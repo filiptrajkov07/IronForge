@@ -1,6 +1,23 @@
-let resetButton = document.getElementById("reset-choice");
+let analyticsSwitch = document.getElementById("ck-analytics");
 
-resetButton.addEventListener("click", function () {
-  localStorage.removeItem("if-cookie");
-  document.getElementById("cookie-banner").hidden = false;
+if (localStorage.getItem("if-cookie") === "yes") {
+  analyticsSwitch.checked = true;
+}
+
+analyticsSwitch.addEventListener("change", function () {
+  if (analyticsSwitch.checked) {
+    localStorage.setItem("if-cookie", "yes");
+    startAnalytics();
+  } else {
+    localStorage.setItem("if-cookie", "no");
+  }
+  document.getElementById("cookie-banner").hidden = true;
+});
+
+document.getElementById("cookie-accept").addEventListener("click", function () {
+  analyticsSwitch.checked = true;
+});
+
+document.getElementById("cookie-decline").addEventListener("click", function () {
+  analyticsSwitch.checked = false;
 });

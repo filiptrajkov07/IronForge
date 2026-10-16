@@ -49,7 +49,7 @@
 
     <section class="page-hero">
       <div class="page-hero-text">
-        <span class="small-caps text-grey">Правни информации · последно ажурирано 1 октомври 2026</span>
+        <span class="small-caps text-grey">Правни информации · последно ажурирано 16 октомври 2026</span>
         <h1 class="page-hero-title">приватност и <span class="text-blue">колачиња</span></h1>
       </div>
     </section>
@@ -60,7 +60,7 @@
       <div class="title-group">
         <span class="small-caps text-yellow">Поставки за колачиња</span>
         <h2 class="cookie-settings-heading">Што зачувуваме</h2>
-        <p class="cookie-settings-text">Само една мала работа: твојот одговор на пораката за колачиња, за да не се појавува на секоја страница. Не користиме колачиња за аналитика или реклами.</p>
+        <p class="cookie-settings-text">Твојот одговор на пораката за колачиња, за да не се појавува на секоја страница. И само ако прифатиш: колачиња од Google Analytics што ги бројат посетите. Не користиме колачиња за реклами.</p>
       </div>
       <div class="cookie-settings-options">
         <label for="ck-ess" class="cookie-row">
@@ -70,9 +70,13 @@
           </span>
           <input id="ck-ess" class="switch" type="checkbox" checked="" disabled="">
         </label>
-        <div class="cookie-settings-buttons">
-          <button type="button" class="button button-yellow" id="reset-choice">Покажи ја пораката за колачиња повторно</button>
-        </div>
+        <label for="ck-analytics" class="cookie-row">
+          <span class="cookie-row-text">
+            <span class="cookie-row-name">Аналитика</span>
+            <span class="cookie-row-note">Google Analytics ги брои посетите и страниците. Исклучено додека не прифатиш.</span>
+          </span>
+          <input id="ck-analytics" class="switch" type="checkbox">
+        </label>
       </div>
     </div>
   </section>
@@ -89,17 +93,16 @@
         <h2>Што собираме</h2>
         <div class="policy-text">
           <ul>
-            <li><strong>Барања за контакт и посета:</strong> име, е-пошта, телефон (по избор), посакуван датум и вашата порака.</li>
+            <li><strong>Контакт формулар:</strong> твоето име, е-пошта, за што ти треба помош, тренерот што ќе го избереш и твојата порака. Формуларот ни се праќа преку Formspree.</li>
             <li><strong>Членови:</strong> име, датум на раѓање, контакт податоци, членарина, евиденција на плаќања и времиња на влез.</li>
-            <li><strong>Билтен:</strong> вашата е-пошта.</li>
-            <li><strong>Користење на страницата:</strong> само твојот одговор на пораката за колачиња, како што е наведено во делот 6.</li>
+            <li><strong>Користење на страницата:</strong> твојот одговор на пораката за колачиња и, само ако прифатиш, статистика за посетите од Google Analytics: прегледани страници, вид на уред и приближна локација, како што е наведено во делот 6.</li>
           </ul>
         </div>
       </section>
       <section id="why" class="policy-row">
         <h2>Зошто ги користиме</h2>
         <div class="policy-text">
-          <p>За да одговориме на вашите барања, да ја водиме вашата членарина, да ви го праќаме билтенот што сте го побарале и да ги исполниме законските обврски, на пример чување фактури. Никогаш не ги продаваме вашите податоци.</p>
+          <p>За да одговориме на вашите пораки, да ја водиме вашата членарина, да видиме кои страници од веб-страницата се корисни (само ако прифатиш аналитика) и да ги исполниме законските обврски, на пример чување фактури. Никогаш не ги продаваме вашите податоци.</p>
         </div>
       </section>
       <section id="keep" class="policy-row">
@@ -108,7 +111,6 @@
           <ul>
             <li>Пораки од контакт формуларот: 12 месеци.</li>
             <li>Евиденција за членството: додека сте член, плус периодот што го бара законот за сметководство: 10 години.</li>
-            <li>Билтен: додека не се отпишете.</li>
           </ul>
         </div>
       </section>
@@ -126,10 +128,12 @@
 <thead><tr><th class="small-caps table-head">Име</th><th class="small-caps table-head">Намена</th><th class="small-caps table-head">Вид</th><th class="small-caps table-head-right">Се чува</th></tr></thead>
 <tbody>
 <tr class="table-row"><td class="table-name">if-cookie</td><td class="table-cell">Памети дека одговори на пораката за колачиња</td><td class="table-cell">Неопходни</td><td class="table-cell-right">Додека не ги избришеш податоците од прелистувачот</td></tr>
+<tr class="table-row"><td class="table-name">_ga</td><td class="table-cell">Google Analytics: ги разликува посетителите за да можеме да ги броиме</td><td class="table-cell">Аналитика, само ако прифатиш</td><td class="table-cell-right">2 години</td></tr>
+<tr class="table-row"><td class="table-name">_ga_V2JXWRYFR7</td><td class="table-cell">Google Analytics: ја памети тековната посета</td><td class="table-cell">Аналитика, само ако прифатиш</td><td class="table-cell-right">2 години</td></tr>
 </tbody>
 </table>
           </div>
-          <p class="table-text">Се чува во локалната меморија на твојот прелистувач и не ни се праќа нам. За повторно да одговориш на пораката, користи го копчето во <a class="cookies-link" href="#cookies">поставките за колачиња</a> погоре.</p>
+          <p class="table-text">if-cookie се чува во локалната меморија на твојот прелистувач и не ни се праќа нам. Двете колачиња од Google Analytics се поставуваат само откако ќе кликнеш „Прифати“. Статистиката оди кај Google, а ние гледаме само збирни бројки, никогаш кој си ти. Својот одговор можеш да го смениш кога сакаш во <a class="cookies-link" href="#cookies">поставките за колачиња</a> погоре. Колачињата што се веќе зачувани остануваат додека не ги избришеш колачињата од прелистувачот.</p>
         </div>
       </section>
       <section id="terms" class="policy-row">
@@ -156,9 +160,9 @@
     </div>
     <div class="footer-inner">
       <div class="footer-info">
-        <div><div class="small-caps footer-title">Каде</div>ул. Македонија 18, 1000 Скопје<br><a class="footer-link-yellow" href="https://maps.google.com/?q=ul.+Makedonija+18,+Skopje">Како до нас</a></div>
+        <div><div class="small-caps footer-title">Каде</div>ул. Македонија 18, 1000 Скопје<br><a class="footer-link-yellow" href="https://www.google.com/maps/dir/?api=1&amp;destination=41.9948,21.4290" target="_blank">Како до нас</a></div>
         <div><div class="small-caps footer-title">Кога</div><span class="footer-label">Пон–Пет 06:00–23:00<br>Саб 08:00–21:00<br>Нед 09:00–18:00</span></div>
-        <div><div class="small-caps footer-title">Контакт</div>+389 70 312 458<br>hello@ironforge.mk</div>
+        <div><div class="small-caps footer-title">Контакт</div>+389 70 312 458<br>ironforge2601@gmail.com</div>
       </div>
       <div class="footer-links">
         <div class="footer-link-group">
@@ -178,18 +182,19 @@
       <div class="footer-big-name" aria-hidden="true">iron forge</div>
       <div class="footer-copyright">
         <span>© 2026 IRON FORGE СКОПЈЕ</span>
-        <span>INSTAGRAM · FACEBOOK · TIKTOK</span>
+        <span><a class="footer-link-grey" href="https://www.instagram.com/ironforge.mk/" target="_blank">INSTAGRAM</a> · <a class="footer-link-grey" href="https://www.facebook.com/profile.php?id=61595370364953" target="_blank">FACEBOOK</a> · <a class="footer-link-grey" href="https://www.tiktok.com/@ironforge.mk" target="_blank">TIKTOK</a></span>
       </div>
     </div>
   </footer>
-  <div class="cookies-banner" id="cookie-banner" hidden role="dialog" aria-label="Cookie preferences">
+  <div class="cookies-banner" id="cookie-banner" hidden role="dialog" aria-label="Поставки за колачиња">
     <div class="cookies-title">
       <span class="cookie-plate" aria-hidden="true"><span class="cookie-dot"></span></span>
       колачиња, лесно натоварени
     </div>
-    <p class="cookies-text">Го зачувуваме само твојот одговор на оваа порака. Без колачиња за следење или реклами. <a class="cookies-link" href="privacy.html">Политика за колачиња</a></p>
-    <div class="wrap-row">
-      <button type="button" class="pill-button cookies-button" id="cookie-ok">Во ред</button>
+    <p class="cookies-text">Користиме колачиња од Google Analytics за броење посети, но само ако прифатиш. <a class="cookies-link" href="privacy.html">Политика за колачиња</a></p>
+    <div class="cookies-buttons">
+      <button type="button" class="pill-button cookies-accept" id="cookie-accept">Прифати</button>
+      <button type="button" class="pill-button cookies-decline" id="cookie-decline">Одбиј</button>
     </div>
   </div>
 </div>
