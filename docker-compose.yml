@@ -1,5 +1,5 @@
 services:
   web:
     build: .
-    ports:
-      - "8080:80"
+    cpus: 0.5
+    mem_limit: 128m
