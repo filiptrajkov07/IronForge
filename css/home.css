@@ -306,21 +306,11 @@
   padding-left: 0;
 }
 
-.photo-band-caption span:last-child {
-  padding-right: 0;
-}
-
 .photo-band-caption i {
   width: 10px;
   height: 10px;
   background: #D2372C;
   flex: none;
-}
-
-@media (max-width: 560px) {
-  .photo-band-caption span:last-child {
-    display: none;
-  }
 }
 
 .zone-cards {

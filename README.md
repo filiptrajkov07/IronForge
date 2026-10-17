@@ -27,7 +27,7 @@ images/           all photos
 | Team | `team.html` | `js/team.js`: personal training plan buttons |
 | Gallery | `gallery.html` | none (the hover is pure CSS) |
 | Blog | `blog.html` | `js/blog.js`: topic filters |
-| Blog posts | `squat-depth.html`, `sauna-after-lifting.html`, `smoothie-bar-orders.html`, `first-four-weeks.html`, `new-platforms.html`, `desk-warm-up.html`, `saturday-open-session.html` | `js/article.js`: "Copy link" button |
+| Blog posts | `squat-depth.html`, `sauna-after-lifting.html`, `smoothie-bar-orders.html`, `first-four-weeks.html`, `new-platforms.html`, `desk-warm-up.html`, `saturday-open-session.html` | none |
 | Contact | `contact.html` | `js/contact.js`: open/closed status, form checks, sends the message with Formspree |
 | Privacy & cookies | `privacy.html` | `js/privacy.js`: the Analytics on/off switch |
 

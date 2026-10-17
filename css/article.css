@@ -98,25 +98,6 @@
   color: #1E5BBF;
 }
 
-.text-link {
-  background: none;
-  border: 0;
-  padding: 0 0 5px;
-  margin: 0;
-  border-bottom: 2px solid #151615;
-  color: #151615;
-  font: 600 12px/1 "Geist Mono",ui-monospace,monospace;
-  letter-spacing: .1em;
-  text-transform: uppercase;
-  cursor: pointer;
-  transition: border-color .2s,color .2s;
-}
-
-.text-link:hover {
-  color: #151615;
-  border-color: #D2372C;
-}
-
 .article-head {
   max-width: 1344px;
   margin: 0 auto;

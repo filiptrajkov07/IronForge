@@ -161,6 +161,13 @@ textarea.line-input {
   transform: translateX(4px);
 }
 
+.send-button:disabled,
+.send-button:disabled:hover {
+  opacity: .6;
+  cursor: wait;
+  transform: none;
+}
+
 .contact-details {
   align-self: start;
   display: flex;

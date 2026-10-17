@@ -82,6 +82,7 @@ for (let i = 0; i < hourRows.length; i++) {
 let form = document.getElementById("contact-form");
 let sentBox = document.getElementById("sent-box");
 let sendAnotherButton = document.getElementById("send-another");
+let sendButton = form.querySelector(".send-button");
 
 function showError(id, englishText, macedonianText) {
   let error = document.getElementById(id);
@@ -100,8 +101,13 @@ function hideError(id) {
 form.addEventListener("submit", function (event) {
   event.preventDefault();
 
+  if (sendButton.disabled) {
+    return;
+  }
+
   let name = form.elements.name.value.trim();
   let email = form.elements.email.value.trim();
+  let message = form.elements.msg.value.trim();
   let topic = form.elements.topic.value;
   let coach = form.elements.coach.value;
   let agreed = form.elements.consent.checked;
@@ -120,6 +126,13 @@ form.addEventListener("submit", function (event) {
     allGood = false;
   } else {
     hideError("email-error");
+  }
+
+  if (message === "") {
+    showError("message-error", "Please write a message.", "Напиши порака.");
+    allGood = false;
+  } else {
+    hideError("message-error");
   }
 
   if (agreed === false) {
@@ -161,6 +174,7 @@ form.addEventListener("submit", function (event) {
   document.getElementById("reply-line").textContent = reply;
 
   let formData = new FormData(form);
+  sendButton.disabled = true;
 
   fetch(form.action, {
     method: "POST",
@@ -168,6 +182,7 @@ form.addEventListener("submit", function (event) {
     headers: { "Accept": "application/json" }
   })
     .then(function (response) {
+      sendButton.disabled = false;
       if (response.ok) {
         hideError("send-error");
         form.hidden = true;
@@ -177,6 +192,7 @@ form.addEventListener("submit", function (event) {
       }
     })
     .catch(function () {
+      sendButton.disabled = false;
       showError("send-error", "Sorry, the message could not be sent. Please try again.", "Пораката не можеше да се испрати. Обидете се повторно.");
     });
 });

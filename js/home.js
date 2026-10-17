@@ -94,13 +94,3 @@ let todayMark = document.querySelector(".today-mark");
 dayButtons[today].appendChild(todayMark);
 
 showDay(today);
-
-let todayHours = document.getElementById("today-hours");
-let hours = "06:00–23:00";
-if (today === 5) {
-  hours = "08:00–21:00";
-}
-if (today === 6) {
-  hours = "09:00–18:00";
-}
-todayHours.textContent = todayHours.dataset.label + " " + hours;
