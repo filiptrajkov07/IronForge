@@ -2,9 +2,20 @@ let cookieBanner = document.getElementById("cookie-banner");
 let acceptButton = document.getElementById("cookie-accept");
 let declineButton = document.getElementById("cookie-decline");
 
+let analyticsId = "G-V2JXWRYFR7";
+let analyticsLoaded = false;
+
 function startAnalytics() {
+  window["ga-disable-" + analyticsId] = false;
+
+  if (analyticsLoaded) {
+    gtag("config", analyticsId);
+    return;
+  }
+  analyticsLoaded = true;
+
   let script = document.createElement("script");
-  script.src = "https://www.googletagmanager.com/gtag/js?id=G-V2JXWRYFR7";
+  script.src = "https://www.googletagmanager.com/gtag/js?id=" + analyticsId;
   script.async = true;
   document.head.appendChild(script);
 
@@ -13,7 +24,22 @@ function startAnalytics() {
     dataLayer.push(arguments);
   };
   gtag("js", new Date());
-  gtag("config", "G-V2JXWRYFR7");
+  gtag("config", analyticsId);
+}
+
+function stopAnalytics() {
+  window["ga-disable-" + analyticsId] = true;
+
+  let names = ["_ga", "_ga_" + analyticsId.replace("G-", "")];
+  let parts = location.hostname.split(".");
+
+  for (let i = 0; i < names.length; i++) {
+    document.cookie = names[i] + "=; max-age=0; path=/";
+    for (let j = 0; j < parts.length - 1; j++) {
+      let domain = parts.slice(j).join(".");
+      document.cookie = names[i] + "=; max-age=0; path=/; domain=." + domain;
+    }
+  }
 }
 
 let choice = localStorage.getItem("if-cookie");
@@ -35,4 +61,5 @@ acceptButton.addEventListener("click", function () {
 declineButton.addEventListener("click", function () {
   localStorage.setItem("if-cookie", "no");
   cookieBanner.hidden = true;
+  stopAnalytics();
 });

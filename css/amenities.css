@@ -369,3 +369,9 @@
   align-items: flex-end;
   gap: 40px 64px;
 }
+
+@media (max-width: 359px) {
+  .zone-block h2 {
+    font-size: 42px;
+  }
+}

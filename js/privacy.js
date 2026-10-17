@@ -10,6 +10,7 @@ analyticsSwitch.addEventListener("change", function () {
     startAnalytics();
   } else {
     localStorage.setItem("if-cookie", "no");
+    stopAnalytics();
   }
   document.getElementById("cookie-banner").hidden = true;
 });
